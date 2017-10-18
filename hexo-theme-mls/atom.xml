@@ -1,0 +1,2011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lazzzis</title>
+  <subtitle>Please Don&#39;t Say &quot;You Are Lazy&quot;!</subtitle>
+  <link href="/hexo-theme-mls/atom.xml" rel="self"/>
+  
+  <link href="http://lazzzis.github.io/hexo-theme-mls/"/>
+  <updated>2017-03-24T16:35:46.000Z</updated>
+  <id>http://lazzzis.github.io/hexo-theme-mls/</id>
+  
+  <author>
+    <name>lazzzis</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一周面试小结</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2017/03/24/recent-interviews-in-march-2017/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2017/03/24/recent-interviews-in-march-2017/</id>
+    <published>2017-03-24T13:38:09.000Z</published>
+    <updated>2017-03-24T16:35:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="背景及摘要">背景及摘要</h1><p>3 月 15 日，浙大玉泉校区举办了一场招聘会，近几百家单位参加。虽然我不是浙大本校生，但是外校学生若携带学生证件也是可以进入的。我总共带了 12 份简历前往，并全部投出。我的目标岗位为 Web 前端开发，但也对 Python / Node.js 后端有意向。目前我已进行了 3 次面试，分别是 <a href="https://www.lagou.com/gongsi/137471.html" target="_blank" rel="external">数聚科技</a>, <a href="https://www.lagou.com/gongsi/178043.html" target="_blank" rel="external">谷神星</a>, <a href="https://www.lagou.com/gongsi/210.html" target="_blank" rel="external">企朋</a> （点击可查看拉钩网上的信息）。我想在这篇文章里分享一下我这几次的面试过程，谈谈我的一些想法，希望对大家有帮助。</p>
+<h1 id="招聘会">招聘会</h1><h2 id="简历">简历</h2><p>这是我的 <a href="https://drive.google.com/file/d/0B46-8KBsYVBpcUZuemJqLXhFalk/view?usp=sharing" target="_blank" rel="external">简历</a> 。因为这份简历仅用于交流，因此我故意抹去了一些信息，比如真实姓名，联系方式，就读的大学等。同时这份简历是我在招聘会后稍作了修改的简历（增加了专业，意向岗位，将 “Java实习生” 改为 “Web 实习生”，其它均未改动）。</p>
+<p>事实上这是我第一次做招聘用的简历，直接套用了 Google Docs 的一个 Resume 模板。但是有几个细节在编辑时没有注意，在招聘会后或面试时我才发现这些是个问题：</p>
+<ol>
+<li><p><strong>没有标注专业</strong>。尽管现在有很多公司也不会太在意你是否是计算机专业出生，但专业本身仍然是 HR 关注的一个重要信息。其次，有些公司在招聘要求上也明确说明需要计算机相关专业的应聘者。因此专业作为一个关键信息仍不能忽视。</p>
+</li>
+<li><p><strong>没有写明目标岗位</strong>。在最初的（也就是用于投递的那一版的）简历里，我没有明确说明意向。招聘会上，有些 HR 会将收到的简历按岗位分开存放。但有些 HR 则不然。或者说，在人多的情况下， HR 也难免会忘记你的意向。注意，我在最初的简历中有写 “Java” 实习生的经历。这本来没问题，但是在我没写清岗位的情况下，有几位 HR 错以为我对 “Java工程师” 有意向。因此，目标岗位也是极重要的信息。</p>
+</li>
+<li><p><strong>简历或许可以再紧凑一点</strong>。看了一些他人的简历，大多有表格辅助，而且空间利用率明显比我的简历要高。或许可以再思考一下如何再打扮一下我的简历。</p>
+</li>
+</ol>
+<h2 id="现场">现场</h2><p><strong>请务必先详细了解招聘场所内的具体分布！</strong></p>
+<p>当我到招聘会现场时，计划时长 3 小时的招聘会已经举办了半小时了。我当时也没注意 3 个场所内公司的分布，所以我一到现场时就先跑进了第一个分会场。看完第一个会场后我就前往了第二个会场。而当时的我仅知道有 3 个会场的存在，但不清楚 3 个会场中公司摊位的数量。结果就是，我在第 2 个会场花了近一个小时。而到了第 3 个会场，我呆了，这里比第 2 个会场有更多的企业。这时，距离结束大约剩余 1 小时。而且在最后大约 20 分钟，我惊奇地发现，这个场所（一个排球馆）的某处有一个不长的通道，通向同一场所的另一个区域 – 这里还有将近 100 家企业。更糟糕的是，<strong>他们已经开始收摊</strong> 了。更更糟糕的是，此时的我。。。手头已经 <strong>没有剩余的简历了</strong>。</p>
+<h1 id="数聚科技">数聚科技</h1><p>我应聘了这家公司的前端，是第二个联系了我的公司（第一个公司以为我要应聘 Java 。。。所以我在电话上就拒绝了 HR）。HR 与我约好周五见面，时间是 3 点到 4 点。</p>
+<p>公司位于浙大科技园（浙大玉泉校区附近）。园内环境可以，但园外。。。背后是丘陵。</p>
+<p><img src="https://s22.postimg.org/50rcp9jn5/Screen_Shot_2017_03_22_at_22_54_21.png" alt="园内"><span class="image-caption">园内</span></p>
+<p><img src="https://s17.postimg.org/588dmvpnz/Screen_Shot_2017_03_22_at_22_53_54.png" alt="园外"><span class="image-caption">园外</span></p>
+<p>面试者是两人，分别是 HR 以及一名技术员工（该员工并没详细介绍自己，但从年龄和谈话上看，应该不是 CTO 或 PM）。</p>
+<p>对话首先以我简历上的项目为重点，主要问了我采用了哪些工具（框架以及包）。接着聊了一下我何时毕业以及我的住处问题。最后商讨薪水。</p>
+<p>整个过程中没有询问任何 <strong>技术上的问题</strong>。谈话中仅仅是说我怎么做项目。但没有问我如何解决一些问题，比如：如何解决高并发问题，也没有问我任何关于 JavaScript 语言的相关问题。</p>
+<p>其次，这个 HR 对技术不是很了解。虽然对于 HR 应不应该懂技术这个问题我保留意见，但我还是想吐槽一下。我在谈项目时我把 <code>Vue</code> 念作单词发音，而不是读成 3 个字母 (<code>V-U-E</code>)。但当我讲完项目后，HR 还是问了一句：你既然对这个 “wei you” 框架这么熟悉，那你对 <code>V-U-E</code> (读这 3 个字母) 熟不熟悉呢？ 我: (；￣Д￣） 这不同一个玩意么。。。</p>
+<p>还想吐槽一点，这个技术员工 <strong>似乎也不是特懂技术</strong>。因为我在简历里写了 SCSS (可以参考 <a href="http://sass-lang.com/" target="_blank" rel="external">Link</a>)，但这技术人员却说：这里是不是写错了，SCSS 是什么，应该是 CSS 吧？ 我: ヘ(゜Д、゜)ノ 你不是技术人员么？</p>
+<p>另外，目前这个公司前端业务不算特别重。据悉，该公司近期做的一个项目是调查问卷。这也难怪他们问我是否用过 E-Charts。不过当时我也完全不知道 E-Charts 是什么。</p>
+<p>总的来说，我个人对这家公司的面试感觉一般。因为我对面试也报了一种 <strong>学习</strong> 的态度，希望能在面试中也能了解一些自己的不足。但是这次面试恰恰相反，我反倒看到了他们的一些不足。</p>
+<p>关于薪水，我当时没有提，因为我还真没认真想这事，以为公司会主动提供数字再让我做决定。所以当时只是说之后电话联系。</p>
+<p>这是星期五（3 月 17 日）的面试，在这之后的第 3 天（星期一），我接到了 HR 的电话。电话中 HR 通知了我被录取的消息，不过在 HR 提出薪资前，我就回绝了。不管这个公司是否真的有前景，但至少我觉得我极不适合这个公司。</p>
+<h1 id="企朋">企朋</h1><p>先上结论，这是我目前面试中 <strong>最满意</strong> 的公司，无论从面试过程还是公司本身来说。</p>
+<h2 id="笔试">笔试</h2><p>笔试总体分三部分: 网络相关知识，算法编程知识，语言相关知识。可以看出该测试偏概念与算法，比如快排或 GC，没有考某某对象的使用或某某方法的使用。至于具体题目，我觉得还是不要透露的好。总之，对于这份试卷，虽然有几题明显可以看出是非原创的（就是从网上抄的），但总体上还是比较能反映一个编程者的基本素养的。</p>
+<h2 id="一面技术面">一面（技术面）</h2><p>本以为前端工程师会问我关于 <code>prototype</code> 或 <code>Object</code> 相关的问题，但事实上这一位工程师没有注重这方面，而是问了我一些关于 <code>yield</code>，以及 <code>async await</code> 的一些问题。</p>
+<p>同时也问了一些关于 <code>session</code> 的概念或实现。我对 <code>session</code> 的理解程度仅仅是用 <code>Node.Js</code> 的某个包实现的程度。所以这方面我确实不懂，反而是工程师教导了我。</p>
+<p>再者，工程师和我聊了一些我项目上的事，针对我项目中写的提问，比如 restful 理解之类的。</p>
+<p>总体上讲，前端工程师并没有问那些 <code>JavaScript</code> 中的那些坑，而是注重我在项目上的实际能力，因为工程师多次对我如何理解和解决问题发问。</p>
+<h2 id="二面-cto">二面 (CTO)</h2><p>技术面之后，马上就安排了 CTO 前来面试。</p>
+<p>不得不说，CTO 整个人显示的气场就很不一样。第一眼看上去，CTO 和蔼可亲，同时有温文尔雅；而在提问和聊天时，又显得沉着睿智。</p>
+<p>和 CTO 的聊天中，我也明显感觉他的表达能力比我更甚一筹。举个例子，在聊项目时，我提到我对排行榜的处理是先以分数排序，再按时间顺序排序。而 CTO 一转述，则变成: <strong>此排序以分数为第一维度，以时间为第二维度</strong>。这种表述便显得书面化，也不容易被人误解。</p>
+<p>CTO 也问了我一些关于 <code>情怀</code> 的题，比如你崇拜的人之类的。（P.S. 这个问题好像有很多公司问呀，我在招聘会上就被一个公司问过了，还同样是一个招前端的公司 ((´д｀)) ）</p>
+<p>CTO 的具体问题细节同样就不透露了，但 CTO 的问题的出发点比前端工程师的站在一个更高的角度，包含了我对项目整个过程中出现的问题以及我个人的一些修养（比如对于 <code>Open Source</code> 和 <code>新技术</code> 的看法）。</p>
+<p>当然，这面试并不是单向的，最后 CTO 允许我问他一些问题。CTO 对我的问题进行了耐心详细的解答，而不是一句两句带过。这让我感觉 CTO 是真心希望我能问问题的，而不是出于某些礼貌说的客套话。</p>
+<h2 id="三面-hr">三面 (HR)</h2><p>和 HR 的聊天集中于待遇和我的需求。HR 给的关于实习薪资就蛮高的，是一些工资的 1.5 ~ 2 倍。（我认为薪资是一种隐私，所以具体数字就不提了）</p>
+<p>另外，同 HR 的聊天中我也了解到这家公司也很注重效率和协作。HR 跟我解释了目前公司使用的协同工具和技术。从这个角度看，在这家公司工作，<strong>沟通不是问题</strong>。</p>
+<p>和 HR 的整体过程很愉快，尤其当 HR 说我有 <strong>极客范</strong> 的时候 ＼(^▽^＠)ノ。真的，这句话足以让我高兴一整天；<strong>对于目前的我来说，这几乎是最大的认可</strong>。并且，这名 HR 是第一个这么评价我的人。</p>
+<h2 id="环境">环境</h2><p><strong>这个公司的环境很棒！</strong></p>
+<p>一进门就感觉这很有 google 的风范。办公室边上有零食架，健身器材，以及其它游戏措施。按 HR 的说法，<strong>这是为了让员工专注于手头的任务</strong>。</p>
+<p><img src="https://s9.postimg.org/kjfijydu7/Screen_Shot_2017_03_23_at_23_37_38.png" alt="公司一角"><span class="image-caption">公司一角</span></p>
+<p><img src="https://s10.postimg.org/ro11xzw61/Screen_Shot_2017_03_23_at_23_59_04.png" alt="公司一角"><span class="image-caption">公司一角</span></p>
+<p><img src="https://s21.postimg.org/mr83kbpc7/Screen_Shot_2017_03_24_at_00_01_10.png" alt="公司一角 -- 吃饭啦！"><span class="image-caption">公司一角 -- 吃饭啦！</span></p>
+<p>另外，在面完 CTO 后，刚好是午饭时间，CTO 和 HR 很友好地请我在公司吃饭。我刚开始出于礼貌而委婉地拒绝了，不过在几次邀请下还是放开吃了。。。嗯，味道不错！ლ(⌒▽⌒ლ)</p>
+<h2 id="谷神星">谷神星</h2><p>首先我表示一下我对这个公司的歉意，因为我迟到了一个小时。以至于到了之后，技术人员有事不在了，所以面试我的反而是一名销售人员。</p>
+<p>销售人员看了简历之后让我介绍自己并讲讲简历上的项目。不过讲到一半时，他打断了对话。他很坦诚的表示，自己只是销售，不懂技术。说罢，还给了我一些建议，比如简历上还是缺少点亮点，说话不够简洁。可能有人觉得这名销售有点无理，但我却不这么认为。从当时销售的语气和表情看，销售确实是出于好意所以打断对话并给我建议，因为我继续讲技术也是对牛弹琴，同时我也确实有表现不好的地方。</p>
+<p>与销售聊完后，HR 与我约好，（当天为周二）过一两天后，我将会与现位于温哥华的一名技术人员进行电话面试。</p>
+<p>周四早上，我与技术人员进行了约好的（微信）电话面试。</p>
+<p>从通话开始，技术便开始提问，首先是关于 <code>Java</code> 的，比如 <code>Spring</code> 的特点。但说实话，我对 <code>Java</code> 并不在行，所以回答得支支吾吾。</p>
+<p>后来又问了一些 <code>JavaScript</code> 的问题，比如 <code>Synchronous vs Asynchronous</code>，<code>Promise</code> 等。因为这与前端相关，所以我比刚才表达更加流利了。</p>
+<p>接着，对 database 又提问了一些，比如 <code>transaction</code>，几条 <code>SQL</code> 语句等。我对数据库只会基本使用，但一些特点却不然。因此这里回答的也很一般。</p>
+<p>最后，技术让我介绍自己做的一个项目。我自然讲了我最近做的那个在线评测系统。</p>
+<p>若让我作个评价，我会说这个技术也确实懂点技术的，对我的提问也明显注重于一些语法的细节和特点。但对我个人如何实现整个项目以及实现项目的能力过问的很少。</p>
+<p>至于我对这个公司的看法，主要是薪资水平太低了。实习生工资也才 3K，而且之前销售还没讲转正后的具体薪资的，只说工资是看实习表现再决定的。初次之外，这个公司并没有专门的前后端，换句话说，我要同时处理前后端认为。这对我来说是不可接受的，毕竟我在之前的一次实习中已经体验过这种开发了。一般这种做法对开发者的负担还是有点大， 不能专心于一件事情之中。因此，我决定拒绝掉这个公司。</p>
+<h1 id="总结">总结</h1><p>目前面试了就这几家，剩下几家要么没通知，要么已经预约了面试但还没到时间。如果后续还有面试，我大概会写一篇新的文章来分享自己的经历和想法。</p>
+<p>但就这几家而言，我个人认为面试是可以准备的，某种程度上也类似与应试考试，允许你临时抱佛脚。但，面试的最终表现还是基于你的真实水平的，依你平时的水平已经基本决定了面试的表现。面试前多做些细节准备能增加面试官的好感度，但并不能仅凭借这些就获得面试官的芳心。</p>
+<p>所以，一方面平时必须要做些项目。这些项目最好与你期望的岗位相关，同时最好是具备一定复杂程度的，比如一个单纯的获取在线时间的爬虫是不够的，但如果是一个能够爬多个网站并能根据比较数据给出建议的爬虫则相对高级很多，则可以显得你能组织代码以及分析问题。同时，对于一个较大的项目，最好是能正式上线的，因为这可以体现你有能力维护代码。另外，我个人认为项目的数量不在多，而在精 —- 你有时间写 10 个冒泡排序还不如写 1 个快速排序来提升算法能力。</p>
+<p>至少，我这几个面试基本上是靠项目 <code>在线评测系统</code> 来与面试官进行交流的（或者是说靠”吹”的 ﾍ(￣ ￣;ﾍ)），如果这个项目不够，简历上的实习也基本能充当谈资了。至于另外的几个项目 – 个人博客 之类的，就是用来凑篇幅的 – 面试官很少提它们，我也几乎不会主动靠它们彰显自己的能力。不过，我不得不说我在简历里的一个遗憾，我没有发布过任何一个包 – 无论是 Python 还是 Node.js 。发布一个好用可维护的包已经添加到 2017 的 Todo-List 里了。</p>
+<p>最后，希望我的这篇文章能给大家一些帮助；同时，祝大家都能拿到满意的 Offer。</p>
+<hr>
+<p><img src="https://s27.postimg.org/mpd84np37/49916912_p0.jpg" alt="Pixiv ID: 49916912"><span class="image-caption">Pixiv ID: 49916912</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;背景及摘要&quot;&gt;背景及摘要&lt;/h1&gt;&lt;p&gt;3 月 15 日，浙大玉泉校区举办了一场招聘会，近几百家单位参加。虽然我不是浙大本校生，但是外校学生若携带学生证件也是可以进入的。我总共带了 12 份简历前往，并全部投出。我的目标岗位为 Web 前端开发，但也对 Python / Node.js 后端有意向。目前我已进行了 3 次面试，分别是 &lt;a href=&quot;https://www.lagou.com/gongsi/137471.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数聚科技&lt;/a&gt;, &lt;a href=&quot;https://www.lagou.com/gongsi/178043.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷神星&lt;/a&gt;, &lt;a href=&quot;https://www.lagou.com/gongsi/210.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;企朋&lt;/a&gt; （点击可查看拉钩网上的信息）。我想在这篇文章里分享一下我这几次的面试过程，谈谈我的一些想法，希望对大家有帮助。&lt;/p&gt;
+&lt;h1 id=&quot;招聘会&quot;&gt;招聘会&lt;/h1&gt;&lt;h2 id=&quot;简历&quot;&gt;简历&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>howdoi 源码阅读与分析</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2017/03/04/source-code-of-howdoi/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2017/03/04/source-code-of-howdoi/</id>
+    <published>2017-03-04T13:49:27.000Z</published>
+    <updated>2017-03-05T14:58:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/gleitz/howdoi" target="_blank" rel="external">howdoi</a> – 一款通过命令行帮你从 stackoverflow 中寻找答案的工具，其源代码部分不足 300 行。同时，这份代码被 <a href="http://docs.python-guide.org/en/latest/writing/reading/" target="_blank" rel="external">The Hitchhiker’s Guide to Python!</a> 推荐为适合新手源码阅读的代码。因此，在读完源码后，我分享一下我对这份代码的理解。</p>
+<p>这里采用的版本是 tree 中标号为 <a href="https://github.com/gleitz/howdoi/tree/d84afdee603dbe699153e35650d46ddd734337d1" target="_blank" rel="external">d84afdee60</a> 的那一版</p>
+<h1 id="实现思路">实现思路</h1><p>简单的概括:</p>
+<blockquote>
+<p>获取搜索关键词 –&gt; 通过爬虫找到 stackoverflow 上的答案(html 格式) –&gt; 对 html 进行解析拿到答案</p>
+</blockquote>
+<p><img src="https://s8.postimg.org/nqgt134np/Screen_Shot_2017_03_04_at_22_59_06.png" alt="一副简单的示意图"><span class="image-caption">一副简单的示意图</span></p>
+<h2 id="获取关键词">获取关键词</h2><p>其中 <strong>关键词</strong> 必须从终端获取，这一步可以通过 Python 自带的包 <code>argparse</code> 实现。</p>
+<p>在代码的第 153 行，<code>args[&#39;query&#39;] = &#39; &#39;.join(args[&#39;query&#39;]).replace(&#39;?&#39;, &#39;&#39;)</code>， 这里作者将关键词中的问号去掉了。刚开始误以为这个处理是怕将问号放到 url 后，问号后面的字符串会变为 url 中查询的参数，从而没有达到使用者的意图。事实上，我的这个想法是错误的，因为之后的代码中，作者会将查询的字符串转义了。我的第二个猜测认为问号会影响 google 查询的结果，因为 <code>?</code> 符号是 google 搜索的指令之一，比如 搜索 <code>c?lor</code> 和 <code>clor</code> 的结果几乎是完全不同的。</p>
+<h2 id="爬虫">爬虫</h2><p>而爬虫部分，则使用包 <strong>requests</strong> ，其中 url 采用的是 google 搜索的 url, <code>&#39;https://www.google.com/search?q=site:{0}%20{1}&#39;</code>。其中 0 位对应搜索的目标网站，而 1 位代表搜索的内容。比如 <code>&#39;https://www.google.com/search?q=site:stackoverflow.com%20python%20async&#39;</code> 代表在 stackoverflow 上搜索有关 <code>python async</code> 的内容，相当于你在 google 的搜索框里输入了 <code>site:stackoverflow python async</code>。其中 site 是 google 搜索的一个指令，其它指令还包括 <code>filetype</code> (制定文件类型)等。</p>
+<p>而 1 的位置填的搜索的内容正是命令行中输入的内容。为了安全起见，最好将其转义，如代码中 95 行所示 <code>result = _get_result(SEARCH_URL.format(URL, url_quote(query)))</code>。假如 <code>query = &#39;foo bar&#39;</code>, 那么转义后 <code>query = &#39;foo%20bar&#39;</code>。</p>
+<h2 id="解析-html">解析 html</h2><p>采用的工具是 <code>pyquery</code>，它可以让使用者像使用 <code>jquery</code> 一样解析 html 代码。</p>
+<p>第一次拿到的 html 是 google 搜索的结果，而不是 stackoverflow 的页面，所以要先拿到有答案的 stackoverflow 的页面。函数 <code>_is_question</code> 帮助程序识别超链接是否是 stackoverflow 的链接。</p>
+<p>如果是 stackoverflow 的链接，那么接下来有一个分支 – 第 151, 152 行。</p>
+<ol>
+<li>用户只需要 url。那么就此打住，将 url 返回即可。</li>
+<li>如果用户需要答案。就对这个链接做一次请求，这一次拿到的 html 就是 stackoverflow 有提问和回答的页面了。为了提高拿到的答案的可靠型，在 153 行，<code>page = _get_result(link + &#39;?answertab=votes&#39;)</code> 使得 stackoverflow 页面返回的结果是根据答案的支持数从高到低排序的。</li>
+</ol>
+<p>拿到页面后，再对 html 分析，这里又有一个分支。如果用户只要代码，拿到 <code>pre</code> 标签内或 <code>code</code> 标签内的内容返回，否则把答案的文本全部返回。</p>
+<h2 id="其它">其它</h2><p>以下几个部分即使删去，也并不也影响程序的主要功能。但加上的话可以很好的改善用户体验。</p>
+<h3 id="代理">代理</h3><p>对应函数 <code>get_proxies</code>。其中作者还为没有用 http 开头的网址加了 http，比如 <code>{&#39;http&#39;: &#39;localhost:1080&#39;}</code> 会转化为 <code>{&#39;http&#39;: &#39;http://localhost:1080&#39;}</code>。</p>
+<h3 id="缓存">缓存</h3><p>如果开启缓存而且搜索次数多了，缓存可以很好地改善用户体验。作者的实现采用了 <code>requests_cache</code>。使用也挺简单的，不多说了，可以参考<a href="https://github.com/reclosedev/requests-cache" target="_blank" rel="external">文档</a>。</p>
+<h3 id="颜色输出">颜色输出</h3><p>这也是改善用户体验的一个途径。作者采用的是 <a href="http://pygments.org/" target="_blank" rel="external">pygments</a> 。用 pygments 提供的 lexer 对字符串解析并加上颜色。</p>
+<h1 id="代码风格">代码风格</h1><p>这里讲一些我从这份源码中比较有启发的代码风格</p>
+<h2 id="私有函数">私有函数</h2><p>Python 中并没有严格意义上的 私有函数，一般来讲，名字以但下划线开头的即为 <strong>不推荐调用</strong> 的函数，也可以认为属于私有函数。而观察这个项目以前的代码，可以发现最早并没有私有函数。私有函数的出现起于 <a href="https://github.com/gleitz/howdoi/pull/132" target="_blank" rel="external">Pull Request: PEP 8 conventions #132</a>。个人认为区分私有和公有的区分对于使用者的学习还是有帮助的，尤其是文档不多或者使用者比较着急使用的情况下，使用者可以直接看公有函数。另外，公有函数也警告使用者不要随意调用，因为有些私有函数的随意调用可能会造成一些对项目比较危险的结果。</p>
+<h2 id="函数的顺序">函数的顺序</h2><p>不知是无意还是有意，函数的顺序根据调用的顺序逆序排列。比如我们从 <code>command_line_runner</code> 看起，这个函数第一个出现的调用是 <code>get_parser</code>，而源码中 <code>command_line_runner</code> 的上一个函数就是 <code>get_parser</code>。继续往下看，则可以看到 <code>_clear_cache</code>, <code>_enable_cache</code>。而这个顺序刚好是你从文件尾往文件头看得顺序。也就是说，每次我看到一个函数调用时，我肯定往上翻就行了，而且越先看到的越先出现，这给阅读源码带来了很大的便利。</p>
+<h2 id="常量">常量</h2><p>我发现这里的常量包括了作为模板的字符串，如 <code>SEARCH_URL = &#39;https://www.google.com/search?q=site:{0}%20{1}&#39;</code>。仔细想想，我好像以前写常量都是固定的字符串或数字，这种模板型的字符串常量我好像一直没用过。</p>
+<h1 id="小细节">小细节</h1><p><code>URL = os.getenv(&#39;HOWDOI_URL&#39;) or &#39;stackoverflow.com&#39;</code></p>
+<p>注意这里用的 stackoverflow 地址是 <code>stackoverflow.com</code>  而不是 <code>www.stackoverflow.com</code>。这是有区别的。使用前者搜索，出来的 stackoverflow 相关链接大多是 <code>stackoverflow.com/problems/(\d+)/</code> 形式，而使用后者，大多出现的是 <code>www.stackoverflow.com/a/(\d+)/</code> 形式。前者的形式相对后者的形式更容易判断一个链接是不是 stackoverflow 的问题链接。</p>
+<h1 id="后记">后记</h1><p>howdoi 的点子很好，而且源码确实比较易懂。读完源码之后，建议可以自己试着实现一个类似的或用其它语言复刻一个。毕竟，有些问题是只有开发时才能想到的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://github.com/gleitz/howdoi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;howdoi&lt;/a&gt; – 一款通过命令行帮你从 stackoverflow 中寻找答案的工具，其源代码部分不足 300 行。同时，这份代码被 &lt;a href=&quot;http://docs.python-guide.org/en/latest/writing/reading/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The Hitchhiker’s Guide to Python!&lt;/a&gt; 推荐为适合新手源码阅读的代码。因此，在读完源码后，我分享一下我对这份代码的理解。&lt;/p&gt;
+&lt;p&gt;这里采用的版本是 tree 中标号为 &lt;a href=&quot;https://github.com/gleitz/howdoi/tree/d84afdee603dbe699153e35650d46ddd734337d1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;d84afdee60&lt;/a&gt; 的那一版&lt;/p&gt;
+&lt;h1 id=&quot;实现思路&quot;&gt;实现思路&lt;/h1&gt;&lt;p&gt;简单的概括:&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 对函数默认参数的处理</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2017/01/16/default-para-in-python/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2017/01/16/default-para-in-python/</id>
+    <published>2017-01-16T12:13:49.000Z</published>
+    <updated>2017-01-16T12:18:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python 对函数默认参数的处理</p>
+<p>一个以可变对象为默认参数的函数:</p>
+<pre><code class="Python">class A:
+    def __init__(self):
+        self.x = 1
+        print(&#39;created&#39;)
+
+def f(a = A()):
+    a.x += 1
+    print(a.x)
+# output: created
+f() # output: 2
+f() # output: 3
+</code></pre>
+<p>从结果可以看出，Python 在解析时便已经创建好了默认参数 a 的值。函数 f 在调用时采用了同一个对象，而不是每次调用时重新创建新的对象。这一点与 <code>C++</code> 的处理方式不同。</p>
+<h1 id="f__defaults__"><code>f.__defaults__</code></h1><p>在 Python 中，函数属于一等公民(first-class)。函数可当作一个对象，拥有自己的属性与方法。而默认参数则存在与函数的一个属性中。</p>
+<pre><code class="Python">In [28]: def f(a, b=1):
+       2     pass
+
+
+In [29]: f.__defaults__
+Out[29]: (1, [])
+</code></pre>
+<p>Python 在解析代码时，便会将默认参数存于 <code>f.__defaults__</code> 中。</p>
+<p>在 CPython 的 (funcobject.h)[<a href="https://github.com/python/cpython/blob/master/Include/funcobject.h" target="_blank" rel="external">https://github.com/python/cpython/blob/master/Include/funcobject.h</a>] 中也可以看到，<code>PyFunctionObject</code> 的一个属性便是 <code>func_defaults</code>, 对应 Python 中每个函数中的 <code>__defaults__</code> 属性</p>
+<h1 id="默认参数-与-闭包">默认参数 与 闭包</h1><p>以下是一个经常被提起的关于理解闭包的一段代码</p>
+<pre><code class="python">def test():
+    lst = []
+    for i in range(5):
+        lst.append(lambda x: x * i)
+    return lst
+
+
+lst = test()
+[f(1) for f in lst]
+# Output: [4, 4, 4, 4, 4]
+</code></pre>
+<p>在这里中，匿名函数中的变量 <code>i</code> 并没有在声明时便被求值，而是在匿名函数被调用时才被求值。因为 <code>i</code> 来自于 <code>test</code> 函数，且在匿名函数被调用时，循环已经结束，所以 <code>i</code> 的值已经变成 4。</p>
+<p>但如果想让 <code>i</code> 在匿名函数声明时便被求值该如何做呢？<br>以下代码便借助默认参数解决问题:</p>
+<pre><code class="python">def test():
+    lst = []
+    for i in range(5):
+        lst.append(lambda x, i=i: x * i)
+    return lst
+
+lst = test()
+
+[f(1) for f in lst]
+# Output: [0, 1, 2, 3, 4]
+</code></pre>
+<p>与第一段代码相比，第二段代码中的 <code>i</code> 在匿名函数声明时就被求值，而且因此，每个匿名函数拥有的默认参数 <code>i</code> 的值都不相同。这样解决了问题。</p>
+<h1 id="参考">参考</h1><ol>
+<li><a href="https://github.com/python/cpython/blob/master/Include/funcobject.h" target="_blank" rel="external">funcobject.h</a></li>
+<li><a href="http://stackoverflow.com/questions/10120974/where-is-the-default-parameter-in-python-function" target="_blank" rel="external">Where is the default parameter in Python function</a></li>
+<li><a href="http://effbot.org/zone/default-values.htm" target="_blank" rel="external">Default Parameter Values in Python</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 对函数默认参数的处理&lt;/p&gt;
+&lt;p&gt;一个以可变对象为默认参数的函数:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;Python&quot;&gt;class A:
+    def __init__(self):
+        self.x = 1
+        print(&amp;#39;created&amp;#39;)
+
+def f(a = A()):
+    a.x += 1
+    print(a.x)
+# output: created
+f() # output: 2
+f() # output: 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从结果可以看出，Python 在解析时便已经创建好了默认参数 a 的值。函数 f 在调用时采用了同一个对象，而不是每次调用时重新创建新的对象。这一点与 &lt;code&gt;C++&lt;/code&gt; 的处理方式不同。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初看 CPython</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2017/01/04/a-glance-at-cpython/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2017/01/04/a-glance-at-cpython/</id>
+    <published>2017-01-04T12:24:13.000Z</published>
+    <updated>2017-01-07T03:44:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是-cpython">什么是 CPython</h1><p>简单的说, <code>CPython</code> 是 Python 解释器的一个实现。换句话说，Python 解释器是由 C 写的，然后由 GCC 之类的编译器编译而成的可执行文件。除了 CPython，还有 <a href="http://pypy.org/" target="_blank" rel="external">PyPy</a>(用 Python 实现的 Python 解释器)，<a href="http://www.skulpt.org/" target="_blank" rel="external">Skulpt</a>(用 JavaScript 实现的 Python 解释器) 等等。如果你不知道你用的是哪一个，那么你一定用的就是 CPython。因为 CPython 是 Python 官方的解释器实现，其它均属于第三方实现。</p>
+<h1 id="从源码到运行">从源码到运行</h1><p>对于从 Python 源码到解释器执行它们的这个过程，我把它分为两大步 —— 编译(Compiling) 与 解释(Interpreting)。</p>
+<h2 id="编译">编译</h2><p>尽管 Python 一门典型的解释型语言 —— 与编译型语言(C, C++) 相对，但 Python 的运行确实涉及到了编译的部分。</p>
+<p>编译在这里的主要功能是将源代码转换为字节码，包括编译了原理中两个关键步骤，词法分析与语法分析，即 lexing, parsing, 也包含了语法检查，即 <code>SyntaxError</code> 可能在这个过程中抛出。</p>
+<p>而由 Python 编译而来的字节码似于如下:</p>
+<pre><code>  1           0 LOAD_NAME                0 (print)
+              2 LOAD_CONST               0 (&#39;hello world&#39;)
+              4 CALL_FUNCTION            1
+              6 POP_TOP
+              8 LOAD_CONST               1 (None)
+             10 RETURN_VALUE
+</code></pre><p>关于字节码的内容，后面将进一步讨论</p>
+<h2 id="解释">解释</h2><p>在这一步，Python 解释器对编译生成的字节码进行解释。且在实际过程中，编译所做的只占很少一部分，也就是说：解释的部分远大于编译的部分 —— 这也是为什么 Python 仍被成为解释型语言的重要原因之一。</p>
+<p>因为 Python 解释器对字节码而非源码进行解释，因此 Python 解释器也会被称为 Python 虚拟机(Python Virtual Machine / PVM)。特别需要指出，尽管 Python 虚拟机与 Java 虚拟机都被称为虚拟机，但两者内部之间仍有较大差别(可以参考<a href="https://www.zhihu.com/question/23727114" target="_blank" rel="external">link</a>)。</p>
+<h2 id="字节码的意义">字节码的意义</h2><p><strong>为什么不直接解释源码？</strong><br>实际上，直接解释源码在理论上当然是可行的。但这样做也有一些缺点。<br>举个例子:</p>
+<pre><code>def test(x, y):
+    if x &lt; y:
+        return 1
+    elif x == y:
+        return 2
+    return 3
+</code></pre><p>如果直接解释源码，那么你每次执行 test 函数都要对函数体重新分析，也就要依次分析出 <code>if</code> 语块，<code>if</code> 条件部分。等结构分析好了，之后，才能对 x, y 取值进行比较。</p>
+<p>但事实上，代码一旦写好，结构不会再变，会变的只是变量的取值。那么可以先对其编译，编译好后再解释就不需要每次重新分析结构，而是可以直接就对 x, y 进行取值比较。从这个角度讲，编译成字节码提高了解释器的效率。</p>
+<p>其次，字节码的存在类似于汇编的存在。汇编介于 C 语言与硬件之间，作为抽象的中间层用于降低开发的复杂度。Python 中的字节码也是如此。</p>
+<h1 id="字节码指令集">字节码指令集</h1><h2 id="查看字节码">查看字节码</h2><p>Python 提高 <code>dis</code> 模块供用户查看由 Python 源码编译而成的字节码。</p>
+<p>假设下列代码是 <code>test.py</code> 中的全部内容:</p>
+<pre><code class="python">x = 1
+y = 2
+z = x + y
+</code></pre>
+<p>在终端中输入</p>
+<pre><code class="bash">python -m dis test.py
+</code></pre>
+<p>可以看到输出的字节码:</p>
+<pre><code>  1           0 LOAD_CONST               0 (1)
+              3 STORE_NAME               0 (x)
+
+  2           6 LOAD_CONST               1 (2)
+              9 STORE_NAME               1 (y)
+
+  3          12 LOAD_NAME                0 (x)
+             15 LOAD_NAME                1 (y)
+             18 BINARY_ADD
+             19 STORE_NAME               2 (z)
+             22 LOAD_CONST               2 (None)
+             25 RETURN_VALUE
+</code></pre><p>其中每一列代表的含义为:</p>
+<pre><code>行号            字节码偏移量     字节码指令        指令参数          对于参数的相关说明
+   1             0            LOAD_CONST        0               (1)
+</code></pre><h2 id="解释字节码">解释字节码</h2><p>Python 解释器对字节码指令进行解释，同时对 <strong>栈</strong> (Stack)进行操作 —- Python 虚拟机属于 <strong>栈机器</strong> (Stack machine)。值的存取都是基于栈来实现的。类似下图:<br><img src="https://markfaction.files.wordpress.com/2012/07/stackadd.png" alt="7 + 20 的实现过程: 将读到的7 与 20存放与栈中，然后取出相加, 并将结果放入栈中"><span class="image-caption">7 + 20 的实现过程: 将读到的7 与 20存放与栈中，然后取出相加, 并将结果放入栈中</span></p>
+<p><strong>栈机器</strong> 优于 <strong>寄存器机器</strong>(Register Virtual Machine) 的一个地方是不需要对地址的存取，数据的读取通过 POP 和 PUSH 的到，而非通过一个寄存器地址，操作上相对简单。</p>
+<h3 id="字节码指令集有哪些">字节码指令集有哪些</h3><p>所有的指令码可以在这个网页中看到: <a href="https://hg.python.org/cpython/file/v2.7.8/Include/opcode.h" target="_blank" rel="external">https://hg.python.org/cpython/file/v2.7.8/Include/opcode.h</a>。这里以网上资料比较多的 2.7.8 为例。从 0 – 147 共148个指令，每个指令都对应特定的功能。任何 Python 源码编译后形成的字节码都可以在这其中找到。</p>
+<h3 id="字节码从哪里被执行">字节码从哪里被执行</h3><p>仍以 2.7.8 为例，查看 CPython 工程的 Python/ceval.c 文件: <a href="https://hg.python.org/cpython/file/v2.7.8/Python/ceval.c" target="_blank" rel="external">https://hg.python.org/cpython/file/v2.7.8/Python/ceval.c</a>。<br>第 964 行处有一个 <code>for (;;)</code> 语句块，负责不断读入每一条指令并执行。</p>
+<p>继续往下看，第 1112 行有一个“庞大”的 <code>switch</code> 语块。负责检查每一条指令具体是哪一条指令，然后采取对应的操作。</p>
+<p>以 1148 行的 <code>POP_TOP</code> 为例:</p>
+<pre><code class="c">case POP_TOP:
+    v = POP();
+    Py_DECREF(v);
+    goto fast_next_opcode;
+</code></pre>
+<p>对应的操作可描述为: 取并弹出栈顶的数据，对这个数据的计数器减一，执行下一条指令。</p>
+<p>CPython 便是以此循环，直到因为用户终止等原因才停止运行。</p>
+<h1 id="后续">后续</h1><p>目前这是一篇极其浅显的对 CPython 的描述。我最近正在学习和研究 CPython 的源码。如果有新的理解，我会继续更新。</p>
+<h1 id="参考">参考</h1><ol>
+<li><a href="https://youtu.be/HVUTjQzESeo" target="_blank" rel="external">Allison Kaptur - Bytes in the Machine: Inside the CPython interpreter - PyCon 2015</a></li>
+<li><a href="https://youtu.be/LhadeL7_EIU?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S" target="_blank" rel="external">CPython internals - Interpreter and source code overview</a></li>
+<li><a href="https://markfaction.wordpress.com/2012/07/15/stack-based-vs-register-based-virtual-machine-architecture-and-the-dalvik-vm/" target="_blank" rel="external">Stack based vs Register based Virtual Machine Architecture, and the Dalvik VM</a></li>
+<li><a href="http://stackoverflow.com/questions/441824/java-virtual-machine-vs-python-interpreter-parlance" target="_blank" rel="external">Java “Virtual Machine” vs. Python “Interpreter” parlance?</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;什么是-cpython&quot;&gt;什么是 CPython&lt;/h1&gt;&lt;p&gt;简单的说, &lt;code&gt;CPython&lt;/code&gt; 是 Python 解释器的一个实现。换句话说，Python 解释器是由 C 写的，然后由 GCC 之类的编译器编译而成的可执行文件。除了 CPython，还有 &lt;a href=&quot;http://pypy.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PyPy&lt;/a&gt;(用 Python 实现的 Python 解释器)，&lt;a href=&quot;http://www.skulpt.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Skulpt&lt;/a&gt;(用 JavaScript 实现的 Python 解释器) 等等。如果你不知道你用的是哪一个，那么你一定用的就是 CPython。因为 CPython 是 Python 官方的解释器实现，其它均属于第三方实现。&lt;/p&gt;
+&lt;h1 id=&quot;从源码到运行&quot;&gt;从源码到运行&lt;/h1&gt;&lt;p&gt;对于从 Python 源码到解释器执行它们的这个过程，我把它分为两大步 —— 编译(Compiling) 与 解释(Interpreting)。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2016 -&gt; 2017</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/12/20/the-end-of-2016/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/12/20/the-end-of-2016/</id>
+    <published>2016-12-20T13:12:15.000Z</published>
+    <updated>2016-12-20T16:21:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>（叹气）又是一年。</p>
+<h1 id="时间花在哪里了">时间花在哪里了？</h1><p>这是我从大三到大四的一年，也是从课多到课少的一年。所以自由安排的时间相对多了很多。</p>
+<p>上半年的学期少部分时间花在课程上，大约一星期上 3 次课左右。</p>
+<p>下半年的学期除了一个时长 3 周的由学校强制学生参加的生产实习外，其余时间为自由时间。</p>
+<p>大部分时间花在了准备 GRE、TOEFL 考试，以及学校的申请上了。这个时间段从 3 月持续到了 12 月。</p>
+<p>花在代码上的时间少了很多。因为准备语言考试和学习代码这两件事，发生了冲突，所以我不得不大大压缩了花在计算机知识学习上的时间，包括暑假里的两个月里我用在代码上的时间可能不超过几天。大概从 11 月开始，我才渐渐将时间放回到计算机知识的学习上。</p>
+<h1 id="我做了什么">我做了什么？</h1><p>记录了对我印象比较深或对我比较有意义的事件:</p>
+<ul>
+<li>购买了 MacBook Pro(Retina)</li>
+<li>考了二次 GRE 和 三次 TOEFL</li>
+<li>完成并发布了一个 hexo 的主题</li>
+<li>目前已学习了 <em>Stucture and Interpretation of Computer Program</em> 的约 70%</li>
+<li>目前已完成了美国研究生院共计 11 个项目的申请</li>
+</ul>
+<p><img src="https://s24.postimg.org/utgjkq5xh/IMG_0840.jpg" alt="购买的 MacBook Pro(Retina)"><span class="image-caption">购买的 MacBook Pro(Retina)</span></p>
+<h1 id="我后悔什么">我后悔什么？</h1><p>尽管人生没有后悔药，但前车之鉴 后事之师，希望我自己不会在下一年也后同样的悔:</p>
+<ul>
+<li>后悔我自己在第三次考 TOEFL 时没有稳住情绪</li>
+<li>后悔对我曾经喜欢过的人说了难听的话</li>
+<li>后悔错过了参加在杭州的举办的 hackathon</li>
+<li>后悔在这一年中没有参加任何一次漫展</li>
+</ul>
+<h1 id="我选择什么">我选择什么?</h1><h2 id="我选择放弃考研">我选择放弃考研</h2><p>这是我在之前一直没有想到的，因为当我还是大一大二时，每当有人问我未来的出路，我总是会毫不犹豫的回答：我要考研。</p>
+<p>但直到大三，我才考虑我之前为什么会这么认为，我想到了三个原因：</p>
+<ol>
+<li>我所在的学院是学校的荣誉学院，大部分人都很爱学习，然后在加上历来这个学院就以颇高的考研率著称，辅导员等人又重复此事实，暗示着同学们应该去考研。因此我受到了一定影响，认为我自己也应考研。</li>
+<li>在大一大二一方面认识到工作并不一定是自由的，另一方面认识到自己能力上的不足，需要更进一步的学习，所以我至少放弃了毕业后工作。</li>
+<li>我压根就没考虑过除了考研和工作之后的选择！！！这是重点，在进入大学后，我无意识地假设了自己只有这两个选择，因此在排除工作后，自然而然地以为应该选择考研。</li>
+</ol>
+<h2 id="我选择申请美国的研究生院">我选择申请美国的研究生院</h2><p>这个决定也不是凭空得来的，包括了外因的推动:</p>
+<ol>
+<li>自从科学上网后，我在互联网上更直接地了解到了外面的世界，这其中就包括了教育。我直接或间接地接触到了留学生，也了解到了在外面读书的好处，因此开始思考我自己在这方面的可行性。</li>
+<li>我亲戚中这几年也有人出国，同时父母虽然有点担忧，但也不完全反对，因此我算是在家庭和亲戚边得到了一定的支持。</li>
+<li>周围的人也有选择走这条路，顿时觉得自己不是一个人在战斗。</li>
+</ol>
+<h1 id="我还要做什么">我还要做什么</h1><h2 id="学习">学习</h2><p><strong>假如哪天我放弃了学习，那要么是我死了，要么就是我颓废得无药可救了</strong></p>
+<p>英语和计算机知识就不用说了，这是我赖以生存的必备之物，必须坚持学习。</p>
+<p>我还希望我能学习乐理知识。我喜欢音乐，因此我也想试着去了解它。同时，我最近迷上了<code>电子管风琴</code>（又称<code>双琴键电子琴</code>），希望我将来能在闲暇之余自由地在电子管风琴上弹奏自己的曲子。</p>
+<h2 id="了解现实的世界">了解现实的世界</h2><p>是的，我一直觉得我还是很宅。我的身体素质很一般，也只是刚刚能过体侧的水平而已，说不上强壮。我也渐渐感觉到体力不足带给我的麻烦。在今年最后一个月，我在同伴的鼓励下办了张健身卡，现在每天都会去。希望我能坚持下去，让自己拥有一个更强壮的身体。</p>
+<p>另外，我对这个社会了解得太少，至少是对中国社会了解地太少。毕竟我在未来总归是要在社会上打拼的，我还是希望能多看看这个社会，了解这个社会的光明与黑暗。</p>
+<h2 id="了解未来">了解未来</h2><p><strong>毕业前的一段时间是迷茫的时期</strong></p>
+<p>尽管我已经初步规划了未来一两年的安排，但事实是我该如何看待更久远的安排。未来实在是有太多的不确定因素，我看不清我现在的选择是不是最好的选择，我真得要用时间来证明我的选择么？</p>
+<p><img src="https://s24.postimg.org/snocz2spx/Screen_Shot_2016_12_15_at_23_16_49.png" alt="《蒲公英之路》：永不会再踌躇"><span class="image-caption">《蒲公英之路》：永不会再踌躇</span></p>
+<h1 id="总评">总评</h1><p>如果满分是 5 分的话，我会给这一年的自己打 2.5 分。原因是相比以往，这一年的自己确实很一般：普通地学习，普通地考试，普通地敲代码。虽然做地不算差，但也绝对不算优秀。</p>
+<hr>
+<p><img src="https://s23.postimg.org/rvpndu597/15447116_p0.jpg" alt="Merry X&#39;mas (Pixiv ID: 15447116)"><span class="image-caption">Merry X&#39;mas (Pixiv ID: 15447116)</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;（叹气）又是一年。&lt;/p&gt;
+&lt;h1 id=&quot;时间花在哪里了&quot;&gt;时间花在哪里了？&lt;/h1&gt;&lt;p&gt;这是我从大三到大四的一年，也是从课多到课少的一年。所以自由安排的时间相对多了很多。&lt;/p&gt;
+&lt;p&gt;上半年的学期少部分时间花在课程上，大约一星期上 3 次课左右。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="kny" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/kny/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>延迟计算: 关于 Python 的 yield</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/12/12/python-yield-and-delay/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/12/12/python-yield-and-delay/</id>
+    <published>2016-12-12T13:07:06.000Z</published>
+    <updated>2016-12-13T15:12:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在 SICP 第 3 章中，有一段部分内容是以 stream 为核心而展开的。而 stream 的特点就是 lazy evaluation / delayed evaluation （惰性求值 / 延迟计算）。在接触 stream 之时，我便立即联想到 Python 具有类似的功能 — <code>yield</code>。</p>
+<h1 id="yield-的意义">yield 的意义</h1><p>使用 yield 的目的是为了生成器，而使用生成器的一个特点是每次只向你返回一个结果。基于这个特点，生成器可以产生的结果数量甚至可以是无限的。因此，生成器在用于表示一些 <code>list</code> 不便或无法表示的超多元素的集合时将表现出很好的便捷性。</p>
+<p>例如:</p>
+<pre><code class="python">In [68]: def fib():
+   ....:     former, latter = 0, 1
+   ....:     yield former
+   ....:     yield latter
+   ....:     while True:
+   ....:         former, latter = latter, latter + former
+   ....:         yield latter
+
+In [69]: select = lambda x :x and x % 1377 == 0
+
+In [70]: for i, item in enumerate(fib()):
+   ....:     if select(item):
+   ....:         print(i, item)
+   ....:         break
+</code></pre>
+<p>在这里，我先定义了一个生成器函数 fib，用于生成 fibonacci 数列，以及另一个普通函数 select，用于筛选出能被 1377 整除的数。接着用一个循环找出第一个满足 select 的条件的数。在这里，使用生成器的好处是你不需要实现估计需要计算多少个 fibonacci 数列中的元素。因为 fib() 可以产生第无穷个 fibonacci 数列中的元素，加入你换成一个 <code>list</code>：</p>
+<pre><code class="python">In [70]: for i, item in enumerate(fib_lst):
+   ....:     if select(item):
+   ....:         print(i, item)
+   ....:         break
+</code></pre>
+<p>这里就有一个明显的顾虑：fib_lst 中应该放多少个元素？放 100 个够不够？1000 个呢？10000 个呢？</p>
+<p>假使你运气好，发现对于例子中 select 函数， 1000 个够了，但如果更改 select 为 <code>lambda x: x and x % 3119 == 0</code>。那么 1000 个还会够么。可能需要 10000 个。同时，你每次生成 10000 个甚至 1000000 个元素的列表，那么生成和保存一个如此大的列表在时间上和空间上会使巨大的浪费。而相比于此，生成器没有保存所有元素，因此至少在空间上有极大的便利。</p>
+<h2 id="q不用生成器不也有办法达到类似的效果么">Q：不用生成器，不也有办法达到类似的效果么？</h2><p>或许有人会举出这么一个反例，既然 fib() 函数产生的生成器只是每次临时计算而已，那不用列表或生成器不也有办法可以很方便么？例如:</p>
+<pre><code class="python">In [63]: former, latter = 0, 1
+
+In [64]: i = 2
+
+In [65]: while True:
+   ....:     former, latter = latter, former + latter
+   ....:     if select(latter):
+   ....:         print(i, latter)
+   ....:         break
+   ....:     i += 1
+</code></pre>
+<p>虽然这个方法也可以，但是仔细想想，这个方法的可读性和可移植性说不上很好。一个原因是在进行 select 的代码中糅合了 fibonacci 数列元素计算的过程，使得逻辑上分离的两个部分连在了一起。另一个原因是，生成器将 fibonacci 数列的元素进行了封装，那么在其他模块中也只需要用 fib() 即可调用；而在这个方法中，每一次计算 fibonacci 数列都需要重新写一遍计算的代码，欠缺方便。</p>
+<h2 id="写法优化">写法优化</h2><p>在上例中，我用一个简单的循环求得了第一个满足要求的元素。而在 Python 中，大多简单的循环又可以写成类似列表表达式的方式，而上一个例子也是如此。</p>
+<pre><code class="python">In [74]: next((i, item) for i, item in enumerate(fib()) if select(item))
+</code></pre>
+<p>在这里，<code>(i, item) for i, item in enumerate(fib()) if select(item)</code> 本身代表了一个生成器表达式</p>
+<pre><code>In [77]: ((i, item) for i, item in enumerate(fib()) if select(item))
+Out[77]: &lt;generator object &lt;genexpr&gt; at 0x104674258&gt;
+
+In [78]: gen = ((i, item) for i, item in enumerate(fib()) if select(item))
+
+In [79]: next(gen)
+Out[79]:
+(1316,
+ 47670484598039529967308137755285220283067857159635666308572483292852087741971817495430736032322993914141991666526048221816855193212853932963317951773586445466676607895893764927922577383975888691399916203755485478472365658305444586740978034474331219811230599774368887776557837)
+
+In [80]: next(gen)
+Out[80]:
+(2632,
+ 5081408804827217679483690811505190320468896152614650981083661467793773636093281628433780640132913496539149358258875736128851767346736337537150191351612842042674073125589815465376413058371692145091298387648676549040287922078680500401041910184918357118604215905739580720823641807065276860800035024575275858699179043965222324466320661415297713837965844699076750589037980732572303226178214876864049241381018710405651898072419680038625628403496847878874630005198585018290768191523976457263007140359513843497547268641482458809531359561789398938836874997259)
+</code></pre><p>如代码所示，这个表达式可以用于一直求下一个满足要求的数子，也可以认为是求第无限个满足要求的数字。这样的写法也与上面的例子的类似的道理，要用的时候再计算，要多少算多少。避免一次性算太多而带来的在时间上的延迟和内存上的紧张。</p>
+<h1 id="yield-的暂停">yield 的暂停</h1><p>尽管在 yield 的帮助下可以产生近似无限长的列表，但这也并不是说生成器可以一直下去: 在有些情况下，我们还是希望 yield 能在某个条件下停下。而如果在生成器函数中使用了 <code>return</code>，那么 <code>return</code> 即意味这暂停。</p>
+<p>例如，我们在每次做一次数学测试，一直生成随机数，直至满足某个条件为止。</p>
+<pre><code class="python">In [81]: def random_test(select, start, end):
+   ....:     while True:
+   ....:         t = random.randint(start, end)
+   ....:         if select(t):
+   ....:             return
+   ....:         else:
+   ....:             yield t
+
+In [82]: r = random_test(lambda x : x &lt; 100, 0, 1000)
+
+In [83]: for i, item in enumerate(r):
+   ....:     print(i, item)
+</code></pre>
+<p>只要不满足 select 条件，这个测试也会一直进行下去，无论是进行多少次，不管是 100 次，还是 1000 次。</p>
+<h2 id="return-的在生成器中的含义"><code>return</code> 的在生成器中的含义</h2><p><code>return</code> 在生成器中表达的含义就是”一切已经结束了，没有更有趣的元素要返回了”</p>
+<p>基于这个含义，如果在 <code>return</code> 后跟上一个返回值的话，那么这个返回值是不会被返回的。</p>
+<pre><code class="python">In [84]: def return_test():
+   ....:     return &quot;Will I be returned?&quot;
+   ....:     yield &quot;I know I will never be returned&quot;
+
+In [85]: r = return_test()
+
+In [86]: next(r)
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+&lt;ipython-input-86-0b5056469c9c&gt; in &lt;module&gt;()
+----&gt; 1 next(r)
+
+StopIteration: Will I be returned?
+</code></pre>
+<p>由此可见，执行 <code>return</code> 的时候，生成器就会停止，抛出 <code>StopIteration</code> 表示停止，不会再返回任何返回值。</p>
+<h2 id="return-等于-stopiteration"><code>return</code> 等于 <code>StopIteration</code> ?</h2><p>既然在上例中，执行 <code>return</code> 就会抛出 <code>StopIteration</code> 异常，那么在生成器函数中，是不是就意味着，<code>StopIteration</code> 是由 <code>return</code> 抛出的呢?</p>
+<pre><code class="python">In [87]: def catch_stop():
+   ....:     try:
+   ....:         return
+   ....:     except:
+   ....:         yield &quot;I catch it&quot;
+
+In [88]: c = catch_stop()
+
+In [89]: next(c)
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+&lt;ipython-input-89-73b012f9653f&gt; in &lt;module&gt;()
+----&gt; 1 next(c)
+
+StopIteration:
+</code></pre>
+<p>由代码可见，<code>StopIteration</code> 并没有被捕获，这说明 <code>StopIteration</code> 是在另一个地方抛出的。而至于是在哪里抛出的，目前据我了解，这可能涉及到 Python 底层解释器的实现，我尚不十分了解。</p>
+<h1 id="关于生成器函数的实现">关于生成器函数的实现</h1><p>生成器函数的实现一个重要点就是它保存了每次运行时的环境信息以及下一次的起点。对于普通函数，每一次运行的起点无疑都是从函数的最开头。而对于生成器函数，除了第一次运行的起点是在函数最开头， 每一次运行的起点都是上一次运行结束的终点。</p>
+<p>另外虽然生成器函数保存了环境信息，但这并不说它保存了环境中每个变量的值。</p>
+<pre><code class="python">n [105]: N = 0
+
+In [106]: def test_sum():
+   .....:     i = 0
+   .....:     while True:
+   .....:         yield N + i
+   .....:         i += 1
+
+In [107]: t = test_sum()
+
+In [108]: next(t)
+Out[108]: 0
+
+In [109]: next(t)
+Out[109]: 1
+
+In [110]: N = 100
+
+In [111]: next(t)
+Out[111]: 102
+</code></pre>
+<p>由代码可见，生成器函数保存了环境变量中 <code>N</code> 的存在，但并没有在产生生成器时就将 <code>N</code> 的值定了下来，而仍是每次运行 <code>next</code> 时对其重新求值。</p>
+<h2 id="一些猜测">一些猜测</h2><p>联想到 SICP 中对 stream 的实现，那么 Python 可能也有类似的做法，即将一个元素包装在函数里。<br>假如不做延时计算:</p>
+<pre><code class="python">In [113]: [&quot;how long will it be?&quot;, time.sleep(1), time.sleep(2)]
+Out[113]: [&#39;how long will it be?&#39;, None, None] # 3 seconds
+</code></pre>
+<p>这个输出将在 3 秒后输出，但如果讲每个元素包装在函数里:</p>
+<pre><code class="python">In [114]: lst = [lambda: &quot;how long will it be?&quot;,lambda: time.sleep(1),lambda: ti
+   .....: me.sleep(2)]
+
+In [115]: for item in lst:
+   .....:     print(item())
+how long will it be?
+None # 1 second
+None # 2 seconds
+</code></pre>
+<p>通过这个方法，每个元素也是在调用是才会被求值，因此我猜测 Python 在实现上可能有类似的做法。但具体是怎么做的，这是一个我接下来需要研究的话题。</p>
+<h1 id="后记">后记</h1><p>如果对 <code>yield</code> 想要更多的了解，建议查看 <a href="https://www.python.org/dev/peps/pep-0255/" target="_blank" rel="external">PEP 255 – Simple Generators</a>, 其中更进一步的探讨了为什么要引入新的关键字 <code>yield</code>，而不是将其设置为一个内建函数，以及为什么不引入一个新的关键字代替 <code>def</code> 来更清楚地表示某个函数是生成器函数等等。</p>
+<h1 id="参考">参考</h1><ol>
+<li><a href="https://www.python.org/dev/peps/pep-0255/" target="_blank" rel="external">PEP 255 – Simple Generators</a></li>
+<li><a href="https://swizec.com/blog/python-and-lazy-evaluation/swizec/5148" target="_blank" rel="external">Python and lazy evaluation</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 SICP 第 3 章中，有一段部分内容是以 stream 为核心而展开的。而 stream 的特点就是 lazy evaluation / delayed evaluation （惰性求值 / 延迟计算）。在接触 stream 之时，我便立即联想到 Python 具有类似的功能 — &lt;code&gt;yield&lt;/code&gt;。&lt;/p&gt;
+&lt;h1 id=&quot;yield-的意义&quot;&gt;yield 的意义&lt;/h1&gt;&lt;p&gt;使用 yield 的目的是为了生成器，而使用生成器的一个特点是每次只向你返回一个结果。基于这个特点，生成器可以产生的结果数量甚至可以是无限的。因此，生成器在用于表示一些 &lt;code&gt;list&lt;/code&gt; 不便或无法表示的超多元素的集合时将表现出很好的便捷性。&lt;/p&gt;
+&lt;p&gt;例如:&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+      <category term="SICP" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/SICP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对 SICP Chapter 2 的一些理解</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/12/03/sicp-chapter-2-summary/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/12/03/sicp-chapter-2-summary/</id>
+    <published>2016-12-03T15:01:22.000Z</published>
+    <updated>2016-12-12T16:11:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>SICP 第二章的标题为 <em>“Building Abstractions with Data”</em>。与第一章标题<em>“Building Abstractions with Procedures”</em> 相比，这一章明显注重于在数据上的抽象。因此，在本章中所采用的例子中，会有多种数据类型被抽象出来，而每种数据类型又会对应着多种操作，那么随着代码量的增多，如何在不减少需求的情况下正确的对数据的抽象将直接影响开发者编码时的难度以及后期维护的成本。</p>
+<p>在阅读和练习完 Chapter 2 之后，我想谈一下对我思维冲击比较大的几个点。</p>
+<h1 id="data-directed-programming">Data-Directed Programming</h1><p>在 SICP 中，DDP 出现的一个背景是：存在多种数据类型，它们需要实现相同功能的操作，但对于不同的类型，具体的实现方式有存在不同。</p>
+<p>拿书上的例子来说，对于有理数R1, R2, 它们的值分别为 3/4, 5/6。那么对于它们，可以构造一个方法叫做 add 用于计算 R1, R2 的值，比如 <code>(add R1 R2)</code>。</p>
+<p>同样的，如果是在同一个系统里，再增加一种类型 ———— 无理数。对于 I1，I2, 它们的值分别是 1 + 2i, 3 + 4i。同样，可以构造一个方法叫 add, 同于计算 I1，I2 的值，比如 <code>(add I1 I2)</code>。</p>
+<p><strong>问题来了</strong>：这是在同一个系统当中，add 被定义了两次，后一次会覆盖前一次，那么在运算过无理数后再调用 add 计算 R1, R2 时，系统必然会报错。</p>
+<p><strong>解法一</strong>: 对于支持面向对象和方法重载的语言，比如 Java, C++，这个问题根本就不是问题。写两个 add 方法，但是参数类型不同。当你调用 add 的时候，系统会根据参数的类型用于决定调用哪一个 add 方法。</p>
+<p><strong>解法二</strong>：对于像 C 语言这种语言，还可以重新命名函数的方法，比如对于计算有理数加法的函数，可以叫做 <code>add_rational</code>；对于计算无理数加法的函数，可以叫做 <code>add_irrational</code>。但问题也很明显，如果在这个系统增加更多种需要进行加法运算的数据类型，那么对于每一种数据类型定义一种函数，而且名字还需要确保不同。假如在系统设计初期，设计者能想好这么多名字，比如 100 种，那勉强还算解决了。然而对于用户来说，这就很头疼了。如果我面对一个支持 100 种数据类型的系统，每操作一种数据类型，我就需要查查手册。如果有一个 <code>add</code> 函数能支持任意一种数据类型加法的运算，那么用户必然对这个系统的好感度必然直线上升。</p>
+<p><strong>解法三</strong>：那就定义一个 <code>add</code> 函数，当传入两个数据时，判断一下类型，在进行相应的操作就好了。<br>伪代码如下:</p>
+<pre><code class="python">def add(x, y):
+    if type(x) == &quot;rational&quot; and type(y) == &quot;rational&quot;:
+        pass # 对应有理数加法的代码
+    elif type(x) == &quot;irrational&quot; and type(y) == &quot;irrational&quot;:
+        pass # 对应无理数加法的代码
+    elif type(x) == &quot;type-a&quot; and type(y) == &quot;type-a&quot;:
+        pass # 对应type-a加法的代码    
+    elif type(x) == &quot;type-b&quot; and type(y) == &quot;type-b&quot;:
+        pass # 对应type-b加法的代码
+    elif ... # 以此类推，每个elif 部分对应一种数据类型的加法运算
+</code></pre>
+<p>对于开发者实现来说，这个方法还算可以，虽然不算美观。<br>记得去年我在某公司实习的时候，我所在的那个项目中还真有这样的代码。一个文件中“挂”了至少上百个 <code>else if</code>。每个实习生一旦写好一个模块，就要在这个文件上加一个对应的 <code>else if</code>。然后因为多个实习生，每个实习生的工作台上都有整个项目的文件，最后提交的时候，负责管理实习生的员工还查看每个实习生增加了几个 <code>else if</code>，然后把它们一个一个汇总到一个文件上。<br>所以很明显，这个方法勉强可以，虽然对开发来说事实上会带来一点繁琐。</p>
+<p><strong>解法四</strong>: 在以上三种解法基础上，终于到了 DDP 登场。我认为 DDP 和解法三的一个重要区别就是，DDP 开发了一个表结构，帮助开发者分析类型并调用对应函数。同时在这时，系统还可以模块化，增加命名空间，避免设计者把过多时间花在起名字上。</p>
+<p>DDP 中有两个重要的函数 <code>put</code>, <code>get</code>。</p>
+<pre><code class="python">put(&lt;操作&gt;，&lt;方法所需参数的各个类型&gt;，方法名)
+get(&lt;操作&gt;，&lt;方法所需参数的各个类型&gt;)
+</code></pre>
+<p>先不管具体是怎么实现的，先明白功能。put 的功能是往系统的一个特殊数据结构中存储一种方法，而这个方法对应的操作是 &lt;操作&gt;，对应参数的各个类型为&lt;方法所需参数的各个类型&gt;。<br>比如:</p>
+<pre><code class="python">put(&quot;add&quot;, [&quot;rational&quot;, &quot;rational&quot;], rational-add)
+put(&quot;add&quot;, [&quot;irrational&quot;, &quot;irrational&quot;], irrational-add)
+</code></pre>
+<p>而 put 的目的是为了 get，这个才是关键。通过 get 就可以实现取到对应数据类性的方法。</p>
+<pre><code class="python">get(&quot;add&quot;, [&quot;rational&quot;, &quot;rational&quot;]) # rational-add
+get(&quot;add&quot;, [&quot;irrational&quot;, &quot;irrational&quot;]) # irrational-add
+</code></pre>
+<p>这看上去似乎没什么用，但是如果在继续定义 add:</p>
+<pre><code class="python">def add(x, y)
+    return get(&quot;add&quot;, [type(x), type(x)])(x, y)
+</code></pre>
+<p>那么这个 add 就可以处理各种系统支持的类型了。<br>比如如果我用 add 计算有理数 R1, R2的和，那么 <code>get</code> 会返回 <code>rational-add</code> 方法计算R1， R2；如果再用 add 计算无理数 I1, I2的和，那么 <code>get</code> 会返回 <code>irrational-add</code> 方法计算I1， I2。</p>
+<p>对于用户来说，每次计算调用的都是同一个方法 <code>add</code>，而对于系统，每次用于计算的则是不同的方法计算。那么如何解决命名空间呢？因为 put 方法已经在系统中实现，属于全局。那么put 也可以在任何地方使用，比如:</p>
+<pre><code class="python">def install_rational():
+    def _add(x, y):
+        pass # 处理有理数加法
+    put(&quot;add&quot;, [&quot;rational&quot;, &quot;rational&quot;], _add)
+
+def install_irrational():
+    def _add(x, y):
+        pass # 处理无理数加法
+    put(&quot;add&quot;, [&quot;irrational&quot;, &quot;irrational&quot;], _add)
+</code></pre>
+<p>这里事实上还涉及到了闭包。因为 <code>_add</code> 方法是在不同的函数中定义的，处于不同的命名空间。所以在这里，对于不同的数据类型的加法函数，可以采用同一个命名。另外，这种设计事实上也模块化了，因为当你需要用有理数时，只需执行 <code>install_rational()</code>。这样这个系统就支持有理数加法操作。</p>
+<p>对比解法三，四可以发现，解法四更简洁化了，它开发了一个程序用于自动添加对应的方法。</p>
+<p>因为 put 操作的作用是往表结构中存储数据，那么这个表结构可以采用类似 python 中的 dict 实现。</p>
+<h1 id="message-passing">Message Passing</h1><p>Message Passing 是本章另一个令我感觉十分新颖的点。在我看来，Message Passing 的特点在于它将一个数据，既可以看作函数操作，又可以看作对象操作。同时它又与 Object-oriented Programming (OOP) 又有些许相似之处。</p>
+<p>同样，以有理数的实现为例子:</p>
+<pre><code class="python">def make_rational(numer, denom):
+    def add(y):
+        pass
+
+    def sub(y):
+        pass
+
+    def mul(y):
+        return make_rational(numer * y(&quot;numer&quot;), denom * y(&quot;denom&quot;))
+
+    def dispatch(msg):
+        if msg == &quot;add&quot;:
+            return add
+        elif msg == &quot;sub&quot;:
+            return sub
+        elif msg == &quot;mul&quot;:
+            return mul
+        elif msg == &quot;numer&quot;:
+            return numer
+        elif msg == &quot;denom&quot;:
+            return denom
+        ...
+    return dispatch
+</code></pre>
+<p>可以看出，如果构造一个有理数对象，那么这个方法实际上返回的是 dispatch 的方法。而如果用调用 add 方法，或 获得 numer 属性，那么就要把构建出来的对象当作函数使用:</p>
+<pre><code class="python">x, y = make_rational(2, 3), make_rational(4, 5)
+x(&quot;add&quot;)(y)
+x(&quot;numer&quot;)
+</code></pre>
+<p>这里是第一个有趣的地方，在第一行中，<code>x, y</code> 被看作是对象，而在第二、三行中，<code>x, y</code> 又被看作是方法 / 函数。这么一来 对象 和 函数 的界限似乎被打破了，或者说，对象 和 函数进行了自由的转换。</p>
+<p>第二个有趣的地方在于这与 OOP 的关系，如果在一个支持 OOP 语言编写的系统中存在 <code>Rational</code> 这个类，那么 <code>make_rational()</code> 就类似与构造函数 <code>Rational()</code>；<code>x(&quot;add&quot;)(y)</code> 就类似于 OOP 中的 <code>x.add(y)</code>；<code>x(&quot;numer&quot;)</code> 类似于 OOP 中的 <code>x.numer</code>。也就是说，在一个不支持面向对象，但支持将函数看作对象操作的语言中，Message Passing 实现了类似于 OOP 的功能。</p>
+<p>同样的，如果要定义一个通用的 add 操作，可以用以下方法实现:</p>
+<pre><code class="python">def add(x, y):
+    return x(&quot;add&quot;)(y)
+x, y = make_rational(2, 3), make_rational(4, 5)
+add(x, y)
+</code></pre>
+<p>那么用户就调用 <code>add(x, y)</code> 之时，又将 x，y 看作了对象而不是函数。倘若再增加一种无理数的数据类型，那也可以参照上文中有理数的实现方法实现，并且，如果无理数中的实现中，同样又对 “add” 的处理，那么无理数的相加也可以直接调用 <code>add(x, y)</code>。</p>
+<h1 id="others">Others</h1><p>除了以上两点，在书中还有更多的讨论：其中一个常见的问题就是如果如何将<code>add</code>用于其他类型的相加，比如无理数和有理数的相加，无理数和自然数的相加。书中采用的方法很巧妙，它定义了一个升级的规则，如果两个相加的数不在一个等级，那么将其中一个等级较低的进行升级。比如，<code>3 / 4</code> 与 <code>2</code> 相加，<code>2</code> 先升级，成为有理数<code>2 / 1</code>，这是可以处在同一层级（都是有理数），所以可以相加；<code>3 + 4i</code> 与 <code>2</code> 相加，<code>2</code> 先升级，成为了 <code>2 / 1</code>，但仍不在同一个层级，因此再升级，成为<code>2 / 1 + 0i</code>，这时可以相加了（注意，实数部分的 <code>3 + 2 / 1</code> 计算过程中事实上也运用了升级的规则）。</p>
+<p>总体来说，对于以上这几点，我只是做了比较基础的一些总结。如果对这方面感兴趣，建议阅读书籍，书中还有更多的内容值得阅读和思考。</p>
+<h1 id="references">References</h1><ol>
+<li><a href="https://book.douban.com/subject/1148282/" target="_blank" rel="external">SICP</a></li>
+<li><a href="http://sicp.readthedocs.io/en/latest/index.html" target="_blank" rel="external">SICP 解题参考</a></li>
+<li><a href="http://inst.eecs.berkeley.edu/~cs61a/su10/resources/sp11-Jordy/ddp.html" target="_blank" rel="external">DDP and Message Passing @ inst.eecs.berkeley.edu</a></li>
+<li><a href="http://berkeley-cs61as.github.io/textbook/data-directed-programming.html" target="_blank" rel="external">Data-Directed Programming @ berkeley-cs61as</a></li>
+<li><a href="http://berkeley-cs61as.github.io/textbook/message-passing.html" target="_blank" rel="external">Message Passing @ berkeley-cs61as</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SICP 第二章的标题为 &lt;em&gt;“Building Abstractions with Data”&lt;/em&gt;。与第一章标题&lt;em&gt;“Building Abstractions with Procedures”&lt;/em&gt; 相比，这一章明显注重于在数据上的抽象。因此，在本章中所采用的例子中，会有多种数据类型被抽象出来，而每种数据类型又会对应着多种操作，那么随着代码量的增多，如何在不减少需求的情况下正确的对数据的抽象将直接影响开发者编码时的难度以及后期维护的成本。&lt;/p&gt;
+&lt;p&gt;在阅读和练习完 Chapter 2 之后，我想谈一下对我思维冲击比较大的几个点。&lt;/p&gt;
+&lt;h1 id=&quot;data-directed-programming&quot;&gt;Data-Directed Programming&lt;/h1&gt;&lt;p&gt;在 SICP 中，DDP 出现的一个背景是：存在多种数据类型，它们需要实现相同功能的操作，但对于不同的类型，具体的实现方式有存在不同。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="SICP" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/SICP/"/>
+    
+      <category term="Scheme" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Scheme/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>几种求平方根的算法</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/11/23/sqrt-algorithms-in-sicp/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/11/23/sqrt-algorithms-in-sicp/</id>
+    <published>2016-11-23T14:32:19.000Z</published>
+    <updated>2016-12-13T15:12:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>SICP 的第一章主要讲述了对过程的抽象。因此在这一章中以 Scheme 为例对函数操作讲了很大一部分。其中经常出现的一个例子就是<strong>求平方根</strong>的算法。</p>
+<p>在以前，对于求平方根，我一般会首先考虑标准库，其次二分法。而在 SICP 中没有出现二分法，但其采用的几种算法的基本思路是与二分法类似的</p>
+<blockquote>
+<p>先试验一个数，如果满意，返回这个数；否则，在猜测的数字上进一步优化，得到一个更接近结果的数字，继续试验</p>
+</blockquote>
+<p>以下是我对这几种算法的简要描述和比较（源码参考于 SICP 的 Scheme 代码。我在此基础上用 Python 改写）</p>
+<h1 id="newtons-method-牛顿法">Newton’s Method / 牛顿法</h1><h2 id="基本方法">基本方法</h2><p>其关键的地方在于如何改进测试数。对于求 x 的平方根，即 sqrt(x)，如果测试数为 guess 且不符合要求，那么该如何得到一个更好的数。牛顿法认为，对于下一个数 next_guess，可以使 <code>next_guess = (guess + x / guess) / 2</code>。</p>
+<p>我刚开始很好奇：为什么 next_guess 可行，因为我怀疑 x / guess 会不会和 guess 一样都小于或大于 sqrt(x)？如果是的话，那么 next_guess 岂不是可能比 guess 更不接近答案？</p>
+<p>书中没有讲述，所以我试着证明了一下，发现这是不会的: 因为 <code>guess * (x / guess) = x</code> 是一定的，如果 <code>guess &lt; sqrt(x)</code>, 且 <code>(x / guess) &lt; sqrt(x)</code>, 那么 <code>guess * (x / guess) &lt; sqrt(x) * sqrt(x) = x</code>。这样的话，与已知不符，所以 guess 与 (x / guess) 必然居于 sqrt(x) 的两侧。</p>
+<p>那怎么保证每次结果都会更接近呢？书中没有讲述，所以我还是试着自己证明了。如图，假设第一次猜测结果为 g1, 对应第二次猜测结果为 <code>g2 = (g1 + x / g1) / 2</code> 。那么接下来就是证明在图中 x / g2 会小于 x / g1。通过反证法，如果 g2 和 x / g2 都大于 g1 和 x / g1，那么 <code>g2 * (x / g2) &gt; g1 * (x / g1) = x</code>, 这与 <code>g2 * (x / g2) = x</code> 矛盾。由此可见，每一次猜测都会比上一次猜测更加靠近结果。</p>
+<p><img src="https://s14.postimg.org/mwo681tkx/sqrt.png" alt="sqrt"><span class="image-caption">sqrt</span></p>
+<p>以下是用Python实现的代码，其中 count 函数是用来通过计算 good_enough 的运行次数，来得到实际的运行次数。</p>
+<pre><code class="python">def count(f):
+    cnt = 0
+    def _count(*args, **kwargs):
+        nonlocal cnt
+        cnt = cnt + 1
+        print(cnt, *args, **kwargs)
+        return f(*args)
+    return _count
+
+def newton_sqrt(x):
+
+    tolerance = 0.0001 # 控制结果的精度
+
+    def newton_sqrt_iter(guess):
+        if (good_enough(guess)):
+            return guess
+        else:
+            return newton_sqrt_iter(improve(guess))
+
+    def square(x):
+        return x * x
+
+    @count
+    def good_enough(guess):
+        return abs(square(guess) - x) &lt; tolerance
+
+    def improve(guess):
+        return (guess + x / guess) / 2
+
+    return newton_sqrt_iter(1)
+
+print(newton_sqrt(37451))
+</code></pre>
+<p>算法时间复杂度为 <em>O(logN)</em> 。</p>
+<h2 id="改进">改进</h2><p>主要的问题出现在计算较小的数字时，比如<code>newton_sqrt(1e-20)</code>时会返回 <code>0.0078125</code>。其中一种比较直接的解决方法就是提高对 <code>tolerance</code> 的限制，比如将其设为 <code>1e-20</code>。除此之外，还有一种提高精度的方法是对 good_enough 函数进行改进: 当连续两次测试数差值小于 tolerance 时，即认为这个测试数足够得好。所以更改代码为:</p>
+<pre><code class="python">def newton_sqrt(x):
+
+    tolerance = 0.0001 # 控制结果的精度
+
+    def newton_sqrt_iter(guess):
+        next_guess = improve(guess)
+        if (good_enough(guess, next_guess)):
+            return next_guess
+        else:
+            return newton_sqrt_iter(next_guess)
+
+    def square(x):
+        return x * x
+
+    def good_enough(guess, next_guess):
+        return abs(guess - next_guess) &lt; tolerance
+
+    def improve(guess):
+        return (guess + x / guess) / 2
+
+    return newton_sqrt_iter(1)
+</code></pre>
+<p>注意在 newton_sqrt_iter 中返回的是 next_guess 而不是 guess。虽然返回 guess 也可行，但明显 next_guess 更适合，因为 next_guess 已经求出来，而且比 guess 更精确，那为什么不返回 next_guess 呢?</p>
+<p>至于这样修改为什么可行，因为能力问题，我暂时并没有证明出来。但就实现来说，这样修改确实能提高结果准确度。</p>
+<h1 id="fixed-point-不动点">Fixed Point / 不动点</h1><h2 id="基本方法">基本方法</h2><blockquote>
+<p>如果说 x 是函数 f 的不动点，那么 x 满足等式 f(x) = x</p>
+</blockquote>
+<p>对于求不动点的方法，可以采用如下方法：任意给定一个数 x0，进行运算 <code>f(x0), f(f(x0)), f(f(f(x0))), f(f(f(f(x0)))) ...</code> 直到连续两次的值足够小之时，那么这个值即可看作不动点。</p>
+<p>而借助不动点，可以求得平方根。假如求 x 的平方根，那么可以定义函数 f(y) = x / y。求得不动点 y0 满足 f(y0) = x / y0 = y0, 即<code>x = y0^2</code>，即求得了 x 的平方根。</p>
+<p>代码实现与上一种有类似之处，同样是先测试一个数，然后不断改进，直至满足精度要求。</p>
+<pre><code class="python">def fixed_point(f, guess):
+
+    tolerance = 0.001
+
+    def fixed_point_try(guess):
+        next_guess = f(guess)
+        if (good_enough(guess, next_guess)):
+            return next_guess
+        else:
+            return fixed_point_try(next_guess)
+
+    def good_enough(guess, next_guess):
+        return abs(guess - next_guess) &lt; tolerance
+
+    return fixed_point_try(guess)
+
+def sqrt(x):
+    return fixed_point(lambda y : x / y, 1.0)
+</code></pre>
+<p>其中 对于 f(y) = x / y，我采用了相对简洁的 lambda 表达式。</p>
+<h2 id="改进">改进</h2><p>另外这个代码其实是<strong>有问题</strong>的，因为我第一次猜测的数字是 1.0。假如我求 sqrt(4), 那么 next_guess 一直会循环于 <code>4 1 4 1 4...</code>。一种解决方法是改变数字，但即使改变数字，仍会发现在求解一些较大的数时，比如 131313111 时，python 会显示 <code>RecursionError: maximum recursion depth exceeded in comparison</code>。而在 SICP 中则给出了另一种方法，是对传入在 sqrt 中对传入 fixed_point 的第一个参数，即自己设定的函数做一点小变化。将 <code>y = x / y</code> 变为 <code>y = 0.5 * (y + x / y)</code>。两个等式实际上是等价的，但用了后面这个式子可以减少 fixed_point_try 所需递归次数。SICP 中称为 <code>average damping</code>。所以修改部分代码为:</p>
+<pre><code class="python">def average_damp(f):
+    return lambda x: 0.5 * (x + f(x))
+
+def sqrt(x):
+    return fixed_point(average_damp(lambda y : x / y), 1.0)
+</code></pre>
+<p>至于为什么这样可行，书中没有提到，google 到的资料也并不多，但可知的是，average_damp 并不能加快所有函数求解不动点的速度，比如求解 y = x / 2 的不动点，用原函数会比用average_damp处理过的函数求不动点的速度更快。</p>
+<h1 id="newtons-method-牛顿法更进一步">Newton’s Method / 牛顿法（更进一步）</h1><p>刚开始提到的牛顿法，其实属于牛顿法的一个特例。根据 SICP 提供的内容，我把它理解为:</p>
+<blockquote>
+<p>如果 g(x) 可微分，且 f(x) = x - g(x) / Dg(x), 那么 g(x) = 0 的解即为 f(x) 的不动点。</p>
+</blockquote>
+<p>其中 <em>D</em> g(x) 表示 g(x) 的导函数。</p>
+<p>那么求 sqrt(x) 可以等价为求 g(y) = y^2 - x 的零点，又可等价为求 f(y) 的不动点，此时就又可以使用上一个方法中求不动点的函数。</p>
+<p>对于表示 <em>D</em> g(x) 可以参考导函数的定义: <em>D</em> g(x) = (g(x + dx) + g(x)) / dx。只要 dx 足够小，那么求出的值也会足够精确。因此可以写出讲 g(x) 转换为 f(x) 的代码:</p>
+<pre><code class="python">def deriv(f):
+    return lambda x: (f(x + dx) - f(x)) / dx
+
+def newton_transform(g):
+    return lambda x: x - g(x) / deriv(g)(x)
+</code></pre>
+<p>在此基础上修改 sqrt 函数即可（与上文重复的部分用 pass 代替):</p>
+<pre><code class="python">def fixed_point(f, guess):
+    pass
+
+def deriv(f):
+    dx = 0.00001
+    pass
+
+def newton_transform(g):
+    pass
+
+def sqrt(x):
+    return fixed_point(newton_transform(lambda y: x - y * y), 1.0)
+</code></pre>
+<h1 id="比较">比较</h1><p>我随意选了一些数据做测试，其中括号中为 good_enough 的调用次数</p>
+<table>
+<thead>
+<tr>
+<th>测试数据</th>
+<th>牛顿法</th>
+<th>不动点</th>
+<th>牛顿法（进一步）</th>
+<th>math.sqrt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4e-10</td>
+<td>(14) 6.320421028899002e-05</td>
+<td>(14) 6.320421028899002e-05</td>
+<td>(14) 6.793792409042473e-05</td>
+<td>2e-5</td>
+</tr>
+<tr>
+<td>4e10</td>
+<td>(23) 200000.0</td>
+<td>(23) 200000.0</td>
+<td>(22) 200000.0</td>
+<td>200000.0</td>
+</tr>
+<tr>
+<td>17</td>
+<td>(6) 4.123105625617805</td>
+<td>(6) 4.123105625617805</td>
+<td>(6) 4.123105625619134</td>
+<td>4.123105625617661</td>
+</tr>
+<tr>
+<td>177</td>
+<td>(8) 13.30413469565007</td>
+<td>(8) 13.30413469565007</td>
+<td>(8) 13.304134695650115</td>
+<td>13.30413469565007</td>
+</tr>
+</tbody>
+</table>
+<p>可以发现：大体来说其实也差不了太多。其中，进一步的牛顿法受限于 dx 的精读不够，如果将 dx 调小至 0.0000001, 那么结果则与前两者差不多了。</p>
+<p>另外，求平方根的方法肯定不只这么几种，必然有更多方法。这些方法在一定程度上能拓展学习者的思路。<del>但一般情况下，大部分人还是直接调用标准库吧。</del></p>
+<h1 id="参考">参考</h1><ol>
+<li><a href="https://book.douban.com/subject/1148282/" target="_blank" rel="external">SICP</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%8D%E5%8A%A8%E7%82%B9" target="_blank" rel="external">Wikipedia 不动点</a></li>
+<li><a href="http://stackoverflow.com/questions/3860929/why-does-average-damping-magically-speed-up-the-convergence-of-fixed-point-calcu" target="_blank" rel="external">Why does average damping magically speed up the convergence of fixed-point calculators?</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SICP 的第一章主要讲述了对过程的抽象。因此在这一章中以 Scheme 为例对函数操作讲了很大一部分。其中经常出现的一个例子就是&lt;strong&gt;求平方根&lt;/strong&gt;的算法。&lt;/p&gt;
+&lt;p&gt;在以前，对于求平方根，我一般会首先考虑标准库，其次二分法。而在 SICP 中没有出现二分法，但其采用的几种算法的基本思路是与二分法类似的&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;先试验一个数，如果满意，返回这个数；否则，在猜测的数字上进一步优化，得到一个更接近结果的数字，继续试验&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以下是我对这几种算法的简要描述和比较（源码参考于 SICP 的 Scheme 代码。我在此基础上用 Python 改写）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Math" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/Math/"/>
+    
+    
+      <category term="Math" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Math/"/>
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+      <category term="SICP" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/SICP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创建了适用于 hexo 的一个主题 mls</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/11/10/new-blog-theme-mls/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/11/10/new-blog-theme-mls/</id>
+    <published>2016-11-10T11:46:55.000Z</published>
+    <updated>2016-12-13T15:21:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前用的主题是基于 <a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">landscape</a>, 虽然这确实是一个不错的主题，使用上也没什么不便，但毕竟这是一个他人贡献的主题。我一直想试着自己做一个主题。之前也尝试在 landscape 上改，修改了一些颜色，对 CSS 做了一些简单修改，但布局没变，整体一眼还是能看出这是 landscape，并且因为我当时不熟悉 EJS 模板，对 Sass 及 CSS3 不是特别熟悉，所以有些功能的实现也完全不知道怎么做，比如一些透明效果的动画。</p>
+<p>最近一段时间，相对以前来说稍微不忙了点，所以趁这个机会试着做一个主题了。</p>
+<h1 id="一些教程">一些教程</h1><h2 id="marketsheet">MarketSheet</h2><p><a href="http://marksheet.io/" target="_blank" rel="external">MarketSheet</a> 这是一个 HTML/CSS/Sass 教程的网站。我主要用它学习 CSS。相比较于其它教程，我十分推荐这个教程。</p>
+<p>一是因为前期它不堆砌各种语法知识，所以前期比较简单，例子也比较多，比如最开始讲讲很基础简单的 color, size, 而不是上来就讲 margin, padding 等对新手来说不友好的点。如果前期语法太多，就比较容易在刚开始就犯糊涂，影响后面的学习。</p>
+<p>二是这个教程确实讲得清楚，比如对 <code>position</code> 属性的解释，比如以前我一直对 <code>relative</code>/<code>absolute</code>/ 不清楚，不知道<code>相对</code>是什么，<code>绝对</code> 是什么，但教程直接解释了 <code>relative</code> 是相对元素原先的位置，而 <code>absolute</code> 是相对已经对位的 parent 来说的。更多的内容可以参考网站。</p>
+<p>三是一些语法外的规则讲解，比如何时使用 class 和 id，如何在表示颜色的十六进制、rgba、hsl 的三者中抉择 等等。</p>
+<h2 id="sass-amp-scss-tutorial-for-beginners">Sass &amp; SCSS Tutorial for Beginners</h2><p><a href="https://www.youtube.com/watch?v=sCbXTrsl7NU&amp;list=PL6gx4Cwl9DGBxQO2r_kmxn-0UqL_Rkj0t" target="_blank" rel="external">Sass &amp; SCSS Tutorial for Beginners</a><br>同样的理由，刚开始就不要太麻烦，把基础牢固最重要。这个教程每节课就讲一个知识点，比如 extend 或 mixin, 而且一节课的内容不长，10 分钟左右。<br>学完之后再去转转其他教程，这时学习一些稍微高级点的知识点就会相对轻松些。</p>
+<h2 id="create-an-hexo-theme">CREATE AN HEXO THEME</h2><p><a href="http://www.codeblocq.com/2016/03/Create-an-Hexo-Theme-Part-1-Index/" target="_blank" rel="external">CREATE AN HEXO THEME</a><br>这个就是从头到尾的一个 hexo theme 教程了，包括了从简单的首页开始，一直到最后的插入评论系统。应该说跟着这个教程做下来的话，搭建 hexo 博客的基本思路已经有了。自己主要做的就是稍微调整下布局，补充补充一些 CSS，这样一个基本功能的主题已经基本完成了。</p>
+<h1 id="一些开源框架-组件-插件">一些开源框架 / 组件 / 插件</h1><h2 id="materialize">Materialize</h2><p><a href="https://github.com/Dogfalo/materialize" target="_blank" rel="external">Materialize</a><br>一个实现了 Material design 的前端框架。之所以使用框架，一方面是想稍微偷个懒，因为目前我对如何实现响应式布局不是很了解，用现成的框架能降低难度，其次是我对 Material design 还是有点喜欢的，所以选择了这个框架。</p>
+<p>不过，并没有使用框架中太多部分，主要是导航栏，icons，以及内置的 grid 布局。</p>
+<h2 id="jquery-backstretch">jquery-backstretch</h2><p><a href="https://github.com/srobbin/jquery-backstretch" target="_blank" rel="external">jquery-backstretch</a><br>使用这个插件主要是两个理由，一是可以延迟加载背景图片，也就是说避免图片加载太慢而导致其它内容加载延迟太多。通过延迟加载，可以在其它加载了差不多了后再加载图片。二是在写主题时发现 chrome 的一个 bug，在我写了 <code>body {background-attachment: fixed}</code> 后，chrome 并没有照做，通过审查元素可以发现，chrome 自动在 body 上加了一个 <code>style=&quot;background-attachment: scroll&quot;</code>。虽然 google 了很多方法，但效果都不大理想。后来放弃了刚开始在 body 元素上设置背景的想法，而通过在其它元素上设置以间接达到目的。</p>
+<h2 id="highlightjs">highlight.js</h2><p><a href="https://github.com/isagalaev/highlight.js" target="_blank" rel="external">highlight.js</a><br>这个用于对代码的高亮。原先 hexo 的代码渲染很奇怪，它把代码部分渲染成了表格，而且用于代码高亮部分的主题的样式表我也看不懂。所以我这一次又偷懒了，关闭了默认的代码高亮（关闭方法不难，可参考 <a href="https://liuzhichao.com/2016/hexo-use-prettify-to-highlight-code.html" target="_blank" rel="external">link</a>），使用了 highlight.js，而且这个组件提供了很多主题。我现在用的主题是 “Atom One Light”。这是一个我同样在 atom 上设置的亮色主题。</p>
+<h2 id="highlightjs-line-numbersjs">highlightjs-line-numbers.js</h2><p><a href="https://github.com/wcoder/highlightjs-line-numbers.js" target="_blank" rel="external">highlightjs-line-numbers.js</a><br>因为希望给代码显示行数，所以找到了这个插件，使用也很方便。</p>
+<h2 id="hexo-image-caption">hexo-image-caption</h2><p><a href="https://github.com/wayou/hexo-image-caption" target="_blank" rel="external">hexo-image-caption</a><br>在原先的 landscape 里，图片下方可以显示一段文字，这段文字就是在写 markdown 时插入图片时的说明文字。为了实现这个功能，我再次偷懒，搜到了这个插件。使用后的效果就是这样: <img src="http://placehold.it/350x150" alt="这是一张 350 * 150 的图片？"><span class="image-caption">这是一张 350 * 150 的图片？</span></p>
+<h2 id="fontawesome">fontawesome</h2><p>一开始不知道一些图标是如何显示在 blog 上的，后来我知道了 <a href="http://fontawesome.io/" target="_blank" rel="external">fontawesome</a>。使用没什么难度，效果可以参考现在页面 footer 上的那几个图标的样子，唯一我个人不满意的地方就在于没有网易云音乐的图标，所以用了一个其它图标代替。</p>
+<h2 id="sharejs">share.js</h2><p><a href="https://github.com/overtrue/share.js" target="_blank" rel="external">share.js</a> 用于分享功能。这个功能原本不在计划之内，但在逛 GitHub 时偶然看到了，而且确实简单好用，于是加上了。目前我选择了四个社交应用的分享，显示在文章之后。</p>
+<h1 id="thanks">Thanks</h1><p>这次主题的创建比我想象的简单了很多，一个很重要的原因就在于 GitHub 上丰富的资源，包括各种教程，为我节省了很多精力和时间，<del>允许我偷懒</del>。我必须要向这些资源们的作者表示感谢。</p>
+<p>同时我不得不说，有些 blog 也带给了我一些灵感。jquery-backstretch 是我在看了<a href="xcoder.in">艾克斯の編碼者</a>的 blog 才知道的，另外也从这个 blog 的主题上也知道了如何单独建立 Categories 和 Tags 的页面。同时， 网页下滑后导航栏透明的设计是在看了 <a href="http://wattlebird.github.io/" target="_blank" rel="external">Dedication</a> 之后才想到要做。而在 footer 上加图标的方法则是参考了 <a href="http://morris821028.github.io/" target="_blank" rel="external">Morris’ Blog</a> 的设计。</p>
+<h1 id="关于-mls">关于 mls</h1><p>主题的代码这几天我会在 GitHub 上开源。</p>
+<p>至于为什么叫 mls，其实很简单，m 代表了 materialize 框架；ls 代表 landscape，代表了上一个主题，因为最初的想法不是从头写，而是想在 landscape 上修改。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前用的主题是基于 &lt;a href=&quot;https://github.com/hexojs/hexo-theme-landscape&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;landscape&lt;/a&gt;, 虽然这确实是一个不错的主题，使用上也没什么不便，但毕竟这是一个他人贡献的主题。我一直想试着自己做一个主题。之前也尝试在 landscape 上改，修改了一些颜色，对 CSS 做了一些简单修改，但布局没变，整体一眼还是能看出这是 landscape，并且因为我当时不熟悉 EJS 模板，对 Sass 及 CSS3 不是特别熟悉，所以有些功能的实现也完全不知道怎么做，比如一些透明效果的动画。&lt;/p&gt;
+&lt;p&gt;最近一段时间，相对以前来说稍微不忙了点，所以趁这个机会试着做一个主题了。&lt;/p&gt;
+&lt;h1 id=&quot;一些教程&quot;&gt;一些教程&lt;/h1&gt;&lt;h2 id=&quot;marketsheet&quot;&gt;MarketSheet&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Front-end" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/Front-end/"/>
+    
+    
+      <category term="CSS" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/CSS/"/>
+    
+      <category term="JavaScript" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/JavaScript/"/>
+    
+      <category term="Sass" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>晴天 — TOEFL @ ZJU</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/10/29/toefl-10-29-zju/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/10/29/toefl-10-29-zju/</id>
+    <published>2016-10-29T15:37:57.000Z</published>
+    <updated>2016-11-09T16:20:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="考前">考前</h1><p>上一次考托福，考了 93。 这分数明显不够，上次出分立即报了一次。故意选择了跟上次一样的考场 — 浙大 E 考场，原因是不想去熟悉新考场了，找个已经去过的考场吧。</p>
+<p>在酒店里发生了一件小插曲，隔壁间的客户发现他们的卡不能打开房门，于是用我房间里的电话向前台求助。关键是这两位，同时也是一对情侣，也是到浙大考托福的，而且是从上海交大来的。女生表现比较开朗，在过程中了解到女生已经考出来了，而男生的成绩不理想，所以她只是陪男生来考试的。短暂的聊天中，并没提到女生的具体分数，但我猜她的分数应该还是比较不错的，因为她说了一句：“TOEFL 分数不需要很高，105 就已经足够了”。</p>
+<h1 id="考试进行">考试进行</h1><p><strong>你信不信我是10点才开考的？</strong></p>
+<p>按照常理，一般到了休息室后，会填保证书，然后检录入场。一般9点左右就已经在位置上了。</p>
+<p>但这次考试，ABCD考场都正常，唯独 <strong>E</strong> 考场网络不对 —— 然后一直等到 9 点半，工作人员才来到休息室，讲解考场纪律，发放保证书。</p>
+<p>从 8 点半进入休息室算起，至少等了一小时。不过休息室里的同学们并没有表现出明显的不满和慌张 —— 相反有些人直接趴在桌子上补睡眠，而有几个人则聊起了 —  “我上次去了台湾的考场”，“你去了台湾，我刚刚去了一次美国的考场” ……</p>
+<p>工作人员进入休息时，用略带诙谐的语气说了句：“大家放心，托福没有统一的开考时间 ———— 别自己把自己心情给搞砸了”。</p>
+<p>相对来说，这里的检录较慢，一个人一个人排队，工作人员也检查比较仔细。9点40左右开始的检录，轮到我入场已经 10 点了。</p>
+<p>顺序自然是 Reading, Listening, Speaking, Writing.</p>
+<p>加试是听力经典加试 ID 卡那一套。不过我是第一次听这套，刚听到时以为是非经典加试，认真听完了 Conversation.</p>
+<p>Speaking 那个 Section 略紧张 —— 说好要表现得自信一点呢！？</p>
+<p>略吐槽一下：CS 真是热门，Listening 中一个 Conversation 出现一个 CS 专业的学生因为实习而去找教授请求写推荐信；而在 Speaking 中的 Task3，女主角说: 我一个同学主修 CS，他（她？）可以到电脑维修部门做兼职，这可以为他（她？）增加工作经验（working experience） —— 连美帝的学生也认为 CS 的学生是修电脑的么？🙄</p>
+<h1 id="考后">考后</h1><p>走出考场已经 14 点了。打开微信，各种相关群对今天的考试已经讨论了也差不多有一小时了，感觉我已经插不上嘴了。</p>
+<p>心情一般，就这样走向了公交站，准备回校。</p>
+<h1 id="后记-晴天">后记 — 晴天</h1><p>整个 10 月都是阴天或下雨，几乎没有晴天，包括今天也不例外。</p>
+<p>之所以想说晴天，其实是想说周杰伦的歌曲《晴天》。最近一直在听这首歌，不禁心里有种共鸣 ———— 每个人都着这自己追求的事物，一直都有，但每个人用了多少的勇气去追呢？至少我觉得我没有用尽所有的勇气 ———— 大概是我的意志还是不够坚定。</p>
+<p>至少这是一首让人安静的曲子 ———— 当这几天心慌的时候，听听这曲子也着实能让我安静不少。</p>
+<p>最后补充两张图:</p>
+<p><img src="https://s21.postimg.org/l7cs5476f/IMG_1541.jpg" alt="考点指示牌"><span class="image-caption">考点指示牌</span></p>
+<p><img src="https://s15.postimg.org/agxm0dfvf/IMG_1542.jpg" alt="储物柜"><span class="image-caption">储物柜</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;考前&quot;&gt;考前&lt;/h1&gt;&lt;p&gt;上一次考托福，考了 93。 这分数明显不够，上次出分立即报了一次。故意选择了跟上次一样的考场 — 浙大 E 考场，原因是不想去熟悉新考场了，找个已经去过的考场吧。&lt;/p&gt;
+&lt;p&gt;在酒店里发生了一件小插曲，隔壁间的客户发现他们的卡不能打开房门，于是用我房间里的电话向前台求助。关键是这两位，同时也是一对情侣，也是到浙大考托福的，而且是从上海交大来的。女生表现比较开朗，在过程中了解到女生已经考出来了，而男生的成绩不理想，所以她只是陪男生来考试的。短暂的聊天中，并没提到女生的具体分数，但我猜她的分数应该还是比较不错的，因为她说了一句：“TOEFL 分数不需要很高，105 就已经足够了”。&lt;/p&gt;
+&lt;h1 id=&quot;考试进行&quot;&gt;考试进行&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="TOEFL" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/TOEFL/"/>
+    
+    
+      <category term="TOEFL" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>考 GRE @ Ningbo University</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/08/26/gre-at-ningbo-university/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/08/26/gre-at-ningbo-university/</id>
+    <published>2016-08-26T13:24:52.000Z</published>
+    <updated>2016-11-08T14:29:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>大约两个月前报名了在宁波大学的这场 GRE 考试。之所以选择宁波的这场考试，一是因为 8 月份杭州没有考位，只能另寻它处，二是相比与周围的考点（如苏州，南京等），宁波更近，方便我的来回。</p>
+<h1 id="出发">出发</h1><p>大约 8 月初的时候，我就把宾馆和车票订好了。值得一提的是，我选择坐动车前往宁波，而我已经近六七年左右没坐过除地铁以外的铁路了。因为以前我并没有跑太远，而且自己家不远处就有个汽车站，而离火车站很远。所以平时大多选择了汽车坐为交通工具。这次坐动车出行，反到给了我一点新鲜感。</p>
+<p><img src="http://i.imgur.com/aLTMi7w.jpg" alt="杭州火车东站"><span class="image-caption">杭州火车东站</span></p>
+<p>从杭州火车东站到宁波站大约一小时，路途正常。我旁边坐了一个小萝莉。因为当时是午饭时间，一路上大部分时间她都在吃刚泡开的泡面。</p>
+<p>到站后，乘坐地铁即可到宁波大学，大约半小时时间。在地铁上，刚好坐在对面的一个妹子也是考 GRE 的，因为我瞄到了她手中的确认信。不过我并没有选择上去勾搭。</p>
+<h1 id="确认考场">确认考场</h1><p>这时的宁波大学正在修建大门，如果不是开车的话，其实没什么影响。刚开始没有找到地点，绕了包玉刚教学楼一圈，才发现自己刚进校门看到的其实就是考点😅。不过那栋楼的门卫并不让我上楼，所以我也没上楼继续确认。</p>
+<p><img src="http://i.imgur.com/DehNyE2.jpg" alt="进大门就可以看到的包玉刚教学楼"><span class="image-caption">进大门就可以看到的包玉刚教学楼</span></p>
+<p><img src="http://i.imgur.com/R6Cbhbt.jpg" alt="一开始走到了教学楼之后，来到了图书馆"><span class="image-caption">一开始走到了教学楼之后，来到了图书馆</span></p>
+<p>之后我并没有马上走，而是到了边上的大踏步校园超市 （这名字让我感觉很有趣）。买了瓶饮料，发现有一个妹子坐在超市前休息，而且也与我一样考 GRE。所以我们聊了起来。她是来自上海交大的研究生，想考 GRE 去美国读博士。— 交大的研究生，瞬间有点觉得我这种来自不知名学校的本科生有点尴尬。</p>
+<p>聊到一半时，又来了一个妹子，是宁波诺丁汉大学的学生。她现在在杭州实习，而且已经去英国读了两年了，而且也与我一样是读 CS 的。 —— 有出国的经验，TOEFL 基本没什么问题，基本只有把 GRE 搞定了，我瞬间又有点羡慕她了。</p>
+<p>交流一会了之后就散了，毕竟她们还要找今晚的住所。</p>
+<h1 id="考前">考前</h1><p>今早大概 7 点半醒的，醒来后继续看了看 issue 和 argument。然后就退房去考场了。</p>
+<p>到场后，大约 8 点 10 分，我没有选择立即上楼进考场，因为我知道进了考场之后就只能发呆了 —— 你的物品已经锁在柜子里了，你没法看资料，只能思考。</p>
+<p>我依旧选择坐在大踏步超市前，拿出 Mac 继续看点资料。随着时间流动，人也聚集了起来。也看到一些家长带着孩子来的。说实话，其实我觉得大家都是本科生及以上的学历了，自己来考试是完全可以的，用不着牵涉家长。当然，他们或许有其他原因，我也不想过多评价。</p>
+<p>大概 9 点，人陆续开始上楼。需要注意的是，如果你要到这考试，你最好准备好 10 块钱，因为这里的储物柜是需要先付 10 元押金的。休息室不算大，可能还有点挤。和浙江省教育考试院（学院路考点，我第一次考 GRE 的地方）的休息室 —— 一个足有两个考场那么大的休息室 —— 比起来，这个真心小了点，不过无伤大雅。</p>
+<p>一个考点两个教室，每个教室约可容纳 40 名考生。配备空调。</p>
+<p>使用的是宽屏的 lenovo 屏幕，这比正方形的屏幕看起来要舒服点。</p>
+<p>我使用的键盘那块键盘比较干净，摸上去还啥不好的，各个键敲上去也比较均衡。</p>
+<p>椅子是可旋转的办公椅子，坐垫和靠背都是软的，而不是那种硬邦邦的椅子。</p>
+<p>桌子是典型的语言教室用桌。两张靠在一起。挡板不算高，刚好遮住屏幕。人与人之间没有挡板，这可能是一个比较注意的问题。因为没有这个延长的挡板，其实我稍微往边上靠靠，还是可以考到旁边的一点屏幕的。不过我能看到的那点部分很少。就算我旁边的想看我的也不会有所得。但如果考托福就不一样了，与同桌没有挡板，考口语的时候，双方之间可能听到对方的回答。另外我坐在第一排，我不敢确定后面的人是不是能看到我的屏幕。不过我想应该不会吧，如果能看到的话，那就是一个很严重的问题了。</p>
+<p>比较有意思的一点是，我当时对屏幕上的照片吃惊了一下。因为我今天穿的是一件深绿色的衣服，外加头发没有仔细梳理，几根呆毛翘了起来。另外我拍照时摘下了眼镜，有可能是光线的缘故，再配上我当时严肃的表情，照片中的我就好似一个喝醉了酒的被抓进了警局的流浪汉。</p>
+<h1 id="考时">考时</h1><p>首先是 AW:</p>
+<ul>
+<li>issue: The main benefit of the study of history is to dispel the illusion that people living now are significantly different from people who lived in earlier times.</li>
+<li>argument: Mozart School</li>
+</ul>
+<p>接下来是 VQVQV</p>
+<p>第一个 V 有几道题做到过。特别需要说明的是一篇中文章：这篇文章做到过，当题目明显改了。所以考试时看到旧题不要太激动。日常练习的时候还是要以 <strong>“弄懂”</strong> 作为首要原则！</p>
+<p>听说最近的 Q 难度有点加大，确实在时间上比以前多花了点。但总的来说，看懂题干，注意单位等一些小细节就基本没问题，因为在知识点上，考得仍然是中国学生能在初中就可以学到的知识点。</p>
+<p>做完后显示的成绩 V 155; Q 170</p>
+<h1 id="考后">考后</h1><p>先通过微信向微臣客服报分了，毕竟我考 GRE 的路上 微臣的课程和资料 确实给了我很大的帮助。因为考了 155，所以还可以得到一份形近词卡片。而且我的报分在今晚的 “琦叔GRE” 公众号推送文章中 “8月26日 考情汇报”中 上榜了。</p>
+<hr>
+<p><strong>既然来了宁波大学，怎么能不绕宁波大学看看呢</strong></p>
+<p>大踏步超市，店阿姨挺友好的，无论是今天和昨天都会热心地给来考试学生提供帮助和回答一些问题。我猜她估计在这工作了很久，所以也帮了很多考生了吧。</p>
+<p><img src="http://i.imgur.com/whYzmox.jpg" alt="不知道是流浪狗还是店阿姨养的狗。只是拍到了一只，其实还有另外几只"><span class="image-caption">不知道是流浪狗还是店阿姨养的狗。只是拍到了一只，其实还有另外几只</span></p>
+<p>走过教学楼，看到了一个金字塔，不知这个塔是不是有什么含义</p>
+<p><img src="http://i.imgur.com/oIXBBsX.jpg" alt="这个金字塔指向什么呢"><span class="image-caption">这个金字塔指向什么呢</span></p>
+<p>每个学校都会有那么几个环形建筑</p>
+<p><img src="http://i.imgur.com/PZDUnPd.jpg" alt="每次看到环型建筑就会让我想到信号塔"><span class="image-caption">每次看到环型建筑就会让我想到信号塔</span></p>
+<p>星桥，从碑子和扶栏的状态来看，可能有段长时间了</p>
+<p><img src="http://i.imgur.com/lRYdW8j.jpg" alt="这座桥是不是学生们的必经之路呢？"><span class="image-caption">这座桥是不是学生们的必经之路呢？</span></p>
+<p>一所学校不能没有湖 / 池塘啊</p>
+<p><img src="http://i.imgur.com/ZUgr6Wo.jpg" alt="绿绿的"><span class="image-caption">绿绿的</span></p>
+<p>一颗赛艇！</p>
+<p><img src="http://i.imgur.com/8ir13Ln.jpg" alt="亦可赛艇"><span class="image-caption">亦可赛艇</span></p>
+<p>转了一圈后来到了，感觉时间不晚，于是来到了自习室休息</p>
+<p><img src="http://ww3.sinaimg.cn/large/006fVPCvjw1f77js6oaj0j31kw23u7vy.jpg" alt="右边的女生把书堆的好高啊，估计最近一直在这位置学习吧"><span class="image-caption">右边的女生把书堆的好高啊，估计最近一直在这位置学习吧</span></p>
+<p>这个阶梯有点“复古”</p>
+<p><img src="http://i.imgur.com/BRJWk2V.jpg" alt="这种样式很久没看到了"><span class="image-caption">这种样式很久没看到了</span></p>
+<hr>
+<p>从外观上看，有些地方可能有点旧了，但总的来说，其实外观上还说不上差。而且现在宁大还在进行一部分的修建和装修。所以外观上一定会变得很好看的。</p>
+<p>但可惜的是，我对宁大的实力不是很了解。可能是因为平时跟宁大学生交流比较少。</p>
+<h1 id="后记">后记</h1><p>这算是一次因为考试需要而展开的简单旅途。对我来说，这种单独出行的机会并不多，我想从此开始，单独出行对我来说也不会陌生了。</p>
+<p>至于成绩，我觉得已经满足我的要求。虽然没有冲上 330，但 325 的成绩算是满足了基本要求。另外不知道我的作文有没有提升。虽然没有预测到作文题目（因为我考试前写的作文都是所谓的“高频”作文），但实际考场上敲得还蛮顺手的。</p>
+<p>以上。</p>
+<hr>
+<p><img src="http://i.imgur.com/m8jEq3m.jpg" alt="*电波女与青春男* 第 12 集"><span class="image-caption">*电波女与青春男* 第 12 集</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大约两个月前报名了在宁波大学的这场 GRE 考试。之所以选择宁波的这场考试，一是因为 8 月份杭州没有考位，只能另寻它处，二是相比与周围的考点（如苏州，南京等），宁波更近，方便我的来回。&lt;/p&gt;
+&lt;h1 id=&quot;出发&quot;&gt;出发&lt;/h1&gt;&lt;p&gt;大约 8 月初的时候，我就把宾馆和车票订好了。值得一提的是，我选择坐动车前往宁波，而我已经近六七年左右没坐过除地铁以外的铁路了。因为以前我并没有跑太远，而且自己家不远处就有个汽车站，而离火车站很远。所以平时大多选择了汽车坐为交通工具。这次坐动车出行，反到给了我一点新鲜感。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/aLTMi7w.jpg&quot; alt=&quot;杭州火车东站&quot;&gt;&lt;span class=&quot;image-caption&quot;&gt;杭州火车东站&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="GRE" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/GRE/"/>
+    
+    
+      <category term="GRE" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/GRE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写在 TFT 小组 第 35 期 之后</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/06/28/after-tft-25/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/06/28/after-tft-25/</id>
+    <published>2016-06-28T12:51:02.000Z</published>
+    <updated>2016-11-08T11:19:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在同学的介绍下，我报名了 <em>刘功勋</em> 老师的 TFT 35 期口语小组。之所以报名这个小组，理由也很简单 —— 就是为了学习口语，为 TOEFL 做准备。在昨天，小组正式结束，感觉收获颇多。同时，这几天又有一些其它想法涌上心头。</p>
+<h1 id="这十天做了什么">这十天做了什么</h1><h2 id="背段子">背段子</h2><p>TA(助教)每天都会布置一篇新段子，一般是一篇一分钟内可以背完的段子。这些段子大多是老师基于某一个话题，然后从晚上摘抄整合下来的，感觉质量还挺高的。举个例子：<a href="http://mp.weixin.qq.com/s?__biz=MzA4NjI5MzUwOQ==&amp;mid=200509253&amp;idx=1&amp;sn=a994a45c0f085635c8623dfef029d8b4&amp;scene=1&amp;srcid=0628nF1OTxzKc4JtlUFD5FEa#rd" target="_blank" rel="external">口语段子</a></p>
+<p>说实话，我算是小组里每天完成被段子任务最早的同学了：一是因为我现在几乎全职学英语，二是我的口语不是很好导致有些词没都对就搜的一些过去了，但好在 coach 会对学生的发音进行一对一的简单评价</p>
+<h2 id="做tpo">做TPO</h2><p>每天都会做一套左右的 TPO 要求将做题时的语音(即模拟考试状态下的语音)和多刺研读材料后修改的录音，以微信语音的方式发在小组群里。</p>
+<p>不得不提一句，因为大家都发在群里，所以我也听了其他人的语言 。又一次感觉我的口语发音和别人差距怎么就这么大呢？</p>
+<p><img src="http://r6.loli.io/IVZN3y.png" alt=""></p>
+<h2 id="coach-反馈">Coach 反馈</h2><p>“没有反馈的训练是一场灾难”。我现在十分认同这句话。</p>
+<p>其实上面两项”背段子” 或是 “作TPO” 都是可以自己独立完成的，用不着报什么小坐。但”反馈”在口语中却是很依赖他人的。因为在得到coach 的反馈之前，我对某些错误是一无所知，甚至认为自己是正确的。举个例子，<code>have to do</code> 就这个短语而言，我刚开始说得时候，总把重音放在了 to 和 do 上，也就是说 have 这个词轻声掠过了。但实际上，coach 告诉我敲敲相反了，尤其是向 to 这种词往往用不着咬那么重，把 have 要的轻， to do 咬的重，一股 chinglish 的味道。说完， coach 便示范了一遍，比较著我自己的读音，确实我有一股 chinglish 的味道。每天coach 都会单独点评每个人的一条语音，指出不当之处。</p>
+<p>但可惜这些 coach 也是兼职，不是全职，coach 们大多在中午休息时间或下班时间点评。不过话又说回来，如果是全职的话，价格就应该会贵了许多吧。</p>
+<h2 id="上课">上课</h2><p>十天内，<em>刘功勋</em> 老师讲了 7 次课。讲了一些做题和语言现象。每个老师都有那么一些理解。我觉得关于上课这点，没什么好说的。</p>
+<p>不过令我比较羡慕的是，老师作为一名从 CMU 毕业的学生，不仅会 能在硅谷code, 还会 guitar!。这对没有受过艺术教育的我来说，真的好羡慕这种才能。</p>
+<h2 id="总的来说">总的来说</h2><p>至少有所收获，值不值是一个很难说的话题。毕竟每个人看法不同。而且我也不想说太多这方面的问题，毕竟我不想让著文章变成一篇打广告的文章。</p>
+<p>但是这个新的形式很吸引我，每天背段子，完成作业，接受反馈，老师讲课，至少比单独一人瞎蒙的要强。</p>
+<h1 id="十天后">十天后</h1><h2 id="即将来临的toefl考试">即将来临的TOEFL考试</h2><p>没几天了，也不想说是哪一天了。感觉已经是交学费了。上个月考完 G,用一个月准备 T 确实慌了点。但也无奈，暑假的位置已经背抢光了，没有太多选择了。</p>
+<h2 id="离校的暑假">离校的暑假</h2><p>我现在的座标在杭州，也就是两个月后要举办某重大国际会议的地方。</p>
+<p>ZF 不允许学生暑假留校，想把我们都赶走，以免后患。对于我来说，我当然不愿意这个决策，毕竟学校好歹学习氛围比其他地方要好点。但要对于我们学生来说，没有选择，毕竟我们不能与 ZF 对抗。因此我身边的人都很快选择了接受。我尽管也选择了接受，但是一想到 ZF 是处于什么目的而出台了这个决策，我的心里依旧充满了不满。</p>
+<p>毕竟没想到一场看上去一场与我无关的回忆竟然打破我两个月的计划。</p>
+<h2 id="关于代码">关于代码</h2><p>说实话现在很少敲了，虽说有时会忙中偷闲敲上几行，但明显没有以前多了。未来几个月也应该会是这样把…</p>
+<p><br></p>
+<p><strong>P.S.</strong> <strong>某天晚上突然有感写下一篇blog，可能某些地方思绪略微杂乱了一点。我自己也不知道什么时候会突然想写新的一篇。</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在同学的介绍下，我报名了 &lt;em&gt;刘功勋&lt;/em&gt; 老师的 TFT 35 期口语小组。之所以报名这个小组，理由也很简单 —— 就是为了学习口语，为 TOEFL 做准备。在昨天，小组正式结束，感觉收获颇多。同时，这几天又有一些其它想法涌上心头。&lt;/p&gt;
+&lt;h1 id=&quot;这十天做了什么&quot;&gt;这十天做了什么&lt;/h1&gt;&lt;h2 id=&quot;背段子&quot;&gt;背段子&lt;/h2&gt;&lt;p&gt;TA(助教)每天都会布置一篇新段子，一般是一篇一分钟内可以背完的段子。这些段子大多是老师基于某一个话题，然后从晚上摘抄整合下来的，感觉质量还挺高的。举个例子：&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA4NjI5MzUwOQ==&amp;amp;mid=200509253&amp;amp;idx=1&amp;amp;sn=a994a45c0f085635c8623dfef029d8b4&amp;amp;scene=1&amp;amp;srcid=0628nF1OTxzKc4JtlUFD5FEa#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;口语段子&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="TOEFL" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/TOEFL/"/>
+    
+    
+      <category term="TFT" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/TFT/"/>
+    
+      <category term="TOEFL" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 中 wait 与 notify 的简单操作</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/02/15/java-wait-notify-usage/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/02/15/java-wait-notify-usage/</id>
+    <published>2016-02-15T14:05:51.000Z</published>
+    <updated>2016-11-08T11:23:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步</p>
+<pre><code class="java">while(condition) {
+  return ;
+}
+</code></pre>
+<p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
+<h1 id="相对简单的例子">相对简单的例子</h1><p>wait() 操作与 notify() 操作必须在临界区内进行。而 synchronized 需要一个对象用作锁，以区分各个不同的临界区。比如临界区 A 中进行了 wait() 操作，在也必须在临界区A 中进行 notify() 操作。</p>
+<p>现看一个例子：</p>
+<pre><code class="java">public class Test {
+    public static void main(String[] args) {
+        TestThread testThread = new TestThread();
+        testThread.start();
+        synchronized (testThread) {
+            System.out.println(&quot;Before wait&quot;);
+            try {
+                testThread.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(&quot;All completed!&quot;);
+    }
+}
+
+class TestThread extends Thread {
+    @Override
+    public void run() {
+        synchronized (this) {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(&quot;notify() Completed&quot;);
+            notify();
+        }
+    }
+}
+</code></pre>
+<p>例子中用了两次 <code>synchronized</code> ，但两次对应的参数是相同的，所以这两块代码都属于同一个临界区。当执行 wait 操作时，程序进入阻塞状态，在进行 notify 操作前，不会进行下一步，即不会输出<code>All completed!</code>。当 sleep 完成，即过了 5 秒钟后，触发 notify() 操作，打印<code>notify() Completed</code>。此时程序从阻塞状态进入就绪状态，然后进入运行状态，输出<code>All completed!</code>。</p>
+<p><em>注意点</em>:</p>
+<ol>
+<li>切记 wait 操作和 notify 操作要在同一个临界区中进行。</li>
+<li>在执行 wait 操作时会抛出一个 InterruptedException 的异常，记得捕获。</li>
+</ol>
+<p>输出结果参考：</p>
+<pre><code class="java">Before wait
+notify() Completed
+All completed!
+</code></pre>
+<h1 id="相对复杂的例子">相对复杂的例子</h1><p>从上面一个例子看出，wait 和 notify 操作实现了进程同步，类似于播放器的暂停(wait)与继续(notify)。只有在 notify 的情况下才能继续 wait 之后的内容，可以保证一些临界值的准确性。</p>
+<p>在操作系统概念中，有一个典型的 <em>消费者与生产者</em> 的模型。在一块区域中，最多存放 5 个 unit 的物品，当区域中的物品少于 5 个时，生产者就会生产 1 个 unit 的物品放在区域内；当区域中的物品大于 0 个时，消费者就会从区域中取走 1 个 unit 的物品。</p>
+<p>如果用 wait 与 notify 模拟的话，那就是要控制好两者的出现时机。</p>
+<p>先看代码：</p>
+<pre><code class="java">import java.util.Date;
+import java.util.Vector;
+/**
+* Created by lazzzis on 2/9/16.
+*/
+public class Test{
+    public static void main(String[] args) {
+        Producer producer = new Producer();
+        producer.start();
+        new Consumer(producer).start();
+        try {
+            Thread.sleep(80);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.exit(0);
+    }
+}
+class Producer extends Thread {
+    static final int MAXQUEUE = 5;
+    private Vector messages = new Vector();
+    @Override
+    public void run() {
+        try {
+            while (true) {
+                this.putMessage();
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    private synchronized void putMessage() throws InterruptedException {
+        while (messages.size() == MAXQUEUE) {
+            System.out.println(&quot;I\&#39;m waiting!&quot;);
+            wait();
+        }
+        messages.addElement(new Date().toString());
+        System.out.println(&quot;put message&quot;);
+        notify();
+    }
+    public synchronized String getMessage() throws InterruptedException {
+        notify();
+        while (messages.size() == 0) {
+            wait();
+        }
+        String message = (String) messages.firstElement();
+        messages.removeElement(message);
+        return message;
+    }
+}
+class Consumer extends Thread {
+    Producer producer;
+    public Consumer(Producer p) {
+        producer = p;
+    }
+    @Override
+    public void run() {
+        try {
+            while (true) {
+                String message = producer.getMessage();
+                System.out.println(&quot;Got message: &quot; + message);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+<p><em>注意点:</em></p>
+<ol>
+<li><code>synchronized</code>对于同一对象的不同方法，算作同样的临界区</li>
+<li>两个方法中 notify 和 wait 的顺序相反，如果相同，极有可能发生两者同时处于wait状态，而导致无法触发 notify 的情况。</li>
+<li>在 getMessage 中触发 notify 会使触发 wait 的 putMessage 继续运行，相当于一旦有物品被取走，就会通知生产者马上生产一个</li>
+<li>在 putMessage 中触发 notify 会使触发 wait 的 getMessage 继续运行，相当于一旦有物品被生产，就会通知消费者马上取走一个。</li>
+</ol>
+<h1 id="参考">参考</h1><ol>
+<li><a href="http://www.programcreek.com/2009/02/notify-and-wait-example/" target="_blank" rel="external">Java Thread: notify() and wait() examples</a></li>
+<li><a href="http://stackoverflow.com/questions/886722/how-to-use-wait-and-notify-in-java" target="_blank" rel="external">How to use wait and notify in Java?</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;while(condition) {
+  return ;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。&lt;/p&gt;
+&lt;h1 id=&quot;相对简单的例子&quot;&gt;相对简单的例子&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Java/"/>
+    
+      <category term="Thread" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Thread/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java Arrays.asList 转化 int 数组为 List</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/02/09/java-arrays-aslist-int-array/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/02/09/java-arrays-aslist-int-array/</id>
+    <published>2016-02-09T14:40:01.000Z</published>
+    <updated>2016-11-08T11:23:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题的发现">问题的发现</h1><p>用 Arrays.asList 方法转化一 int 型数组为 List 类型</p>
+<pre><code class="java">import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        int arr[] = new int[]{1, 2, 3};
+        List list = Arrays.asList(arr);
+
+        System.out.println(&quot;int array&quot;);
+        System.out.println(list.size());
+        list.forEach(x -&gt; System.out.println(x));
+        /*  output:
+            int array
+            1
+            [I@16b98e56
+         */
+    }
+}
+</code></pre>
+<p>如果按照一般的思维，转化后的 list 应该含有三个元素{1, 2, 3}，所以 size 自然也应该是3。但从实践来看，并不是如此。</p>
+<h1 id="原因解释">原因解释</h1><p>首先查看 Arrays.asList 的源码</p>
+<pre><code class="java">public static &lt;T&gt; List&lt;T&gt; asList(T... a) {
+    return new ArrayList&lt;&gt;(a);
+}
+</code></pre>
+<p>可以发现该方法传入的参数是一个可变长的参数。而问题的关键在于泛型。在 JAVA 中，基本数据类型是不能被泛型的。基本数据类型，即 primitive type，包含 8 种，具体可查看 <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html" target="_blank" rel="external">Link</a> 。</p>
+<p>支持泛型的只能是对象。int 是基本数据类型，不能被泛型。而 int[] 是数组，数组在 JAVA 中属于对象，因此能被泛型。所以在最开始的代码中，list 仅包含一个元素，而这个元素即为 包含了 {1, 2, 3} 的数组。</p>
+<h1 id="解决方法">解决方法</h1><h2 id="声明-list-类型为-listltlt-int-gtgt">声明 List 类型为 List&lt;&lt; int[] &gt;&gt;</h2><pre><code class="java">import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        int arr[] = new int[]{1, 2, 3};
+        List&lt;int[]&gt; list1 = Arrays.asList(arr);
+        System.out.println(list1.get(0).length);
+        Arrays.stream(list1.get(0)).forEach(x -&gt; System.out.println(x));
+        /*  output:
+            3
+            1
+            2
+            3
+         */
+    }
+}
+</code></pre>
+<p>既然知道了list中仅有的元素是一个数组，那么只能将计就计，从列表取出是要多一个心眼，知道拿出的是数组。</p>
+<h2 id="将数组声明为-integer-对象数组">将数组声明为 Integer 对象数组</h2><p>Integer 属于对象，因此能被泛型，可以达到预期的效果。</p>
+<pre><code class="java">import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        Integer arrIN[] = new Integer[]{1, 2, 3};
+        list = Arrays.asList(arrIN);
+        System.out.println(&quot;Integer array&quot;);
+        System.out.println(list.size());
+        list.forEach(x -&gt; System.out.println(x));
+        /*  output:
+            3
+            1
+            2
+            3
+         */
+    }
+}
+</code></pre>
+<p>相对来讲这种方法跟满足预期要求。</p>
+<h1 id="参考">参考</h1><ol>
+<li>Stack Overflow <a href="http://stackoverflow.com/questions/1467913/arrays-aslist-not-working-as-it-should" target="_blank" rel="external">Arrays.asList() not working as it should?</a></li>
+<li><a href="http://www.cnblogs.com/chenssy/p/3890842.html" target="_blank" rel="external">Java提高篇（三六）—–Java集合细节（二）：asList的缺陷</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题的发现&quot;&gt;问题的发现&lt;/h1&gt;&lt;p&gt;用 Arrays.asList 方法转化一 int 型数组为 List 类型&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        int arr[] = new int[]{1, 2, 3};
+        List list = Arrays.asList(arr);
+
+        System.out.println(&amp;quot;int array&amp;quot;);
+        System.out.println(list.size());
+        list.forEach(x -&amp;gt; System.out.println(x));
+        /*  output:
+            int array
+            1
+            [I@16b98e56
+         */
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果按照一般的思维，转化后的 list 应该含有三个元素{1, 2, 3}，所以 size 自然也应该是3。但从实践来看，并不是如此。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python @staticmethod 与 @classmethod 的区别分析</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/02/03/staticmethod-and-classmethod-in-Python/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/02/03/staticmethod-and-classmethod-in-Python/</id>
+    <published>2016-02-03T13:33:09.000Z</published>
+    <updated>2016-11-08T14:42:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>乍一看之下，@staticmethod 与 @classmethod 真的很相似，貌似都可以看作是静态函数，除了后者必须有一个传入参数外就貌似没区别了。但既然加入了，那也一定有开发者的考虑了。</p>
+<h1 id="相同点调用者">相同点：调用者</h1><pre><code class="python">class TestClass():
+
+    @classmethod
+    def class_foo(cls):
+        print(cls)
+        print(&#39;test in class_foo&#39;)
+
+    @staticmethod
+    def static_foo():
+        print(&#39;test in static_foo&#39;)
+
+
+if __name__ == &#39;__main__&#39;:
+    test = TestClass()
+    test.class_foo()
+    test.static_foo()
+    TestClass.class_foo()
+    TestClass.static_foo()
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;class &#39;__main__.TestClass&#39;&gt;
+test in class_foo
+test in static_foo
+&lt;class &#39;__main__.TestClass&#39;&gt;
+test in class_foo
+test in static_foo
+</code></pre><p>无论是<code>@classmethod</code>还是<code>@staticmethod</code>  的调用者，即可以为一个已经是实例化的对象，也可以的是为一个类名，这一点上与 JAVA 或 C++ 的静态函数有点相似</p>
+<h1 id="主要区别参数要求">主要区别：参数要求</h1><p><code>@classmethod</code> 比 <code>@staicmethod</code> 多要求一个参数，而多处的这个参数 <code>cls</code> 指代的就是调用者的类。从上一个例子可以看出，<code>cls</code>实际上指代的就是调用者的类型，即<code>test</code>的类型为<code>TestClass</code>。</p>
+<h1 id="应用举例">应用举例</h1><h2 id="构造多个-constructor构造函数">构造多个 constructor（构造函数）</h2><p>对于 C++ 以及 JAVA 函数来说，由于存在重载机制，因此可以多个构造函数。比如在 JAVA 的 Test 类中，我可以声明一个用数组初始化的构造函数，也可以声明一个由字符串初始化的构造函数。但由于 Python 没有这种机制，貌似有点棘手。但可以用 @classmethod 弥补。</p>
+<pre><code class="python">class TestClass():
+    def __init__(self, lst):
+        self.lst = lst
+
+    @classmethod
+    def from_str(cls, s):
+        lst = s.split()
+        return cls(lst)
+
+if __name__ == &#39;__main__&#39;:
+    t = TestClass([1, 2, 3])
+    print(t.lst)
+    t = TestClass.from_str(&quot;1 2 3&quot;)
+    print(t.lst)
+</code></pre>
+<p>输出：</p>
+<pre><code>[1, 2, 3]
+[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]
+</code></pre><p>而如果用 @staticmethod 则显得无力了</p>
+<h2 id="构造工厂类">构造工厂类</h2><p>借助上面的特性，可以把在实际编写中写出一些简单的工厂类</p>
+<pre><code>class Diagram():
+    @classmethod
+    def make_circle(Class, color):
+        return Class.Circle(color)
+
+    @classmethod
+    def make_square(Class, color):
+        return Class.Circle(color)
+
+    class Circle():
+        def __init__(self, color):
+            self.color = color
+
+    class Square():
+        def __init__(self, color):
+            self.color = color
+
+class AnotherDiagram():
+    @classmethod
+    def make_circle(Class, color):
+        return Class.Circle(color)
+
+    @classmethod
+    def make_square(Class, color):
+        return Class.Circle(color)
+
+    class Circle():
+        def __init__(self, color):
+            self.color = color
+
+    class Square():
+        def __init__(self, color):
+            self.color = color
+
+if __name__ == &quot;__main__&quot;:
+    factory = Diagram
+    d_circle = factory.make_circle(&quot;red&quot;)
+    d_square = factory.make_square(&quot;green&quot;)
+
+    factory = AnotherDiagram
+    ad_circle = factory.make_circle(&quot;violet&quot;)
+    ad_square = factory.make_square(&quot;pink&quot;)
+    print(d_circle.color, d_square.color, ad_circle.color, ad_square.color)
+</code></pre><p>例子中有两个工厂类：Diagram 和 AnotherDiagram 代表两种图表，两种图表都有 Circle 和Square 。另外值得注意的是，因为命名空间的原因，可以分别在两个工厂内声明 Circle 类和 Square 类。而不用大费力气的声明成这样：</p>
+<pre><code class="python">class DiagramCirle():
+    pass
+
+class DiagramSquare():
+    pass
+
+class AnotherDiagramCircle():
+    pass
+
+class AnotherDiagramSquare():
+    pass
+</code></pre>
+<p>运用 @classmethod 的工厂方式可读性显得更佳。而且在 factory 调用函数，不需要知道自己是 Diagram 或 AnotherDiagram，直接调用需要的绘图方法即可。</p>
+<h1 id="参考">参考</h1><ol>
+<li><a href="https://book.douban.com/subject/25955274/" target="_blank" rel="external">Python编程实战 运用设计模式、并发和程序库创建高质量程序</a> / Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns</li>
+<li><a href="http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner/14605349" target="_blank" rel="external">Stack Overflow - Python @classmethod and @staticmethod for beginner?</a></li>
+<li><a href="https://www.zhihu.com/question/20021164" target="_blank" rel="external">知乎 - Python 中的 classmethod 和 staticmethod 有什么具体用途？</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;乍一看之下，@staticmethod 与 @classmethod 真的很相似，貌似都可以看作是静态函数，除了后者必须有一个传入参数外就貌似没区别了。但既然加入了，那也一定有开发者的考虑了。&lt;/p&gt;
+&lt;h1 id=&quot;相同点调用者&quot;&gt;相同点：调用者&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;class TestClass():
+
+    @classmethod
+    def class_foo(cls):
+        print(cls)
+        print(&amp;#39;test in class_foo&amp;#39;)
+
+    @staticmethod
+    def static_foo():
+        print(&amp;#39;test in static_foo&amp;#39;)
+
+
+if __name__ == &amp;#39;__main__&amp;#39;:
+    test = TestClass()
+    test.class_foo()
+    test.static_foo()
+    TestClass.class_foo()
+    TestClass.static_foo()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UVa1395 - Slim Span</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2016/01/25/uva1395/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2016/01/25/uva1395/</id>
+    <published>2016-01-25T06:05:41.000Z</published>
+    <updated>2016-11-08T14:42:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="思路">思路</h1><p>首先有一点是可以确定的：对于任何一连通图，必有一生成树（简直废话）。<br>对于这一题，关键的问题是确定最大与最小。对于这种寻找两个相关变量的题，其实一般可以先试着确定一个，然后再去寻找另一个。<br>比如在这题中，可以迭代每一个边 L，同时把这条边 L 当做最小的边，用比它大的边去试着连同一幅图，知道找到边 R， 使得加上这条边 R 后刚好可以凑成一幅联通图。<br>因此，从上述思路可以看出，排序是必不可少了。所有排序是第一步。<br>排序好后进行遍历 L，建立 N （顶点数） 个并查集 S，每加入一条边就将该边的端点对应的并查集合并（前提是两个端点对应不同的并查集）。<br>直到刚好加入边 R 后，并查集只剩一个，且大小刚好与顶点数相等。此时对于 L 来说，R － L 极为其 “苗条度”。<br>因此对所有求得的“苗条度”求一个最小值即可。如果连一个“苗条度”都没有，那结果自然就是找不到合适的答案了。</p>
+<h1 id="代码">代码</h1><pre><code class="cpp">/*
+ * Run Time : 0.033s
+ */
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+struct Node{
+    int first, second;
+    int len;
+};
+
+bool cmp(Node a, Node b) {
+    return a.len &lt; b.len;
+}
+
+const int INF = 1000000;
+const int MAXN = 100 + 50;
+int N, M;
+vector&lt;Node&gt; nodes;
+int size[MAXN], root[MAXN];
+
+void read() {
+    int a, b, k;
+    nodes.clear();
+    for (int i = 0; i &lt; M; ++ i) {
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; k;
+        Node n;
+        n.first = a; n.second = b; n.len = k;
+        nodes.push_back(n);
+    }
+}
+
+int ans;
+
+int Find(int n) {
+    if (root[n] == n) {
+        return n;
+    }
+    return root[n] = Find(root[n]);
+}
+
+void work() {
+    sort(nodes.begin(), nodes.end(), cmp);
+    ans = INF;
+    for (int i = 0, j; i &lt; M; ++ i) {
+        for (j = 1; j &lt;= N; ++ j) {
+            size[j] = 1;
+            root[j] = j;
+        }
+        for (j = i; j &lt; M; ++ j) {
+            int ra = Find(nodes[j].first);
+            int rb = Find(nodes[j].second);
+            if (ra != rb) {
+                root[rb] = ra;
+                size[ra] += size[rb];
+            }
+            if (size[Find(1)] == N) {
+                break;
+            }
+        }
+        if (size[Find(1)] == N) {
+            ans = min(nodes[j].len - nodes[i].len, ans);
+        } else if (size[Find(1)] &lt; N) {
+            break;
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    while(cin &gt;&gt; N &gt;&gt; M &amp;&amp; (N + M)) {
+        read();
+        work();
+        cout &lt;&lt; (ans == INF ? -1 : ans) &lt;&lt; endl;
+    }
+    return 0;
+}
+</code></pre>
+<h1 id="后记">后记</h1><p>最近没怎么练习，在做这题时犯了一个低级错误。刚开始使用了一个 set （集合）代替并查集。当 set 大小为 N 时，即可计算“苗条度”<br>这种想法当然是<strong>错误</strong>的！！！很明贤，顶点数达到要求了，但并不一定代表图已经连通！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;思路&quot;&gt;思路&lt;/h1&gt;&lt;p&gt;首先有一点是可以确定的：对于任何一连通图，必有一生成树（简直废话）。&lt;br&gt;对于这一题，关键的问题是确定最大与最小。对于这种寻找两个相关变量的题，其实一般可以先试着确定一个，然后再去寻找另一个。&lt;br&gt;比如在这题中，可以迭代每一个边 L，同时把这条边 L 当做最小的边，用比它大的边去试着连同一幅图，知道找到边 R， 使得加上这条边 R 后刚好可以凑成一幅联通图。&lt;br&gt;因此，从上述思路可以看出，排序是必不可少了。所有排序是第一步。&lt;br&gt;排序好后进行遍历 L，建立 N （顶点数） 个并查集 S，每加入一条边就将该边的端点对应的并查集合并（前提是两个端点对应不同的并查集）。&lt;br&gt;直到刚好加入边 R 后，并查集只剩一个，且大小刚好与顶点数相等。此时对于 L 来说，R － L 极为其 “苗条度”。&lt;br&gt;因此对所有求得的“苗条度”求一个最小值即可。如果连一个“苗条度”都没有，那结果自然就是找不到合适的答案了。&lt;/p&gt;
+&lt;h1 id=&quot;代码&quot;&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;/*
+ * Run Time : 0.033s
+ */
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+#include &amp;lt;vector&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+
+using namespace std;
+
+struct Node{
+    int first, second;
+    int len;
+};
+
+bool cmp(Node a, Node b) {
+    return a.len &amp;lt; b.len;
+}
+
+const int INF = 1000000;
+const int MAXN = 100 + 50;
+int N, M;
+vector&amp;lt;Node&amp;gt; nodes;
+int size[MAXN], root[MAXN];
+
+void read() {
+    int a, b, k;
+    nodes.clear();
+    for (int i = 0; i &amp;lt; M; ++ i) {
+        cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b &amp;gt;&amp;gt; k;
+        Node n;
+        n.first = a; n.second = b; n.len = k;
+        nodes.push_back(n);
+    }
+}
+
+int ans;
+
+int Find(int n) {
+    if (root[n] == n) {
+        return n;
+    }
+    return root[n] = Find(root[n]);
+}
+
+void work() {
+    sort(nodes.begin(), nodes.end(), cmp);
+    ans = INF;
+    for (int i = 0, j; i &amp;lt; M; ++ i) {
+        for (j = 1; j &amp;lt;= N; ++ j) {
+            size[j] = 1;
+            root[j] = j;
+        }
+        for (j = i; j &amp;lt; M; ++ j) {
+            int ra = Find(nodes[j].first);
+            int rb = Find(nodes[j].second);
+            if (ra != rb) {
+                root[rb] = ra;
+                size[ra] += size[rb];
+            }
+            if (size[Find(1)] == N) {
+                break;
+            }
+        }
+        if (size[Find(1)] == N) {
+            ans = min(nodes[j].len - nodes[i].len, ans);
+        } else if (size[Find(1)] &amp;lt; N) {
+            break;
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    while(cin &amp;gt;&amp;gt; N &amp;gt;&amp;gt; M &amp;amp;&amp;amp; (N + M)) {
+        read();
+        work();
+        cout &amp;lt;&amp;lt; (ans == INF ? -1 : ans) &amp;lt;&amp;lt; endl;
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/ACM/"/>
+    
+      <category term="UVaOJ" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/UVaOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改 grub2 的启动主题以及等待时间</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2015/12/28/grub-theme/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2015/12/28/grub-theme/</id>
+    <published>2015-12-28T13:15:43.000Z</published>
+    <updated>2016-11-08T11:22:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="备份">备份</h1><p>已防万一，最好还是先做好备份:</p>
+<pre><code class="bash">sudo cp -R /boot ~/
+</code></pre>
+<p>这里将 /boot 备份在了自己的 home 目录下， 需要的话，保存在其它地方也是一样的</p>
+<h1 id="下载主题">下载主题</h1><p>这里以 Breeze GRUB2 theme 为例，<a href="http://kde-look.org/content/show.php/Breeze+GRUB2+theme?content=171217" target="_blank" rel="external">地址</a>。下载后，将压缩包解压。在解压后的文件夹中可以看到 <code>install.sh</code> 文件，然后已 root 权限安装:</p>
+<pre><code class="bash">sudo ./install.sh
+</code></pre>
+<p>安装好后，可以看到在 <code> /boot/grub2/themes </code> 中多了一个名为 <code> breeze </code>的目录，其中就存放了这个主题所需的文件。</p>
+<h1 id="修改配置文件">修改配置文件</h1><p>用编辑器打开 <code>/etc/default/grub</code> 文件，需要更改三个部分</p>
+<ol>
+<li>将 <code> GRUB_TERMINAL_OUTPUT=”console” </code> 注释。也就是在该行前，加一个 “#”，变成 <code> #GRUB_TERMINAL_OUTPUT=”console” </code>。 如果你的配置文件中没有这句话，就忽略这一步</li>
+<li>修改 <code>GRUB_THEME</code>, 如果没有就添加上去，将其改为<code>GRUB_THEME=”/boot/grub2/themes/breeze/theme.txt”</code></li>
+<li>配置文件应该有一项是 <code> GRUB_TIMEOUT=5 </code>，其中 5 就代表开机时，grub2 的等待时间，具体的值根据需要修改</li>
+</ol>
+<p><strong>注意</strong>: 千万不要在等式两边加空格</p>
+<h1 id="应用">应用</h1><p>执行命令</p>
+<pre><code class="bash">sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+</code></pre>
+<p>执行完后，即可重启观看效果</p>
+<h1 id="安装其它主题">安装其它主题</h1><p>安装其它主题也是类似额，如果没有提供 <code> install.sh </code>，一般是在 <code> /boot/grub2/themes </code>新建文件夹，存放主题的相关文件，然后也是同样的，修改<code> /etc/default/grub </code>文件，然后执行应用的命令。</p>
+<h1 id="最后再说一点">最后再说一点</h1><p>今天突然看到 grub2 可以修改主题，感觉比较简单，就试了一下，一次成功了。<br>但是说实话，我在修改前还是有所顾虑的，因为美化主题这总事情，大部分情况下意义不大，而且如果设计到修改系统文件，那么因修改失败而带来的风险也是有的。我之前的系统就是因为想修改启动动画而意外的搞崩了系统。<br>所以，如果没什么必要，美化主题的事还是量力而为比较好。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;备份&quot;&gt;备份&lt;/h1&gt;&lt;p&gt;已防万一，最好还是先做好备份:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo cp -R /boot ~/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里将 /boot 备份在了自己的 home 目录下， 需要的话，保存在其它地方也是一样的&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Operating System" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/Operating-System/"/>
+    
+    
+      <category term="Linux" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这一年就这样过去了</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2015/12/24/goodbye-2015/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2015/12/24/goodbye-2015/</id>
+    <published>2015-12-24T09:04:32.000Z</published>
+    <updated>2016-11-08T11:21:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="merry-xmas">Merry Xmas</h1><p><strong>Merry Xmas!</strong><br><br>圣诞节悄然而至，再过几天就是2016了。已经不止一次这么感叹了：时间过得太快，总感觉这一年就这么没了。<br><br>对于2015年，总想写下一点内容，毕竟有些事情一直释怀不下，可能说出来会好一点。<br><img src="https://c.hime.io/images/R9k6.jpg" alt="Pixiv Id 54204715"><span class="image-caption">Pixiv Id 54204715</span></p>
+<h1 id="acm">ACM</h1><p>  这或许是我今年最大的一个心结。今年 6 月份，我参加了省赛，拿了一个三等奖（铜牌）。这个奖虽然很一般，但对于我来说确实是给了我很大的鼓励, 因为我能在训练的第一年就拿奖感觉确实很幸运。比赛后，本想着和队友继续努力，试着参与区域赛。但出乎我意料的是，我的两个队友似乎已经“满足”了，队友 Z 本身是机械专业的，Z 对 编程相关的是已经逐渐失去兴趣，比赛后也几乎不来做题了。网络赛之后，Z也确实表态，不会再参加ACM。 而另一个队友 C, C 对 参与区域赛的事刚开始也是支持，在参加网络赛时也很积极。但在之后，也就是最近是几个月，已经很少出现了。不知道是不是真的巧合，每次叫 C 来参加 bestcoder 和 codeforces 的时候，C 总有理由推脱。至于网络赛的结果，并不理想，实力还是差太多了。现在的状况就是，现在的队伍几乎只有我一个人是在继续学习的。<br><br>  <img src="https://c.hime.io/images/d20M.png" alt=""><br>  这是队伍的事，再加上我所在的学校本来就不重视这项竞赛。大部分有能力参加 ACM 的学生，被招去了参加学校更重视，获奖率更高的数模等竞赛。然后是教练的问题，现在的教练只是一个负责老师，只负责事情，不教学，而且有时连报名的事都没有负责好。我也在想方设法换一个教练，但问题又是，谁来呢？做得好的老师也去了数模等竞赛。某种意义上，已经陷入一种恶性循环。这几年，我所在学校的 ACM 队伍并没有取得好成绩，去年没拿奖，今年最好的也就是铜奖。照目前的状况，就算明年获奖，下一界又有谁来呢？ 包括连我自己有时候都在灰心。<br><br>  但如果单纯地看，抛开学校方面的话，我对我自己还是有一点信心的，毕竟自己已经坚持了这么久，如果不再拿一个更好的奖，那就感觉太对不起自己了。<br><br>  <img src="https://c.hime.io/images/kaqA.png" alt=""></p>
+<h1 id="samfree">Samfree</h1><p>想起 Samfree 的离去，至今还有点感伤。而从他的离去到现在刚好是 3 个月. <img src="https://c.hime.io/images/83an.png" alt=""><br>毕竟 Samfree 是早期就开始编写 V+ 歌曲的人，这几年也挺了不少他写的歌。而他的离去，总觉得有点“天妒英才”。如果 Samfree 继续留在世上，觉得能继续创作更多更美的曲子。可惜，这一切已经成为“如果”。<br><strong>R.I.P</strong></p>
+<p><center><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm1961633"></script></center></p>
+<h1 id="2016">2016</h1><p>现在已经大三了，明年这时候应该已经在准备毕业的事了。准确的说，明年是我在大学的最后一年，最后的半年估计忙着其它事了。至少目前来说，我并没有想好毕业后要做什么，工作，考研，出国？无论哪一个选择，都有好处和坏处，而我现在就是分不清，哪一条路对我是最好的。</p>
+<h1 id="smile">Smile</h1><p>在后半年里，自己考虑（担心）的事情多了一些，大概是因为感觉自己的能力和自己的期望差距太大了，除了上面所提的 ACM 外，自己的英文水平也是一个问题。在翻墙前没有感觉，但在翻墙后发现太多的一手资料是用英文写的了！这个没办法，只能下决心补了。<br><br>说到底，自己的能力还有太多的不足，这一年就这样留下了一些遗憾，但一定要在新的一年里加油哦！<br><img src="https://c.hime.io/images/AgQN.jpg" alt="凉宫春日的忧郁"><span class="image-caption">凉宫春日的忧郁</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;merry-xmas&quot;&gt;Merry Xmas&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Merry Xmas!&lt;/strong&gt;&lt;br&gt;&lt;br&gt;圣诞节悄然而至，再过几天就是2016了。已经不止一次这么感叹了：时间过得太快，总感觉这一年就这么没了。&lt;br&gt;&lt;br&gt;对于2015年，总想写下一点内容，毕竟有些事情一直释怀不下，可能说出来会好一点。&lt;br&gt;&lt;img src=&quot;https://c.hime.io/images/R9k6.jpg&quot; alt=&quot;Pixiv Id 54204715&quot;&gt;&lt;span class=&quot;image-caption&quot;&gt;Pixiv Id 54204715&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;acm&quot;&gt;ACM&lt;/h1&gt;&lt;p&gt;  这或许是我今年最大的一个心结。今年 6 月份，我参加了省赛，拿了一个三等奖（铜牌）。这个奖虽然很一般，但对于我来说确实是给了我很大的鼓励, 因为我能在训练的第一年就拿奖感觉确实很幸运。比赛后，本想着和队友继续努力，试着参与区域赛。但出乎我意料的是，我的两个队友似乎已经“满足”了，队友 Z 本身是机械专业的，Z 对 编程相关的是已经逐渐失去兴趣，比赛后也几乎不来做题了。网络赛之后，Z也确实表态，不会再参加ACM。 而另一个队友 C, C 对 参与区域赛的事刚开始也是支持，在参加网络赛时也很积极。但在之后，也就是最近是几个月，已经很少出现了。不知道是不是真的巧合，每次叫 C 来参加 bestcoder 和 codeforces 的时候，C 总有理由推脱。至于网络赛的结果，并不理想，实力还是差太多了。现在的状况就是，现在的队伍几乎只有我一个人是在继续学习的。&lt;br&gt;&lt;br&gt;  &lt;img src=&quot;https://c.hime.io/images/d20M.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;  这是队伍的事，再加上我所在的学校本来就不重视这项竞赛。大部分有能力参加 ACM 的学生，被招去了参加学校更重视，获奖率更高的数模等竞赛。然后是教练的问题，现在的教练只是一个负责老师，只负责事情，不教学，而且有时连报名的事都没有负责好。我也在想方设法换一个教练，但问题又是，谁来呢？做得好的老师也去了数模等竞赛。某种意义上，已经陷入一种恶性循环。这几年，我所在学校的 ACM 队伍并没有取得好成绩，去年没拿奖，今年最好的也就是铜奖。照目前的状况，就算明年获奖，下一界又有谁来呢？ 包括连我自己有时候都在灰心。&lt;br&gt;&lt;br&gt;  但如果单纯地看，抛开学校方面的话，我对我自己还是有一点信心的，毕竟自己已经坚持了这么久，如果不再拿一个更好的奖，那就感觉太对不起自己了。&lt;br&gt;&lt;br&gt;  &lt;img src=&quot;https://c.hime.io/images/kaqA.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UVa1619 - Feel Good</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2015/12/22/uva1619/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2015/12/22/uva1619/</id>
+    <published>2015-12-22T11:32:46.000Z</published>
+    <updated>2016-11-08T14:42:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="思路">思路</h1><p>明确题目所求 <span>$(a_l + a_{l+1} + \dots + a_r) * min(a_l, a_{l + 2}, \dots , a_r)$</span><!-- Has MathJax --> 。从公式可以看出，是由两部分组成，一部分是区间和, 另一部分是区间最小值。<br>想法一：受连续最大子序列和的影响，设想是否可以通过 $O(N)$ 的算法获得？但问题是，这个公式有两个部分，或者说，要同时控制两个变量，难度有点大。目前我没有想出什么对应的好办法。<br>想法二：对于两个部分，控制其中一个部分不变，让另一部分尽量大。例如对于  <span>$a_i$</span><!-- Has MathJax -->, 寻找区间 <span>$[l ,r]$</span><!-- Has MathJax -->, 其中  <span>$l &lt;= i &lt;= r$</span><!-- Has MathJax -->， 令<span>$a_i$</span><!-- Has MathJax -->在这个区间内为最小值，则只要区间最大化即可，也就是说，在这个区间内， <span>$a_i$</span><!-- Has MathJax -->是最小值，如果区间再扩大，则  <span>$a_i$</span><!-- Has MathJax --> 不再是这个区间的最小值。对于每一个  <span>$a_i$</span><!-- Has MathJax --> 如何确定区间呢？可以使用设置一个递增的单调队列，从序列的最左边开始，对每一个  <span>$a_i$</span><!-- Has MathJax -->, 寻找比它小的第一个数，此时能确定左边界，同样的，如果单调序列从右边开始，则可以确定右边界。</p>
+<p>需要特别注意的是, 对于我的代码， 在数据为:</p>
+<pre><code>5
+0 0 0 0 0
+</code></pre><p>时，需要特别判断一下。</p>
+<h1 id="代码">代码</h1><pre><code class="cpp">/**
+ * Run Time : 139ms
+ */
+#include &lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+typedef long long LL;
+typedef pair&lt;int, int&gt; pr_int;
+
+int N;
+vector&lt;LL&gt; v;
+const int MAXN = 100000 + 50;
+int left_min[MAXN], right_min[MAXN];
+
+void read() {
+    v.clear();
+    for (int i = 0; i &lt; N; ++ i) {
+        LL t;
+        cin &gt;&gt; t;
+        v.push_back(t);
+    }
+}
+
+void work() {
+    stack&lt;pr_int&gt; st;
+
+    // left
+    st.push(make_pair(-1, -10e7));
+    for (int i = 0; i &lt; N; ++ i) {
+        while (st.top().second &gt;= v[i]) {
+            st.pop();
+        }
+        left_min[i] = st.top().first;
+        st.push(make_pair(i, v[i]));
+    }
+
+    // right
+    while(!st.empty()) {
+        st.pop();
+    }
+    st.push(make_pair(N, -10e7));
+    for (int i = N - 1; i &gt;= 0; -- i) {
+        while (st.top().second &gt;= v[i]) {
+            st.pop();
+        }
+        right_min[i] = st.top().first;
+        st.push(make_pair(i, v[i]));
+    }
+
+    vector&lt;LL&gt; sum;
+    sum.push_back(v[0]);
+    for (int i = 1; i &lt; N; ++ i) {
+        sum.push_back(v[i] + sum[i - 1]);
+    }
+    int lr, rr;
+    LL ans = 0;
+    for (int i = 0; i &lt; N; ++ i) {
+        //cout &lt;&lt; left_min[i] &lt;&lt; &quot; &quot; &lt;&lt; right_min[i] &lt;&lt; endl;
+        LL sumL = left_min[i] == -1 ? 0 : sum[left_min[i]];
+        if ( (sum[right_min[i] - 1] - sumL) * v[i] &gt; ans ) {
+            ans = (sum[right_min[i] - 1] - sumL) * v[i];
+            lr = left_min[i] + 1 + 1;
+            rr = right_min[i];
+        } else if ((sum[right_min[i] - 1] - sumL) * v[i] == ans &amp;&amp;
+         right_min[i] - left_min[i] &lt; rr - lr + 2 ) {
+            lr = left_min[i] + 2;
+            rr = right_min[i];
+        }
+    }
+    if (ans == 0) {
+        cout &lt;&lt; &quot;0\n1 1&quot; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; ans &lt;&lt; endl &lt;&lt; lr &lt;&lt; &quot; &quot; &lt;&lt; rr &lt;&lt; endl;
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int K = 0;
+    while(cin &gt;&gt; N) {
+        if (K) {
+            cout &lt;&lt; endl;
+        }
+        K = 1;
+        read();
+        work();
+    }
+    return 0;
+}
+</code></pre>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;思路&quot;&gt;思路&lt;/h1&gt;&lt;p&gt;明确题目所求 &lt;span&gt;$(a_l + a_{l+1} + \dots + a_r) * min(a_l, a_{l + 2}, \dots , a_r)$&lt;/span&gt;&lt;!-- Has MathJax --&gt; 。从公式可以看出，是由两部分组成，一部分是区间和, 另一部分是区间最小值。&lt;br&gt;想法一：受连续最大子序列和的影响，设想是否可以通过 $O(N)$ 的算法获得？但问题是，这个公式有两个部分，或者说，要同时控制两个变量，难度有点大。目前我没有想出什么对应的好办法。&lt;br&gt;想法二：对于两个部分，控制其中一个部分不变，让另一部分尽量大。例如对于  &lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt;, 寻找区间 &lt;span&gt;$[l ,r]$&lt;/span&gt;&lt;!-- Has MathJax --&gt;, 其中  &lt;span&gt;$l &amp;lt;= i &amp;lt;= r$&lt;/span&gt;&lt;!-- Has MathJax --&gt;， 令&lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt;在这个区间内为最小值，则只要区间最大化即可，也就是说，在这个区间内， &lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt;是最小值，如果区间再扩大，则  &lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt; 不再是这个区间的最小值。对于每一个  &lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt; 如何确定区间呢？可以使用设置一个递增的单调队列，从序列的最左边开始，对每一个  &lt;span&gt;$a_i$&lt;/span&gt;&lt;!-- Has MathJax --&gt;, 寻找比它小的第一个数，此时能确定左边界，同样的，如果单调序列从右边开始，则可以确定右边界。&lt;/p&gt;
+&lt;p&gt;需要特别注意的是, 对于我的代码， 在数据为:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;5
+0 0 0 0 0
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/ACM/"/>
+    
+      <category term="UVaOJ" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/UVaOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>某微积分的习题笔记 -- 0</title>
+    <link href="http://lazzzis.github.io/hexo-theme-mls/2015/12/03/calculus-collection-0/"/>
+    <id>http://lazzzis.github.io/hexo-theme-mls/2015/12/03/calculus-collection-0/</id>
+    <published>2015-12-03T12:16:12.000Z</published>
+    <updated>2016-12-03T14:59:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="problem-1">Problem 1</h1><h2 id="description">Description</h2><p>求极限<span>$\lim_{x \rightarrow +\infty} \frac{sinx}{x}$</span><!-- Has MathJax --></p>
+<h2 id="thoughts">Thoughts</h2><p>第一眼看到题目的时候很容易想到一个常用公式：<span>$\lim_{x \rightarrow 0} \frac{sinx}{x}=1$</span><!-- Has MathJax --> （式子1）, 但要注意的是，式子1的 $x$ <strong>趋向于0</strong>，而非正无穷！所以看到熟悉的$ \frac{sinx}{x}$ 时还应看看 $x$ 趋向于何值。</p>
+<h2 id="prove">Prove</h2><p>考虑到$sinx$是一个有界函数，其趋向于正无穷的极限不存在，但其上界为 1，下界为 -1，而且 <span>$\lim_{x \rightarrow +\infty} \frac{1}{x} = 0$</span><!-- Has MathJax -->，可以考虑用夹挤定理(pinching theorem)。</p>
+<pre><code><span>$$\lim_{x \rightarrow +\infty} \frac{-1}{x} \leq \lim_{x \rightarrow +\infty} \frac{sinx}{x} \leq \lim_{x \rightarrow +\infty} \frac{1}{x} \\
+\lim_{x \rightarrow +\infty} \frac{-1}{x} = 0 \\
+\lim_{x \rightarrow +\infty} \frac{1}{x} = 0 \\
+0 \leq \lim_{x \rightarrow +\infty} \frac{sinx}{x} \leq 0$$</span><!-- Has MathJax -->
+根据 &lt;code&gt;pinching theorem&lt;/code&gt; 即可得 ：<span>$\lim_{x \rightarrow +\infty} \frac{sinx}{x} = 0$</span><!-- Has MathJax -->
+</code></pre><h1 id="problem-2">Problem 2</h1><h2 id="description">Description</h2><p>如果<span>$lim_{x \rightarrow x_a}f(x)$</span><!-- Has MathJax --> 存在，但<span>$lim_{x \rightarrow x_a}g(x)$</span><!-- Has MathJax --> 不存在，判断<span>$lim_{x \rightarrow x_a}[f(x) + g(x)]$</span><!-- Has MathJax -->是否存在。</p>
+<h2 id="thoughts">Thoughts</h2><p>这题看上去无从下手，似乎没有切入点。想了很久，才发现是对基本概念<strong>极限运算法则</strong>的考察。</p>
+<blockquote>
+<p>如果$limf(x) = A, limg(x) = B$,那么$lim[f(x) \pm g(x)] = limf(x) \pm limg(x) = A \pm B$</p>
+</blockquote>
+<p>这个定理成立的前提条件是两个极限必须都存在，只要有一个不存在就不能运用。所谓的不存在是指在某处的极限趋向于无穷大（极限趋向于0表示存在，我最初学习时混淆了这一点，使得后面的学习非常艰难）。可以考虑运用反证法，假设<span>$lim_{x \rightarrow x_a}[f(x) + g(x)]$</span><!-- Has MathJax -->存在，根据定理，可得<span>$lim_{x \rightarrow x_a}[f(x) + g(x)] - lim_{x \rightarrow x_a}f(x) = lim_{x \rightarrow x_a}g(x)$</span><!-- Has MathJax -->，由此可以推出矛盾。</p>
+<h2 id="prove">Prove</h2><p>假设<span>$lim_{x \rightarrow x_a}[f(x) + g(x)]$</span><!-- Has MathJax -->存在，因为<span>$lim_{x \rightarrow x_a}f(x)$</span><!-- Has MathJax -->存在，根据极限运算法则，可得<span>$lim_{x \rightarrow x_a}g(x) = lim_{x \rightarrow x_a}[f(x) + g(x)] - lim_{x \rightarrow x_a}f(x)$</span><!-- Has MathJax -->，即<span>$lim_{x \rightarrow x_a}g(x)$</span><!-- Has MathJax -->存在极限，与已知矛盾，故原价设不成立，即在原题的前提下，<span>$lim_{x \rightarrow x_a}[f(x) + g(x)]$</span><!-- Has MathJax -->不存在.</p>
+<h1 id="problem-3">Problem 3</h1><h2 id="description">Description</h2><p>设<span>$$f(x) = \left\{\begin{matrix}
+ xsin\frac{1}{x}, x &gt; 0 \\
+ a + x^2, x &lt;= 0
+\end{matrix}\right.$$</span><!-- Has MathJax -->，要使$f(x)$在$(-\infty, +\infty)$内连续，应当怎样选择数 $a$ ?</p>
+<h2 id="thoughts">Thoughts</h2><p>要注意的地方其实也就两点：</p>
+<ol>
+<li>连续的性质，如果$f(x)$在$a$点连续，那么$lim_{x \rightarrow a} = f(a)$。再考虑左右极限，不难得出：<span>$lim_{x \rightarrow 0^-}(a + x^2) = lim_{x \rightarrow 0^+}(xsin\frac{1}{x}) = f(0) = a$</span><!-- Has MathJax --></li>
+<li>如 Problem 1 所说，不要一看到 $limxsin\frac{1}{x}$ 就想到它的极限为1，还要考虑 $x$ 的趋向。因为这个我确实吃了不少亏。</li>
+</ol>
+<h2 id="prove">Prove</h2><span>$$\because lim_{x \rightarrow 0^+}(xsin\frac{1}{x}) = f(0) = a 且 lim_{x \rightarrow 0^+}(xsin\frac{1}{x}) = 0\\
+\therefore a = 0$$</span><!-- Has MathJax -->
+<h1 id="problem-4">Problem 4</h1><h2 id="description">Description</h2><p>如何看待”和的极限等于极限的和”</p>
+<h2 id="thoughts">Thoughts</h2><p>这题目出得有点来自”知乎”的味道。<br>如果对于有限项的相加，这不难证明，根据极限运算法则，对于已知的n，且<span>$limf_{i}(x)存在, i \in [1, n] 且 i$</span><!-- Has MathJax -->为整数，则可以得知<span>$lim(\sum_{i=1}^n f_{i}(x)) = limf_{1}(x) + limf_2(x) + \dots + limf_n(x)$</span><!-- Has MathJax -->成立。在有限项的前提下，可以证明这句话是正确的。<br>那么无线项呢，是不是有反例呢？事实上，有的，我在这里列举一个。</p>
+<h2 id="solve">Solve</h2><p>假设原命题是正确的，那么对于<span>$lim_{n \rightarrow \infty} \frac{1 + 2 + \dots + n}{n^2}$</span><!-- Has MathJax --> 则有， <span>$$lim_{n \rightarrow \infty} \frac{1 + 2 + \dots + n}{n^2} = lim_{n \rightarrow \infty}( \frac{1}{n^2} + \frac{1}{n^2} + \dots + \frac{n}{n^2}) =\\
+ lim_{n \ rightarrow \infty} \frac{1}{n^2} + lim_{n \ rightarrow \infty} \frac{2}{n^2} + \dots + lim_{n \ rightarrow \infty} \frac{n}{n^2} = 0$$</span><!-- Has MathJax --><br>但很明显，这种做法是错误的，正确的解法是<span>$$lim_{n \rightarrow \infty}  \frac{1 + 2 + \dots +n}{n^2} = lim_{n \rightarrow \infty} \frac{\frac{n(n + 1)}{2}}{n} \\
+
+```
+= lim_{n \rightarrow \infty} \frac{1 + \frac{1}{n}}{2} = \frac{1}{2}$$</span><!-- Has MathJax --><br>```</p>
+<h2 id="extended">Extended</h2><p>既然提到了和，那如果换作是积呢？<br>类似的，我找到了一个反例：<span>$lim_{n \rightarrow \infty} \frac{(n-1)!}{n!}$</span><!-- Has MathJax -->，如果对于无线项，”积的极限等于极限的积”，那么 <span>$$lim_{n \rightarrow \infty} \frac{(n-1)!}{n!} \\
+= lim_{n \rightarrow \infty} \frac{1}{1} + lim_{n \rightarrow \infty} \frac{2}{2} + \dots + lim_{n \rightarrow \infty} \frac{1}{n}$$</span><!-- Has MathJax --><br>很明显，这有问题，正确的解法是 <span>$lim_{n \rightarrow \infty} \frac{(n-1)!}{n!} = lim_{n \rightarrow \infty} \frac{1}{n} = 0$</span><!-- Has MathJax --><br>但目前我只能通过反例来证明在无线项的前提下原命题是不成立的，还没想到更充分的证明过程。( 某种意义上说，我在这里挖了一个坑，需要在日后填补 )</p>
+<h1 id="problem-5">Problem 5</h1><h2 id="description">Description</h2><p>设<span>$lim {f(x)} = 1, lim {g(x)} = \infty$</span><!-- Has MathJax -->, 证明：<br><span>$lim{f(x)^{g(x)}} = e^{lim{(f(x)-1)g(x)}}$</span><!-- Has MathJax --></p>
+<h2 id="thoughts">Thoughts</h2><p>对于 $e$ ，如果看得多了，自然会敏感起来，例如：<span>$lim_{x \rightarrow 0}{(1+x)^{ \frac{1}{x}}} = e$</span><!-- Has MathJax -->。所以解这题不免要先凑一下试试看。有<span>$lim {f(x)} = 1$</span><!-- Has MathJax -->, 可以联想到 <span>$lim(f(x) - 1) = 0$</span><!-- Has MathJax -->, 那么$f(x) - 1$就凑出来了。剩下的就是模仿<span>$lim_{x \rightarrow 0}{(1+x)^{ \frac{1}{x}}} = e$</span><!-- Has MathJax -->了，可以得出，<span>$lim {[1 + f(x) - 1] ^ {\frac{1}{f(x) - 1}}}  = e$</span><!-- Has MathJax -->.</p>
+<h2 id="solve">Solve</h2><span>$$\because {f(x)} ^ {g(x)} = {[1 + (f(x) - 1)]} ^ {\frac{1}{f(x)-1} (f(x) - 1)g(x)} \\
+\therefore lim{f(x) ^ {g(x)}} = lim{\{[1 + (f(x) - 1)] ^ \frac{1}{f(x) - 1}\}} ^ {(f(x) - 1)g(x)}$$</span><!-- Has MathJax -->
+<h2 id="extended">Extended</h2><p>这个定理常常可以用于求 “<span>$1 ^ \infty$</span><!-- Has MathJax -->“ 型的不定式的极限<br>如<span>$lim_{x \rightarrow \infty}(\frac{x^2+1}{x^2-1}) = e ^ {lim_{x \rightarrow \infty}{(\frac{x^2+1}{x^2-1} - 1)x^2}} = e ^ 2$</span><!-- Has MathJax --></p>
+<h1 id="后记">后记</h1><p>不知是啥时候脑子里要冒出一个想法要做一个习题集。大概因为最近在学习微积分，做了些题目，感觉需要作个笔记。“干脆写成博客吧”脑子有证么一个想法产生。仔细想想，确实是一个不错的主意。所以在平时习题的基础上，我把自己收获比较多的题选了出来，于是就把习题发布到这里了。<br>说是学习，其实是复习，现在我已经是大三了，但大一时基础不扎实，在大二时有些影响，但因为影响不大，因此并没有重新学习过微积分。我考虑到自己未来既有可能继续学习（例如读研究生之类的），所以最近学习了起来。同时我<strong>强烈推荐</strong>颜东勇老师的MOOC课程 – <a href="http://www.sharecourse.net/sharecourse/course/view/courseInfo/496" target="_blank" rel="external">《2015微积分导论》</a>.颜老师讲的真心很不错，无论是难点还是重点都将的很详细。听了颜老师的课，我逐渐理清了一些初学时没有理解的问题 – 比如入门时对极限的定义。<br>这一次选了5道题，不知道算多算少。我会先继续写几篇，更新时间不定，如果我个人感觉好的话，会一直写下去。如果阅读此篇文章的你发现了什么错误，欢迎指正。<br><img src="https://c.hime.io/images/kaAy.png" alt="52.png"><span class="image-caption">52.png</span></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;problem-1&quot;&gt;Problem 1&lt;/h1&gt;&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;&lt;p&gt;求极限&lt;span&gt;$\lim_{x \rightarrow +\infty} \frac{sinx}{x}$&lt;/span&gt;&lt;!-- Has MathJax --&gt;&lt;/p&gt;
+&lt;h2 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Math" scheme="http://lazzzis.github.io/hexo-theme-mls/categories/Math/"/>
+    
+    
+      <category term="Math" scheme="http://lazzzis.github.io/hexo-theme-mls/tags/Math/"/>
+    
+  </entry>
+  
+</feed>
