@@ -2,26 +2,21 @@
 <html>
 <!-- Head -->
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta charset="utf-8">
   
   <title>在初学JS时犯的一些错误 | lazzzis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了.
-number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot;
-var">
-<meta property="og:type" content="website">
+  <meta name="description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了. number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot; var">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
 <meta property="og:title" content="在初学JS时犯的一些错误">
-<meta property="og:url" content="http://lazzzis.github.io/hexo-theme-mls/2015/10/24/mis-in-js/index.html">
+<meta property="og:url" content="https://lazzzis.github.io/hexo-theme-mls/2015/10/24/mis-in-js/index.html">
 <meta property="og:site_name" content="lazzzis">
-<meta property="og:description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了.
-number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot;
-var">
-<meta property="og:updated_time" content="2016-12-03T15:00:09.000Z">
+<meta property="og:description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了. number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot; var">
+<meta property="og:updated_time" content="2017-07-30T05:48:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在初学JS时犯的一些错误">
-<meta name="twitter:description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了.
-number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot;
-var">
+<meta name="twitter:description" content="表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了. number 与 string 相加/减/乘/除Example 1:var a  = &amp;quot;5&amp;quot; + 2;   // the result is &amp;quot;52&amp;quot; var">
 <meta name="twitter:creator" content="@lazzzis">
 <link rel="publisher" href="https://plus.google.com/114550357749490779368">
   
@@ -49,17 +44,17 @@ var">
             user-select: none;
         }
     </style>
-    <!-- <link rel="stylesheet" href="/hexo-theme-mls/css/style.css" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="/hexo-theme-mls/css/code.css" type="text/css"> -->
-    <link rel="stylesheet" href="/hexo-theme-mls/css/style.css?version=5-15-53-14" type="text/css">
-    <link rel="stylesheet" href="/hexo-theme-mls/css/code.css?version=5-15-53-14" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <!-- <link rel="stylesheet" href="/hexo-theme-mls/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="/hexo-theme-mls/css/code.css"> -->
+    <link rel="stylesheet" href="/hexo-theme-mls/css/style.css?version=10-27-46-14" type="text/css">
+    <link rel="stylesheet" href="/hexo-theme-mls/css/code.css?version=10-27-46-14" type="text/css">
 
 </head>
 
 
 <body>
 
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><header>
+<header>
     <div class="navbar-fixed">
         <nav class="blue darken-3 nav-extended">
             <div class="nav-wrapper">
@@ -69,13 +64,15 @@ var">
                         <li><a href="/" class="nav-logo">lazzzis</a></li>
                     
                     
-                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/hexo-theme-mls/">Home</a></li>
                     
-                    <li><a class="" href="/archives">Archives</a></li>
+                    <li><a class="" href="/hexo-theme-mls/archives">Archives</a></li>
                     
-                    <li><a class="" href="/links">Links</a></li>
+                    <li><a class="" href="/hexo-theme-mls/categories">Categories</a></li>
                     
-                    <li><a class="" href="/about">About</a></li>
+                    <li><a class="" href="/hexo-theme-mls/tags">Tags</a></li>
+                    
+                    <li><a class="" href="/hexo-theme-mls/about">About</a></li>
                     
                 </ul>
             </div>
@@ -84,13 +81,15 @@ var">
     </div>
     <ul class="side-nav" id="mobile-demo">
         
-        <li><a class="" href="/">Home</a></li>
+        <li><a class="" href="/hexo-theme-mls/">Home</a></li>
         
-        <li><a class="" href="/archives">Archives</a></li>
+        <li><a class="" href="/hexo-theme-mls/archives">Archives</a></li>
         
-        <li><a class="" href="/links">Links</a></li>
+        <li><a class="" href="/hexo-theme-mls/categories">Categories</a></li>
         
-        <li><a class="" href="/about">About</a></li>
+        <li><a class="" href="/hexo-theme-mls/tags">Tags</a></li>
+        
+        <li><a class="" href="/hexo-theme-mls/about">About</a></li>
         
     </ul>
     <!--You have to move ul out to make sure this work in mobile environment-->
@@ -113,27 +112,27 @@ var">
         
     
         </br>
-        Last Updated on 2016 Dec 03 23:00:09
+        Last Updated on 2017 Jul 30 01:48:51
         
     </p>
 
 
     <!-- Content -->
     <p>表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了.</p>
-<h2 id="number-与-string-相加减乘除">number 与 string 相加/减/乘/除</h2><h3 id="example-1">Example 1:</h3><pre><code class="js">var a  = &quot;5&quot; + 2;   // the result is &quot;52&quot;
+<h2 id="number-与-string-相加-减-乘-除"><a href="#number-与-string-相加-减-乘-除" class="headerlink" title="number 与 string 相加/减/乘/除"></a>number 与 string 相加/减/乘/除</h2><h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1:"></a>Example 1:</h3><pre><code class="js">var a  = &quot;5&quot; + 2;   // the result is &quot;52&quot;
 var b = 2 + &quot;5&quot;;    // the result is &quot;25&quot;
 </code></pre>
 <p>在 number 与 string 相加时, number 会被转化为 string, 然后这两个字符串会根据前后顺序做拼接. 这一点上, 有点类似与 JAVA 中的<code>System.out.println(2 + “5”);</code>, 数字遇到加号时会变为字符串,让后做拼接运算.</p>
-<h3 id="example-2">Example 2:</h3><pre><code class="js">var a  = &quot;5&quot; + 2 + 2;   // the result is &quot;522&quot;
+<h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2:"></a>Example 2:</h3><pre><code class="js">var a  = &quot;5&quot; + 2 + 2;   // the result is &quot;522&quot;
 var b = 2 + 2 + &quot;5&quot;;    // the result is &quot;45&quot;
 </code></pre>
 <p>如果在 string 前有 number 的运算, 那么 number 仍然会进行正常的 number 之前的运算,直到遇到 string, number 才会 被转为 string.<br>反过来, 如果在 number 前线遇到了 string, 那么后续的每一个 number 都会被当作 string 进行运算.<br>如果对 JAVA 熟悉一点, 这一点也还好理解, 这跟JAVA中<code>System.out.println(2 + 2 + “5”);</code>和<code>System.out.println(“5” + 2 + 2);</code>的结果也是一样的.</p>
-<h3 id="example-3">Example 3:</h3><pre><code class="js">var x = &quot;5&quot; - 2;  // the result is 3
+<h3 id="Example-3"><a href="#Example-3" class="headerlink" title="Example 3:"></a>Example 3:</h3><pre><code class="js">var x = &quot;5&quot; - 2;  // the result is 3
 var y = &quot;5&quot; * 2; // the result is 10
 var z = &quot;5&quot; / 2; // the result is 2.5
 </code></pre>
 <p>比起加法, 减/乘/除 相对更简单一点,只要 string 能转化为 number, 那么 string 就会转化为 numner 进行运算.</p>
-<h2 id="undefined-不是-null">Undefined 不是 Null</h2><p>在 JS 中, null 更多是针对 objects 而言的, 而 undefined 则更多是针对 variables, properties, methods 而言的.<br>要变成null, 一个 object 首先要被定义, 否则只能变成 undefined.</p>
+<h2 id="Undefined-不是-Null"><a href="#Undefined-不是-Null" class="headerlink" title="Undefined 不是 Null"></a>Undefined 不是 Null</h2><p>在 JS 中, null 更多是针对 objects 而言的, 而 undefined 则更多是针对 variables, properties, methods 而言的.<br>要变成null, 一个 object 首先要被定义, 否则只能变成 undefined.</p>
 <p>因此 如果要判断一个 object 是否存在(不为空 且 已被定义),那么以下发发是<strong>错</strong>的:</p>
 <pre><code class="js">if (myObj !== null &amp;&amp; typeof myObj !== &quot;undefined&quot;)
 </code></pre>
@@ -141,8 +140,8 @@ var z = &quot;5&quot; / 2; // the result is 2.5
 <pre><code class="js">if (typeof myObj !== &quot;undefined&quot; &amp;&amp; myObj !== null)
 </code></pre>
 <p>只有 myObj 被定义了 且 不为 null 时, 上述判断语句才能被盘为 true, 否则均为 false.</p>
-<h2 id="向array添加元素的方式">向Array添加元素的方式</h2><p>如果已知一个数组<code>arr = [1, 2, 3]</code>, 那么向它的末尾添加元素的方式至少有以下三种：</p>
-<h3 id="example">Example:</h3><pre><code class="js">arr[3] = 4; // 方法1
+<h2 id="向Array添加元素的方式"><a href="#向Array添加元素的方式" class="headerlink" title="向Array添加元素的方式"></a>向Array添加元素的方式</h2><p>如果已知一个数组<code>arr = [1, 2, 3]</code>, 那么向它的末尾添加元素的方式至少有以下三种：</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h3><pre><code class="js">arr[3] = 4; // 方法1
 arr[arr.length] = 4; // 方法2
 arr.push(4); // 方法3
 </code></pre>
@@ -150,7 +149,7 @@ arr.push(4); // 方法3
 <pre><code class="js">[1, 2, 3, undefined, 4]
 </code></pre>
 <p>可以看出，JS在此时会自动填充undefined。所以为了避免这种情况的发生，<strong>强烈建议</strong>采用方法2和方法3向数组末尾添加元素.</p>
-<h2 id="断开的-return-语句">断开的 return 语句</h2><h3 id="example">Example:</h3><pre><code class="js">function myFun() {
+<h2 id="断开的-return-语句"><a href="#断开的-return-语句" class="headerlink" title="断开的 return 语句"></a>断开的 return 语句</h2><h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example:"></a>Example:</h3><pre><code class="js">function myFun() {
     return
         10;
 }
@@ -162,7 +161,7 @@ arr.push(4); // 方法3
 }
 </code></pre>
 <p>JS 会在那一行的末尾自动补上一个分号以示结束. 所以结果自然是 undefined.</p>
-<h2 id="switch-的严格比较">Switch 的严格比较</h2><p>先看例子:</p>
+<h2 id="Switch-的严格比较"><a href="#Switch-的严格比较" class="headerlink" title="Switch 的严格比较"></a>Switch 的严格比较</h2><p>先看例子:</p>
 <pre><code class="js">var x = 10;
 switch (x) {
     case &quot;10&quot;:
@@ -174,7 +173,7 @@ switch (x) {
 }
 </code></pre>
 <p>在这个例子中, 网页跳出的弹窗中会显示那条信息呢?经测试, 是后一条(“run in default”),而不是前一条(“run in case”).<br>原因很简单, <code>10 === “10” </code>是 false. 所以 不能进入第一个case, 最终会进入到 default 中.</p>
-<h2 id="精度的损失">精度的损失</h2><p>不管是什么语言, 浮点数的精度损失不可避免,有的损失比较小, 可以不用太在意,而有的损失可能就比较大,需要额外的注意.<br>Example:</p>
+<h2 id="精度的损失"><a href="#精度的损失" class="headerlink" title="精度的损失"></a>精度的损失</h2><p>不管是什么语言, 浮点数的精度损失不可避免,有的损失比较小, 可以不用太在意,而有的损失可能就比较大,需要额外的注意.<br>Example:</p>
 <pre><code class="js">var x = 0.1;
 var y = 0.2
 var z = x + y;
@@ -186,7 +185,7 @@ if (z == 0.3) {
 <p>我经过实际运行可以发现 z 的 值其实是 0.30000000000000004 . 跟期望的有点出入. 所以在实际运行网页上不会有弹窗出现.<br>就算是写成 <code>var z = 0.1 + 0.2;</code>也只是换汤不换药.<br>除非直接写成 <code> var z = 0.3 </code><br>如果需要要到x, y变量是可以考虑这么写:</p>
 <pre><code class="js">var z = (x * 10 + y * 10) / 10;       // z will be 0.3
 </code></pre>
-<h2 id="object-之间不能比较">object 之间不能比较</h2><p>Example:</p>
+<h2 id="object-之间不能比较"><a href="#object-之间不能比较" class="headerlink" title="object 之间不能比较"></a>object 之间不能比较</h2><p>Example:</p>
 <pre><code class="js">var x = new String(&quot;John&quot;);
 var y = new String(&quot;John&quot;);
 
@@ -195,7 +194,7 @@ var y = new String(&quot;John&quot;);
 // (x === y) true
 </code></pre>
 <p>从中也可以看出，对于 string, <strong>极不建议</strong>用构造对象的方式声明.</p>
-<h2 id="script-放在head-中还是-body-中">script 放在head 中还是 body 中</h2><p>理论上讲，把JS放在哪都可以运行，但最近我个人在学习过程中就遇到了一个因放置位置而引起的问题。<br>就我个人编写的下面这个例子来说</p>
+<h2 id="script-放在head-中还是-body-中"><a href="#script-放在head-中还是-body-中" class="headerlink" title="script 放在head 中还是 body 中"></a>script 放在head 中还是 body 中</h2><p>理论上讲，把JS放在哪都可以运行，但最近我个人在学习过程中就遇到了一个因放置位置而引起的问题。<br>就我个人编写的下面这个例子来说</p>
 <pre><code class="html">   &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
 &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
     &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;
@@ -216,10 +215,10 @@ var y = new String(&quot;John&quot;);
 &lt;/html&gt;
 </code></pre>
 <p>如果是写在1处，那么结果是窗口弹出 null，但如果是2处，则正确取到了对象。google之后的结果是：放在 head 和 body 处各有千秋，不能一概而论。但至少如果是放在body里的话，能使 html 的加载在 js 前，相对而言，能使 html 免于因 js 加载受阻而造成影响。所以，在这里只能是先提个醒了，如果放在 head 中运行异常的话，可以试试放在 body 处。</p>
-<h2 id="a标签的文本如何不做跳转">a标签的文本如何不做跳转</h2><p>少数时候不希望被 a 标签包围的文本被点击后做跳转, 只希望停留在当前页面, 也不是重新载入至当前页面.<br>此时需要在 a 标签的 href 属性里如下写:</p>
+<h2 id="a标签的文本如何不做跳转"><a href="#a标签的文本如何不做跳转" class="headerlink" title="a标签的文本如何不做跳转"></a>a标签的文本如何不做跳转</h2><p>少数时候不希望被 a 标签包围的文本被点击后做跳转, 只希望停留在当前页面, 也不是重新载入至当前页面.<br>此时需要在 a 标签的 href 属性里如下写:</p>
 <pre><code class="html">&lt;a href=&quot;javascript:;&quot;&gt;Text&lt;/a&gt;
 </code></pre>
-<h2 id="删除元素应由其父级进行操作">删除元素应由其父级进行操作</h2><p>在进行DOM操作时，如果要删除某一元素，如：</p>
+<h2 id="删除元素应由其父级进行操作"><a href="#删除元素应由其父级进行操作" class="headerlink" title="删除元素应由其父级进行操作"></a>删除元素应由其父级进行操作</h2><p>在进行DOM操作时，如果要删除某一元素，如：</p>
 <pre><code class="html">&lt;html&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;
@@ -306,15 +305,15 @@ document.body.removeChild(target);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/js/social-share.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-<script src="/hexo-theme-mls/js/addition.js" type="text/javascript"></script>
-<script src="/hexo-theme-mls/js/zooming.js" type="text/javascript"></script>
+<script src="/hexo-theme-mls/js/addition.js"></script>
+<script src="/hexo-theme-mls/js/zooming.js"></script>
 <!-- Disqus Comments -->
 
 
 
 <script>
     // https://github.com/srobbin/jquery-backstretch
-    $.backstretch("/hexo-theme-mls/css/images/background.jpg?version=5-15-53-14");
+    $.backstretch("/hexo-theme-mls/css/images/background.jpg?version=10-27-46-14");
 
     
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -326,7 +325,7 @@ document.body.removeChild(target);
         ga('send', 'pageview');
     
 
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</script>
 
 
 </body>
