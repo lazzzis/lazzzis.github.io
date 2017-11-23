@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lazzzis.github.io/"/>
-  <updated>2017-11-09T18:28:30.000Z</updated>
+  <updated>2017-11-23T01:43:29.000Z</updated>
   <id>https://lazzzis.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>拓扑排序 / topological sort</title>
+    <link href="https://lazzzis.github.io/2017/11/22/intro-of-topological-sort/"/>
+    <id>https://lazzzis.github.io/2017/11/22/intro-of-topological-sort/</id>
+    <published>2017-11-23T01:42:24.000Z</published>
+    <updated>2017-11-23T01:43:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述: 提供一些以数字为 id 的任务(task)，这些任务存在如下图所示的依赖关系:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo1.png" alt=""></p><p>其中, <code>1 -&gt; 3</code> 表示任务 3 必须在任务 1 完成之后才能够开始。如上图中，任务 3 必须在任务 1 和任务 4 之后。而任务 4 又必须在任务 2 之后。</p><p>而要求就是, 提供一个序列，要求按照这个序列能够顺利完成所有任务。这里假设每个时刻只能处理一个任务，而且一旦开始处理某个任务，那么你不能中止或切换到其它任务。这个答案可能不唯一。在上图中，一个可能的答案就是 <code>[1, 2, 4, 3, 5, 7, 6]</code>。</p><h1 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h1><p>一个显然可以得到的观点就是，对于没有依赖的任务，可以直接将其放入所求的序列中， 比如上图中的 <code>[1, 2]</code>。</p><p>那算法的第一步就是找出所有没有被依赖的任务，并将其移除，此时可以得到一个新的图:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo2.png" alt=""></p><p>显然又可以发现，又出现了没有依赖的任务 <code>[4]</code>，那我们继续把它放入所求的序列中，并将其移除，得到的新的图:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo3.png" alt=""></p><p>此时又得到新的图，而且同样出现了没有依赖的任务，所以继续把它放入序列中，将其移除。。。以此类推，每次移除没有依赖的点，得到新的图，继续移除没有依赖的点，直到所有的点都被移除了。</p><p>我们首先需要用一种数据结构表示一点任务是否有依赖。那我们可以发现，用依赖的数量来表示是否有依赖非常合适。如最开始的图中:</p><p>方块中的数字即表示旁边的任务的依赖数，如果数字为 0 即表示依赖为 0。而当我们把<code>[1, 2]</code> 移除后，相连的 <code>[3, 4]</code> 的依赖数必定会减少，变成如图所示:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo4.png" alt=""></p><p>此时任务 4 的依赖数为 0，将其移除后，任务 3 的依赖数变为 0，任务 6 的依赖变为 2。所有下一次又移除 3。</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo5.png" alt=""></p><p>而实际上，这里的依赖数有一个更专业的名词叫 <code>入度</code>。如其字面意思一样，对于某个点，有多少箭头指向它。</p><p>主流的实现方法有两种，BFS 和 DFS 。因为我更喜欢 BFS，所以这里用 BFS 解释。其中 Queue 的实现可以参照<a href="https://gist.github.com/lazzzis/e07499c379bf9ec43066cc6c66b091f0" target="_blank" rel="external">这里</a>。</p>    <pre><code class="lang-js"><span class="hljs-comment">/** * numTasks 表示任务的数量，这里假设任务的 id 从 0 ~ numTasks * * prerequisites 是一个二维数组 * 例如 [[3, 1], [4, 2], [3, 4]] 表示: * 任务 3 必须在任务 1 之后，任务 4 必须在任务 2 之后，任务 3 必须在任务 4 之后 * 换言之，1 指向 3，2 指向 4，4 指向 1 */</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">topo</span> (<span class="hljs-params">numTasks, prerequisites</span>) </span>{  <span class="hljs-keyword">const</span> indegrees = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(numTasks).fill(<span class="hljs-number">0</span>) <span class="hljs-comment">// 入度</span>  <span class="hljs-keyword">const</span> links = <span class="hljs-built_in">Array</span>.from({ <span class="hljs-attr">length</span>: numTasks }).map(<span class="hljs-function"><span class="hljs-params">_</span> =&gt;</span> [])  <span class="hljs-comment">// 用一个二维数组表示图</span>  <span class="hljs-comment">// 比如数组 links[5] = [6, 7] 表示 5 指向 6 与 7</span>  prerequisites.forEach(<span class="hljs-function">(<span class="hljs-params">[second, first]</span>) =&gt;</span> {    indegrees[second]++    links[first].push(second)  })  <span class="hljs-keyword">const</span> q = <span class="hljs-keyword">new</span> Queue()  <span class="hljs-keyword">const</span> ans = []  <span class="hljs-comment">// 寻找 入度 为 0 的点</span>  ;[...Array(numTasks).keys()].filter(<span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> !indegrees[i]).forEach(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> q.push(x))  <span class="hljs-keyword">while</span> (!q.empty()) {    <span class="hljs-keyword">const</span> top = q.pop()    ans.push(top)    <span class="hljs-comment">// 移除这个点的对应的边，所以相连的任务的入度都减一</span>    links[top].forEach(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> indegrees[x]--)    <span class="hljs-comment">// 入度减小的这些任务中是否有入度为 0 的点</span>    links[top].filter(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> !indegrees[x]).forEach(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> q.push(x))  }  <span class="hljs-keyword">return</span> ans</code></pre><p>对于此图的运行结果:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo7.png" alt=""></p>    <pre><code class="lang-js">&gt; topo(<span class="hljs-number">7</span>, [[<span class="hljs-number">2</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">6</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])[ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">5</span> ]</code></pre><h2 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h2><p>假设顶点数为 V，边的数目为 E，时间复杂度上讲，应该为 O(V + E)。</p><p>因为每一个点仅仅被访问一次，而每条边也都会被移除一次。</p><h2 id="存在环"><a href="#存在环" class="headerlink" title="存在环"></a>存在环</h2><p>如果存在环，那么在某个时刻存在入度不为 0 的点，如下图所示:</p><p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo6.png" alt=""></p><p>这种情况下，一般需要判断最后的序列长度是否为 <code>numTasks</code>。如果不是，则存在环。所以，这个算法也可以用于判断环的存在与否。</p><p>特别注意的是，即使存在环，上述代码中 <code>while (!q.empty())</code> 也不会陷入死循环，原因是 <code>q</code> 包含的是入度为 0 的点，如果不存在了入度为 0 的点，那么就会终止循环。</p><h1 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h1><ol><li><a href="https://leetcode.com/problems/course-schedule/description/" target="_blank" rel="external">LeetCode 207. Course Schedule</a></li><li><a href="https://leetcode.com/problems/course-schedule-ii/description/" target="_blank" rel="external">LeetCode 210. Course Schedule II</a></li><li><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1285" target="_blank" rel="external">HDU 1285 确定比赛名次</a></li><li><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2094" target="_blank" rel="external">HDU 2094 产生冠军</a></li></ol><h1 id="最后再说几句"><a href="#最后再说几句" class="headerlink" title="最后再说几句"></a>最后再说几句</h1><p>最初这题是一位 FaceBook 的学长给我做 mock interview 出的题目。当时我知道这是拓扑排序，但没想到的是，我因为长期没有做这类题，已经完全忘记了它的具体做法。在当时的情况下，我并没有想起来怎么去做这题。所以说，平时偶尔还是要刷一些已经刷过的题呀。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol><li><a href="https://en.wikipedia.org/wiki/Topological_sorting" target="_blank" rel="external">Wiki Topological Sorting</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;问题描述: 提供一些以数字为 id 的任务(task)，这些任务存在如下图所示的依赖关系:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b91
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://lazzzis.github.io/tags/ACM/"/>
+    
+      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>思考为什么要用工厂模式</title>
@@ -319,9 +345,9 @@
     </summary>
     
     
-      <category term="SICP" scheme="https://lazzzis.github.io/tags/SICP/"/>
-    
       <category term="Scheme" scheme="https://lazzzis.github.io/tags/Scheme/"/>
+    
+      <category term="SICP" scheme="https://lazzzis.github.io/tags/SICP/"/>
     
   </entry>
   
@@ -482,30 +508,6 @@
     
     
       <category term="Java" scheme="https://lazzzis.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python @staticmethod 与 @classmethod 的区别分析</title>
-    <link href="https://lazzzis.github.io/2016/02/03/staticmethod-and-classmethod-in-Python/"/>
-    <id>https://lazzzis.github.io/2016/02/03/staticmethod-and-classmethod-in-Python/</id>
-    <published>2016-02-04T02:33:09.000Z</published>
-    <updated>2017-07-30T05:48:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>乍一看之下，@staticmethod 与 @classmethod 真的很相似，貌似都可以看作是静态函数，除了后者必须有一个传入参数外就貌似没区别了。但既然加入了，那也一定有开发者的考虑了。</p><h1 id="相同点：调用者"><a href="#相同点：调用者" class="headerlink" title="相同点：调用者"></a>相同点：调用者</h1>    <pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span><span class="hljs-params">()</span>:</span><span class="hljs-meta">    @classmethod</span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">class_foo</span><span class="hljs-params">(cls)</span>:</span>        print(cls)        print(<span class="hljs-string">'test in class_foo'</span>)<span class="hljs-meta">    @staticmethod</span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">static_foo</span><span class="hljs-params">()</span>:</span>        print(<span class="hljs-string">'test in static_foo'</span>)<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:    test = TestClass()    test.class_foo()    test.static_foo()    TestClass.class_foo()    TestClass.static_foo()</code></pre><p>输出：</p><pre><code>&lt;class &#39;__main__.TestClass&#39;&gt;test in class_footest in static_foo&lt;class &#39;__main__.TestClass&#39;&gt;test in class_footest in static_foo</code></pre><p>无论是<code>@classmethod</code>还是<code>@staticmethod</code>  的调用者，即可以为一个已经是实例化的对象，也可以的是为一个类名，这一点上与 JAVA 或 C++ 的静态函数有点相似</p><h1 id="主要区别：参数要求"><a href="#主要区别：参数要求" class="headerlink" title="主要区别：参数要求"></a>主要区别：参数要求</h1><p><code>@classmethod</code> 比 <code>@staicmethod</code> 多要求一个参数，而多处的这个参数 <code>cls</code> 指代的就是调用者的类。从上一个例子可以看出，<code>cls</code>实际上指代的就是调用者的类型，即<code>test</code>的类型为<code>TestClass</code>。</p><h1 id="应用举例"><a href="#应用举例" class="headerlink" title="应用举例"></a>应用举例</h1><h2 id="构造多个-constructor（构造函数）"><a href="#构造多个-constructor（构造函数）" class="headerlink" title="构造多个 constructor（构造函数）"></a>构造多个 constructor（构造函数）</h2><p>对于 C++ 以及 JAVA 函数来说，由于存在重载机制，因此可以多个构造函数。比如在 JAVA 的 Test 类中，我可以声明一个用数组初始化的构造函数，也可以声明一个由字符串初始化的构造函数。但由于 Python 没有这种机制，貌似有点棘手。但可以用 @classmethod 弥补。</p>    <pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestClass</span><span class="hljs-params">()</span>:</span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, lst)</span>:</span>        self.lst = lst<span class="hljs-meta">    @classmethod</span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">from_str</span><span class="hljs-params">(cls, s)</span>:</span>        lst = s.split()        <span class="hljs-keyword">return</span> cls(lst)<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:    t = TestClass([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])    print(t.lst)    t = TestClass.from_str(<span class="hljs-string">"1 2 3"</span>)    print(t.lst)</code></pre><p>输出：</p><pre><code>[1, 2, 3][&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]</code></pre><p>而如果用 @staticmethod 则显得无力了</p><h2 id="构造工厂类"><a href="#构造工厂类" class="headerlink" title="构造工厂类"></a>构造工厂类</h2><p>借助上面的特性，可以把在实际编写中写出一些简单的工厂类</p><pre><code>class Diagram():    @classmethod    def make_circle(Class, color):        return Class.Circle(color)    @classmethod    def make_square(Class, color):        return Class.Circle(color)    class Circle():        def __init__(self, color):            self.color = color    class Square():        def __init__(self, color):            self.color = colorclass AnotherDiagram():    @classmethod    def make_circle(Class, color):        return Class.Circle(color)    @classmethod    def make_square(Class, color):        return Class.Circle(color)    class Circle():        def __init__(self, color):            self.color = color    class Square():        def __init__(self, color):            self.color = colorif __name__ == &quot;__main__&quot;:    factory = Diagram    d_circle = factory.make_circle(&quot;red&quot;)    d_square = factory.make_square(&quot;green&quot;)    factory = AnotherDiagram    ad_circle = factory.make_circle(&quot;violet&quot;)    ad_square = factory.make_square(&quot;pink&quot;)    print(d_circle.color, d_square.color, ad_circle.color, ad_square.color)</code></pre><p>例子中有两个工厂类：Diagram 和 AnotherDiagram 代表两种图表，两种图表都有 Circle 和Square 。另外值得注意的是，因为命名空间的原因，可以分别在两个工厂内声明 Circle 类和 Square 类。而不用大费力气的声明成这样：</p>    <pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DiagramCirle</span><span class="hljs-params">()</span>:</span>    <span class="hljs-keyword">pass</span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DiagramSquare</span><span class="hljs-params">()</span>:</span>    <span class="hljs-keyword">pass</span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnotherDiagramCircle</span><span class="hljs-params">()</span>:</span>    <span class="hljs-keyword">pass</span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnotherDiagramSquare</span><span class="hljs-params">()</span>:</span>    <span class="hljs-keyword">pass</span></code></pre><p>运用 @classmethod 的工厂方式可读性显得更佳。而且在 factory 调用函数，不需要知道自己是 Diagram 或 AnotherDiagram，直接调用需要的绘图方法即可。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol><li><a href="https://book.douban.com/subject/25955274/" target="_blank" rel="external">Python编程实战 运用设计模式、并发和程序库创建高质量程序</a> / Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns</li><li><a href="http://stackoverflow.com/questions/12179271/python-classmethod-and-staticmethod-for-beginner/14605349" target="_blank" rel="external">Stack Overflow - Python @classmethod and @staticmethod for beginner?</a></li><li><a href="https://www.zhihu.com/question/20021164" target="_blank" rel="external">知乎 - Python 中的 classmethod 和 staticmethod 有什么具体用途？</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;乍一看之下，@staticmethod 与 @classmethod 真的很相似，貌似都可以看作是静态函数，除了后者必须有一个传入参数外就貌似没区别了。但既然加入了，那也一定有开发者的考虑了。&lt;/p&gt;
-&lt;h1 id=&quot;相同点：调用者&quot;&gt;&lt;a href=&quot;#相同点：调用者&quot; 
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://lazzzis.github.io/tags/Python/"/>
     
   </entry>
   
