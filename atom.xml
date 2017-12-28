@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lazzzis.github.io/"/>
-  <updated>2017-11-23T01:43:29.000Z</updated>
+  <updated>2017-12-16T20:24:11.000Z</updated>
   <id>https://lazzzis.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP 协议中的 URL</title>
+    <link href="https://lazzzis.github.io/2017/12/16/http-protocol-url/"/>
+    <id>https://lazzzis.github.io/2017/12/16/http-protocol-url/</id>
+    <published>2017-12-16T20:22:33.000Z</published>
+    <updated>2017-12-16T20:24:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="URL-概念"><a href="#URL-概念" class="headerlink" title="URL 概念"></a>URL 概念</h1><blockquote><p>全称 Uniform Resource Locator (统一资源定位符)，是一种 URI (Uniform Resource Identifier, 统一资源标识符)</p></blockquote><h1 id="URL-作用"><a href="#URL-作用" class="headerlink" title="URL 作用"></a>URL 作用</h1><p>主要用于网络资源的定位。换句话说，当你想告诉 Alice 你的服务器上有一个有趣的文件想要分享时，你就可以告诉这个文件对应的 URL。那么 Alice 就可以根据这个 URL 找到你要分享的文件。而目前 URL 更通俗的被称为网址。</p><h2 id="URL-诞生前的故事"><a href="#URL-诞生前的故事" class="headerlink" title="URL 诞生前的故事"></a>URL 诞生前的故事</h2><p>想了解 URL 的意义，那你必须要了解一下在 URL 诞生前，人们是怎么找资源的。同样，你要分享一个文件给 Alice。那么你要说: 使用一个 FTP 软件，连接到 ftp.example.com，然后使用用户名 anonymous 和密码 anonymous，接着切换到 doc 目录，再然后转换到 <code>binary mode</code> (二进制模式)，找到名为 <code>story.doc</code> 的文件下载并打开。</p><p>但现在，你知道的，表示成 URL 就是 <code>ftp://ftp.example.com/doc/story.doc</code>。而且就下载而言，大部分浏览器已经具有 FTP 软件的一些功能。因此，URL 使你分享文件更加简单，因为别人更容易找到你想要分享的文件。</p><h1 id="URL-与请求"><a href="#URL-与请求" class="headerlink" title="URL 与请求"></a>URL 与请求</h1><p>URL 常常出现在 HTTP 请求的 start-line，也就是请求的第一行，比如:</p><pre><code>GET /hello.html HTTP/1.1Host: localhost:3000User-Agent: ...</code></pre><h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><pre><code>&lt;scheme&gt;://&lt;user&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;path&gt;?&lt;query&gt;#&lt;frag&gt;</code></pre><p>依次解释一下</p><h2 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a>Scheme</h2><p>指代协议类型，告诉浏览器怎么去访问目标资源。常见的有 <code>FTP</code>, <code>HTTP</code>, <code>HTTPS</code>。 注意它是不区分大小写的，因此 <code>http://example.com</code> 与 <code>HTTP://example.com</code> 是完全等价的。</p><h2 id="User-和-password"><a href="#User-和-password" class="headerlink" title="User 和 password"></a>User 和 password</h2><p>某些协议需要密码，<code>FTP</code> 中就有时可以看到，举上面分享文件的例子，加上用户名密码就是 <code>ftp://anonymous:anonymous@ftp.example.com/doc/story.doc</code>。</p><h2 id="host-和-port"><a href="#host-和-port" class="headerlink" title="host 和 port"></a>host 和 port</h2><p>host 可以有两种表现形式，一种是域名，一种是 IP。不过域名只是为了方便记忆，因为在访问目标地址的时候，域名会通过 DNS 服务器解析为 IP。之后再通过寻找目标地址。</p><p>port 就是端口，平时访问网站之所以不用写端口，是因为它在 HTTP 协议中默认为 80 端口。</p><h2 id="path"><a href="#path" class="headerlink" title="path"></a>path</h2><p>就是路径了。指代资源的位置，比如 <code>http://example.com/hello.doc</code>。说得就是 <code>hello.doc</code> 在服务器目录的根目录下。路径表示和 Unix 系统中的路径表示很相似，用 <code>/</code> 分隔。</p><p>但是在如今开发中 path 变得有抽象意义了，像上一个例子比较直白告诉你就是 <code>hello.doc</code>。但当今大多数路径并不能表示在服务器目录中的具体位置，而更像是在逻辑关系中的一种层级关系, 比如 <code>http://github.com/lazzzis/Test</code> 当然不是代表：你要的那个资源是在服务器的一个名为 <code>lazzzis</code> 的目录下的一个叫 <code>Test</code> 的文件。</p><h2 id="query"><a href="#query" class="headerlink" title="query"></a>query</h2><p><code>query</code> 的形式以键值对的形式出现，即: <code>key=value</code>，多个键值对之间以 <code>&amp;</code> 分隔。</p><p><code>query</code>，常用于查询，在请求服务器的时候提供更多的额外信息。</p><h2 id="fragment"><a href="#fragment" class="headerlink" title="fragment"></a>fragment</h2><p>有时也被称为 <code>anchor</code> / <code>锚点</code>，指示当前文件内容的一个片段，有点类似于书签。</p><p><code>https://github.com/chancejs/chancejs#packages</code>。<code>#packages</code> 表示文件中代表 <code>packages</code> 的那一段，浏览器一般会自动帮你跳转到那一行。</p><p>注意的是，在发送带有 <code>fragment</code> 的请求时，<code>fragment</code> 其实不会包含在 HTTP 请求里。也就是说，服务器接受到的请求消息里并没有 <code>fragment</code> 这一部分。原因是，服务器通常只能把 <code>https://github.com/chancejs/chancejs</code> 代表的整个资源返回，而不能只返回 <code>#packages</code> 代表的那一段。</p><h1 id="字符的一些限制"><a href="#字符的一些限制" class="headerlink" title="字符的一些限制"></a>字符的一些限制</h1><p>通常情况下，HTTP 协议对可以出现在 URL 的字符作出了限制。比如一般你很难看到 URL 有中文或日文，等非英文字母。一般遇到中文等语言的字符，URL 会对其编码，转换成一个 <code>%</code> 开头的字符串。</p><p>如图，虽然我输入的是中文<code>火狐</code>，但 HTTP 请求消息中出现的是已经对其编码。</p><p><img src="https://i.loli.net/2017/12/17/5a3580135e99d.png" alt=""></p><p>除了中文字符，空格，斜杠等字符也会被编码，否则会在 URL 中引起歧义。比如 空格被编码为 <code>%20</code></p><h1 id="URL-潜在的问题"><a href="#URL-潜在的问题" class="headerlink" title="URL 潜在的问题"></a>URL 潜在的问题</h1><p>用 URL 表示资源的一个问题就是资源的对应的 URL 变化时，之前的 URL 就没用了。例如，原先用户 alice 的主页是 <code>http://example.com/alice</code>。但 <code>alice</code> 改名了，变成 <code>eve</code>，那么她的主页变成 <code>http://example.com/eve</code>。这时，她的朋友们可能因为仍旧通过 <code>http://example.com/alice</code> 访问她的主页而导致访问失败。</p><p>不过现在有些网站会提示 <code>alice</code> 已经更名为 <code>eve</code>，然后帮助浏览者跳转至 <code>http://example.com/eve</code>。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol><li><a href="https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6" target="_blank" rel="external">统一资源定位符</a></li><li><a href="http://shop.oreilly.com/product/9781565925090.do" target="_blank" rel="external">HTTP: The Definitive Guide</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages" target="_blank" rel="external">HTTP Messages</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web" target="_blank" rel="external">Identifying resources on the Web</a></li><li><a href="http://www.ruanyifeng.com/blog/2010/02/url_encoding.html" target="_blank" rel="external">关于URL编码</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;URL-概念&quot;&gt;&lt;a href=&quot;#URL-概念&quot; class=&quot;headerlink&quot; title=&quot;URL 概念&quot;&gt;&lt;/a&gt;URL 概念&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;全称 Uniform Resource Locator (统一资源定位符)，是一种
+      
+    
+    </summary>
+    
+    
+      <category term="HTTP" scheme="https://lazzzis.github.io/tags/HTTP/"/>
+    
+  </entry>
   
   <entry>
     <title>拓扑排序 / topological sort</title>
@@ -483,31 +507,6 @@
       <category term="Java" scheme="https://lazzzis.github.io/tags/Java/"/>
     
       <category term="Thread" scheme="https://lazzzis.github.io/tags/Thread/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java Arrays.asList 转化 int 数组为 List</title>
-    <link href="https://lazzzis.github.io/2016/02/09/java-arrays-aslist-int-array/"/>
-    <id>https://lazzzis.github.io/2016/02/09/java-arrays-aslist-int-array/</id>
-    <published>2016-02-10T03:40:01.000Z</published>
-    <updated>2017-07-30T05:48:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="问题的发现"><a href="#问题的发现" class="headerlink" title="问题的发现"></a>问题的发现</h1><p>用 Arrays.asList 方法转化一 int 型数组为 List 类型</p>    <pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Arrays;<span class="hljs-keyword">import</span> java.util.List;<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> {</span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{        <span class="hljs-keyword">int</span> arr[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};        List <span class="hljs-built_in">list</span> = Arrays.asList(arr);        System.out.println(<span class="hljs-string">"int array"</span>);        System.out.println(<span class="hljs-built_in">list</span>.size());        <span class="hljs-built_in">list</span>.forEach(x -&gt; System.out.println(x));        <span class="hljs-comment">/*  output:            int array            1            [I@16b98e56         */</span>    }}</code></pre><p>如果按照一般的思维，转化后的 list 应该含有三个元素{1, 2, 3}，所以 size 自然也应该是3。但从实践来看，并不是如此。</p><h1 id="原因解释"><a href="#原因解释" class="headerlink" title="原因解释"></a>原因解释</h1><p>首先查看 Arrays.asList 的源码</p>    <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;T&gt; <span class="hljs-function">List&lt;T&gt; <span class="hljs-title">asList</span>(<span class="hljs-params">T... a</span>) </span>{    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(a);}</code></pre><p>可以发现该方法传入的参数是一个可变长的参数。而问题的关键在于泛型。在 JAVA 中，基本数据类型是不能被泛型的。基本数据类型，即 primitive type，包含 8 种，具体可查看 <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html" target="_blank" rel="external">Link</a> 。</p><p>支持泛型的只能是对象。int 是基本数据类型，不能被泛型。而 int[] 是数组，数组在 JAVA 中属于对象，因此能被泛型。所以在最开始的代码中，list 仅包含一个元素，而这个元素即为 包含了 {1, 2, 3} 的数组。</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="声明-List-类型为-List-lt-lt-int-gt-gt"><a href="#声明-List-类型为-List-lt-lt-int-gt-gt" class="headerlink" title="声明 List 类型为 List&lt;&lt; int[] &gt;&gt;"></a>声明 List 类型为 List&lt;&lt; int[] &gt;&gt;</h2>    <pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Arrays;<span class="hljs-keyword">import</span> java.util.List;<span class="hljs-keyword">public</span> class Test {    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> main(<span class="hljs-keyword">String</span>[] args) {        <span class="hljs-keyword">int</span> arr[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};        List&lt;<span class="hljs-keyword">int</span>[]&gt; list1 = Arrays.asList(arr);        System.out.<span class="hljs-built_in">println</span>(list1.<span class="hljs-built_in">get</span>(<span class="hljs-number">0</span>).length);        Arrays.stream(list1.<span class="hljs-built_in">get</span>(<span class="hljs-number">0</span>)).forEach(x -&gt; System.out.<span class="hljs-built_in">println</span>(x));        <span class="hljs-comment">/*  output:            3            1            2            3         */</span>    }}</code></pre><p>既然知道了list中仅有的元素是一个数组，那么只能将计就计，从列表取出是要多一个心眼，知道拿出的是数组。</p><h2 id="将数组声明为-Integer-对象数组"><a href="#将数组声明为-Integer-对象数组" class="headerlink" title="将数组声明为 Integer 对象数组"></a>将数组声明为 Integer 对象数组</h2><p>Integer 属于对象，因此能被泛型，可以达到预期的效果。</p>    <pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Arrays;<span class="hljs-keyword">import</span> java.util.List;<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> {</span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{        Integer arrIN[] = <span class="hljs-keyword">new</span> Integer[]{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};        <span class="hljs-built_in">list</span> = Arrays.asList(arrIN);        System.out.println(<span class="hljs-string">"Integer array"</span>);        System.out.println(<span class="hljs-built_in">list</span>.size());        <span class="hljs-built_in">list</span>.forEach(x -&gt; System.out.println(x));        <span class="hljs-comment">/*  output:            3            1            2            3         */</span>    }}</code></pre><p>相对来讲这种方法跟满足预期要求。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol><li>Stack Overflow <a href="http://stackoverflow.com/questions/1467913/arrays-aslist-not-working-as-it-should" target="_blank" rel="external">Arrays.asList() not working as it should?</a></li><li><a href="http://www.cnblogs.com/chenssy/p/3890842.html" target="_blank" rel="external">Java提高篇（三六）—–Java集合细节（二）：asList的缺陷</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;问题的发现&quot;&gt;&lt;a href=&quot;#问题的发现&quot; class=&quot;headerlink&quot; title=&quot;问题的发现&quot;&gt;&lt;/a&gt;问题的发现&lt;/h1&gt;&lt;p&gt;用 Arrays.asList 方法转化一 int 型数组为 List 类型&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code
-      
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="https://lazzzis.github.io/tags/Java/"/>
     
   </entry>
   
