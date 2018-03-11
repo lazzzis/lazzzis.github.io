@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://lazzzis.github.io/"/>
+  <link href="https://lazzzis.moe/"/>
   <updated>2018-01-05T21:48:50.000Z</updated>
-  <id>https://lazzzis.github.io/</id>
+  <id>https://lazzzis.moe/</id>
   
   <author>
     <name>lazzzis</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>联系 Koa.js 和 requests 看 HTTP 协议中的重定向</title>
-    <link href="https://lazzzis.github.io/2018/01/04/http-protocol-redirecting/"/>
-    <id>https://lazzzis.github.io/2018/01/04/http-protocol-redirecting/</id>
+    <link href="https://lazzzis.moe/2018/01/05/http-protocol-redirecting/"/>
+    <id>https://lazzzis.moe/2018/01/05/http-protocol-redirecting/</id>
     <published>2018-01-04T21:29:09.000Z</published>
     <updated>2018-01-05T21:48:50.000Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="HTTP" scheme="https://lazzzis.github.io/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://lazzzis.moe/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>2017 -&gt; 2018</title>
-    <link href="https://lazzzis.github.io/2017/12/29/the-end-of-2017/"/>
-    <id>https://lazzzis.github.io/2017/12/29/the-end-of-2017/</id>
+    <link href="https://lazzzis.moe/2017/12/30/the-end-of-2017/"/>
+    <id>https://lazzzis.moe/2017/12/30/the-end-of-2017/</id>
     <published>2017-12-29T19:31:46.000Z</published>
     <updated>2017-12-29T19:32:12.000Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>HTTP 协议中的 ETag 与 If-None-Match</title>
-    <link href="https://lazzzis.github.io/2017/12/28/http-protocol-etag-if-none-match/"/>
-    <id>https://lazzzis.github.io/2017/12/28/http-protocol-etag-if-none-match/</id>
+    <link href="https://lazzzis.moe/2017/12/29/http-protocol-etag-if-none-match/"/>
+    <id>https://lazzzis.moe/2017/12/29/http-protocol-etag-if-none-match/</id>
     <published>2017-12-28T22:26:57.000Z</published>
     <updated>2017-12-28T22:39:03.000Z</updated>
     
@@ -82,14 +82,14 @@
     </summary>
     
     
-      <category term="HTTP" scheme="https://lazzzis.github.io/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://lazzzis.moe/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>HTTP 协议中的 URL</title>
-    <link href="https://lazzzis.github.io/2017/12/16/http-protocol-url/"/>
-    <id>https://lazzzis.github.io/2017/12/16/http-protocol-url/</id>
+    <link href="https://lazzzis.moe/2017/12/17/http-protocol-url/"/>
+    <id>https://lazzzis.moe/2017/12/17/http-protocol-url/</id>
     <published>2017-12-16T20:22:33.000Z</published>
     <updated>2017-12-16T20:24:11.000Z</updated>
     
@@ -106,14 +106,14 @@
     </summary>
     
     
-      <category term="HTTP" scheme="https://lazzzis.github.io/tags/HTTP/"/>
+      <category term="HTTP" scheme="https://lazzzis.moe/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>拓扑排序 / topological sort</title>
-    <link href="https://lazzzis.github.io/2017/11/22/intro-of-topological-sort/"/>
-    <id>https://lazzzis.github.io/2017/11/22/intro-of-topological-sort/</id>
+    <link href="https://lazzzis.moe/2017/11/23/intro-of-topological-sort/"/>
+    <id>https://lazzzis.moe/2017/11/23/intro-of-topological-sort/</id>
     <published>2017-11-23T01:42:24.000Z</published>
     <updated>2017-11-23T01:43:29.000Z</updated>
     
@@ -130,16 +130,16 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="ACM" scheme="https://lazzzis.moe/tags/ACM/"/>
     
-      <category term="ACM" scheme="https://lazzzis.github.io/tags/ACM/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>思考为什么要用工厂模式</title>
-    <link href="https://lazzzis.github.io/2017/11/09/why-factory-method-pattern/"/>
-    <id>https://lazzzis.github.io/2017/11/09/why-factory-method-pattern/</id>
+    <link href="https://lazzzis.moe/2017/11/10/why-factory-method-pattern/"/>
+    <id>https://lazzzis.moe/2017/11/10/why-factory-method-pattern/</id>
     <published>2017-11-09T18:01:59.000Z</published>
     <updated>2017-11-09T18:28:30.000Z</updated>
     
@@ -161,8 +161,8 @@
   
   <entry>
     <title>简单谈谈 Node.js 对 ESM 的几种支持方案</title>
-    <link href="https://lazzzis.github.io/2017/10/17/words-on-the-support-of-esm-in-node/"/>
-    <id>https://lazzzis.github.io/2017/10/17/words-on-the-support-of-esm-in-node/</id>
+    <link href="https://lazzzis.moe/2017/10/18/words-on-the-support-of-esm-in-node/"/>
+    <id>https://lazzzis.moe/2017/10/18/words-on-the-support-of-esm-in-node/</id>
     <published>2017-10-18T03:18:10.000Z</published>
     <updated>2017-11-14T15:44:32.000Z</updated>
     
@@ -179,14 +179,14 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>借助 Proxy 实现一个 DefaultDict</title>
-    <link href="https://lazzzis.github.io/2017/09/30/defaultdict-in-js/"/>
-    <id>https://lazzzis.github.io/2017/09/30/defaultdict-in-js/</id>
+    <link href="https://lazzzis.moe/2017/10/01/defaultdict-in-js/"/>
+    <id>https://lazzzis.moe/2017/10/01/defaultdict-in-js/</id>
     <published>2017-10-01T02:44:12.000Z</published>
     <updated>2017-10-01T04:33:21.000Z</updated>
     
@@ -202,14 +202,14 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>node-thunkify 的实现及源码阅读</title>
-    <link href="https://lazzzis.github.io/2017/06/29/source-code-of-thunkify/"/>
-    <id>https://lazzzis.github.io/2017/06/29/source-code-of-thunkify/</id>
+    <link href="https://lazzzis.moe/2017/06/30/source-code-of-thunkify/"/>
+    <id>https://lazzzis.moe/2017/06/30/source-code-of-thunkify/</id>
     <published>2017-06-29T19:52:32.000Z</published>
     <updated>2017-08-02T14:47:06.000Z</updated>
     
@@ -225,14 +225,14 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>终于完成了一个 OJ -- Putong OJ</title>
-    <link href="https://lazzzis.github.io/2017/06/01/notes-of-putongoj/"/>
-    <id>https://lazzzis.github.io/2017/06/01/notes-of-putongoj/</id>
+    <link href="https://lazzzis.moe/2017/06/02/notes-of-putongoj/"/>
+    <id>https://lazzzis.moe/2017/06/02/notes-of-putongoj/</id>
     <published>2017-06-02T03:53:12.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -249,16 +249,16 @@
     </summary>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
-      <category term="Projects" scheme="https://lazzzis.github.io/tags/Projects/"/>
+      <category term="Projects" scheme="https://lazzzis.moe/tags/Projects/"/>
     
   </entry>
   
   <entry>
     <title>杭州白马湖漫展一行</title>
-    <link href="https://lazzzis.github.io/2017/04/28/anime-convention-in-hangzhou/"/>
-    <id>https://lazzzis.github.io/2017/04/28/anime-convention-in-hangzhou/</id>
+    <link href="https://lazzzis.moe/2017/04/29/anime-convention-in-hangzhou/"/>
+    <id>https://lazzzis.moe/2017/04/29/anime-convention-in-hangzhou/</id>
     <published>2017-04-29T01:51:02.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -274,14 +274,14 @@
     </summary>
     
     
-      <category term="ACG" scheme="https://lazzzis.github.io/tags/ACG/"/>
+      <category term="ACG" scheme="https://lazzzis.moe/tags/ACG/"/>
     
   </entry>
   
   <entry>
     <title>一周面试小结</title>
-    <link href="https://lazzzis.github.io/2017/03/24/recent-interviews-in-march-2017/"/>
-    <id>https://lazzzis.github.io/2017/03/24/recent-interviews-in-march-2017/</id>
+    <link href="https://lazzzis.moe/2017/03/25/recent-interviews-in-march-2017/"/>
+    <id>https://lazzzis.moe/2017/03/25/recent-interviews-in-march-2017/</id>
     <published>2017-03-25T01:38:09.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -301,8 +301,8 @@
   
   <entry>
     <title>howdoi 源码阅读与分析</title>
-    <link href="https://lazzzis.github.io/2017/03/04/source-code-of-howdoi/"/>
-    <id>https://lazzzis.github.io/2017/03/04/source-code-of-howdoi/</id>
+    <link href="https://lazzzis.moe/2017/03/05/source-code-of-howdoi/"/>
+    <id>https://lazzzis.moe/2017/03/05/source-code-of-howdoi/</id>
     <published>2017-03-05T02:49:27.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -318,14 +318,14 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lazzzis.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://lazzzis.moe/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python 对函数默认参数的处理</title>
-    <link href="https://lazzzis.github.io/2017/01/16/default-para-in-python/"/>
-    <id>https://lazzzis.github.io/2017/01/16/default-para-in-python/</id>
+    <link href="https://lazzzis.moe/2017/01/17/default-para-in-python/"/>
+    <id>https://lazzzis.moe/2017/01/17/default-para-in-python/</id>
     <published>2017-01-17T01:13:49.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -344,14 +344,14 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lazzzis.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://lazzzis.moe/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>初看 CPython</title>
-    <link href="https://lazzzis.github.io/2017/01/04/a-glance-at-cpython/"/>
-    <id>https://lazzzis.github.io/2017/01/04/a-glance-at-cpython/</id>
+    <link href="https://lazzzis.moe/2017/01/05/a-glance-at-cpython/"/>
+    <id>https://lazzzis.moe/2017/01/05/a-glance-at-cpython/</id>
     <published>2017-01-05T01:24:13.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -367,14 +367,14 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lazzzis.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://lazzzis.moe/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>2016 -&gt; 2017</title>
-    <link href="https://lazzzis.github.io/2016/12/20/the-end-of-2016/"/>
-    <id>https://lazzzis.github.io/2016/12/20/the-end-of-2016/</id>
+    <link href="https://lazzzis.moe/2016/12/21/the-end-of-2016/"/>
+    <id>https://lazzzis.moe/2016/12/21/the-end-of-2016/</id>
     <published>2016-12-21T02:12:15.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -390,15 +390,15 @@
     
     </summary>
     
-      <category term="kny" scheme="https://lazzzis.github.io/categories/kny/"/>
+      <category term="kny" scheme="https://lazzzis.moe/categories/kny/"/>
     
     
   </entry>
   
   <entry>
     <title>延迟计算: 关于 Python 的 yield</title>
-    <link href="https://lazzzis.github.io/2016/12/12/python-yield-and-delay/"/>
-    <id>https://lazzzis.github.io/2016/12/12/python-yield-and-delay/</id>
+    <link href="https://lazzzis.moe/2016/12/13/python-yield-and-delay/"/>
+    <id>https://lazzzis.moe/2016/12/13/python-yield-and-delay/</id>
     <published>2016-12-13T02:07:06.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -414,16 +414,16 @@
     </summary>
     
     
-      <category term="Python" scheme="https://lazzzis.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://lazzzis.moe/tags/Python/"/>
     
-      <category term="SICP" scheme="https://lazzzis.github.io/tags/SICP/"/>
+      <category term="SICP" scheme="https://lazzzis.moe/tags/SICP/"/>
     
   </entry>
   
   <entry>
     <title>对 SICP Chapter 2 的一些理解</title>
-    <link href="https://lazzzis.github.io/2016/12/03/sicp-chapter-2-summary/"/>
-    <id>https://lazzzis.github.io/2016/12/03/sicp-chapter-2-summary/</id>
+    <link href="https://lazzzis.moe/2016/12/04/sicp-chapter-2-summary/"/>
+    <id>https://lazzzis.moe/2016/12/04/sicp-chapter-2-summary/</id>
     <published>2016-12-04T04:01:22.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -439,16 +439,16 @@
     </summary>
     
     
-      <category term="SICP" scheme="https://lazzzis.github.io/tags/SICP/"/>
+      <category term="SICP" scheme="https://lazzzis.moe/tags/SICP/"/>
     
-      <category term="Scheme" scheme="https://lazzzis.github.io/tags/Scheme/"/>
+      <category term="Scheme" scheme="https://lazzzis.moe/tags/Scheme/"/>
     
   </entry>
   
   <entry>
     <title>创建了适用于 hexo 的一个主题 mls</title>
-    <link href="https://lazzzis.github.io/2016/11/10/new-blog-theme-mls/"/>
-    <id>https://lazzzis.github.io/2016/11/10/new-blog-theme-mls/</id>
+    <link href="https://lazzzis.moe/2016/11/11/new-blog-theme-mls/"/>
+    <id>https://lazzzis.moe/2016/11/11/new-blog-theme-mls/</id>
     <published>2016-11-11T00:46:55.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -463,21 +463,21 @@
     
     </summary>
     
-      <category term="Front-end" scheme="https://lazzzis.github.io/categories/Front-end/"/>
+      <category term="Front-end" scheme="https://lazzzis.moe/categories/Front-end/"/>
     
     
-      <category term="JavaScript" scheme="https://lazzzis.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://lazzzis.moe/tags/JavaScript/"/>
     
-      <category term="CSS" scheme="https://lazzzis.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://lazzzis.moe/tags/CSS/"/>
     
-      <category term="Sass" scheme="https://lazzzis.github.io/tags/Sass/"/>
+      <category term="Sass" scheme="https://lazzzis.moe/tags/Sass/"/>
     
   </entry>
   
   <entry>
     <title>晴天 — TOEFL @ ZJU</title>
-    <link href="https://lazzzis.github.io/2016/10/29/toefl-10-29-zju/"/>
-    <id>https://lazzzis.github.io/2016/10/29/toefl-10-29-zju/</id>
+    <link href="https://lazzzis.moe/2016/10/30/toefl-10-29-zju/"/>
+    <id>https://lazzzis.moe/2016/10/30/toefl-10-29-zju/</id>
     <published>2016-10-30T03:37:57.000Z</published>
     <updated>2017-07-30T05:48:51.000Z</updated>
     
@@ -492,10 +492,10 @@
     
     </summary>
     
-      <category term="TOEFL" scheme="https://lazzzis.github.io/categories/TOEFL/"/>
+      <category term="TOEFL" scheme="https://lazzzis.moe/categories/TOEFL/"/>
     
     
-      <category term="TOEFL" scheme="https://lazzzis.github.io/tags/TOEFL/"/>
+      <category term="TOEFL" scheme="https://lazzzis.moe/tags/TOEFL/"/>
     
   </entry>
   
