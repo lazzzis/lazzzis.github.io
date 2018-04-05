@@ -1,1 +1,1 @@
-[{"title":"About","type":"page","link":"/about"},{"title":"Links","type":"page","link":"/links"}]
+[{"title":"About","type":"page","link":"/about","layout":"about"},{"title":"Links","type":"page","link":"/links","layout":"links"}]
