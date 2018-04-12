@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>lazzzis</title>
+  <link rel="icon" href="favicon.ico"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/ionicons.min.css">
+  <link rel="stylesheet" href="/css/milligram.min.css">
+  <link rel="stylesheet" href="/css/comfortaa.css">
+  <link rel="stylesheet" href="/css/source-sans-pro.css">
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <link rel="stylesheet" href="/css/nprogress.css">
+  <link rel="stylesheet" href="/css/loaders.min.css">
+  <link rel="stylesheet" href="/css/atom-one-light.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div id="app"></div>
+  <template>
+    <template>
+    <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>Sort is a prevalent topic in programing. Although the sort operation mostly is handled by the back-end like PHP, Java and so on, occasionaly some are occured in front-end. Here are some simple instances I dealt with recently.</p>
+<h2 id="Bubble-like-Sort"><a href="#Bubble-like-Sort" class="headerlink" title="Bubble-like Sort"></a>Bubble-like Sort</h2><p>Suppose some list elements ordered as follows:</p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"demo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>Every time I filter through the nodes to get the smallest-value one from 1st one to 4nd one, and then I put it to the tail of lists. Next, I still filter to get the smallest-value one but from 1st one to 3nd one, and still put it to the tail to the lists. Now, two elements are sorted, and still two ones stay idle. The operation continues until all the elements have been sorted.<br>The produceres can be illustrated as follows:</p>
+<blockquote>
+<p>2 1 4 3 -&gt; 2 4 3 1 -&gt; 4 3 1 2 -&gt; 4 1 2 3 -&gt; 1 2 3 4</p>
+</blockquote>
+<p>The following is my code:</p>
+
+    <pre><code class="lang-js"><span class="hljs-keyword">var</span> ulObj = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'demo'</span>);
+<span class="hljs-keyword">var</span> lists = ulObj.getElementsByTagName(<span class="hljs-string">'li'</span>);
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = lists.length - <span class="hljs-number">1</span>; i &gt;=<span class="hljs-number">0</span> ; -- i) {
+    <span class="hljs-keyword">var</span> max_one = lists[i];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = i; j &gt;= <span class="hljs-number">0</span>; -- j) {
+     <span class="hljs-comment">/* A: */</span>   <span class="hljs-keyword">if</span> (<span class="hljs-built_in">parseInt</span>(lists[j].innerHTML) &gt; <span class="hljs-built_in">parseInt</span>(max_one.innerHTML)) {
+            max_one = lists[j];
+        }
+    }
+    <span class="hljs-comment">// B: ulObj.removeChild(max_one);</span>
+    ulObj.appendChild(max_one);
+}
+</code></pre>
+<p>Pay attention to the part A and B.</p>
+<ul>
+<li>Part A: Due to the type of <code>lists[i].innerHTML</code>, sort order is according to the string Unicode code points. Therefore, <code>parseInt()</code> function is expected!</li>
+<li>Part B: This operation is optional. Because everytime <code>appendChild(node)</code> is invoked, it will remove the node from the orignal parent and then append it to the new parent. So removeChild() function can be dispensable.</li>
+</ul>
+<h2 id="Use-Array-sort"><a href="#Use-Array-sort" class="headerlink" title="Use Array.sort()"></a>Use Array.sort()</h2><p>The first time, I applied the sort() method of Array as following:</p>
+
+    <pre><code class="lang-js"><span class="hljs-keyword">var</span> ulObj = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'demo'</span>);
+<span class="hljs-keyword">var</span> lists = ulObj.getElementsByTagName(<span class="hljs-string">'li'</span>);
+lists.sort();
+</code></pre>
+<p>However these measures are <strong>not accepted</strong>!</p>
+<blockquote>
+<p>A node list may look like an array, but it is not. The node list can be looped through and referred to its nodes like an array. However, Array Methods are forbidden, like valueOf() or join() on the node list.</p>
+</blockquote>
+<p>Therefore, I need to convert the list to a new array as initial. After <code>sort()</code> method, the list elemnts are appended with <code>appendChild()</code> method.</p>
+
+    <pre><code class="lang-js"><span class="hljs-keyword">var</span> ulObj = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'demo'</span>);
+<span class="hljs-keyword">var</span> lists = ulObj.getElementsByTagName(<span class="hljs-string">'li'</span>);
+<span class="hljs-keyword">var</span> listsArr = [];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = lists.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; -- i) {
+    listsArr.push(lists[i]);
+}
+listsArr.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{
+   <span class="hljs-comment">/* A */</span> <span class="hljs-keyword">return</span> <span class="hljs-built_in">parseInt</span>(a.innerHTML) - <span class="hljs-built_in">parseInt</span>(b.innerHTML);
+});
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = listsArr.length - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; -- i) {
+    ulObj.appendChild(listsArr[i]);
+}
+</code></pre>
+<p>In part A, there is a custom compareFunctiom to define the sort order. Especially to deserve to be mentioned, elements are sorted by converting them to strings and comparing strings in Unicode point order by defaut.  The <code>parseInt()</code> can still not be erased.</p>
+
+</template>
+
+  </template>
+  <script type="text/javascript">
+    window.root = "/"
+  </script>
+  <script src="/js/manifest.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

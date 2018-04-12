@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>lazzzis</title>
+  <link rel="icon" href="favicon.ico"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/ionicons.min.css">
+  <link rel="stylesheet" href="/css/milligram.min.css">
+  <link rel="stylesheet" href="/css/comfortaa.css">
+  <link rel="stylesheet" href="/css/source-sans-pro.css">
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <link rel="stylesheet" href="/css/nprogress.css">
+  <link rel="stylesheet" href="/css/loaders.min.css">
+  <link rel="stylesheet" href="/css/atom-one-light.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div id="app"></div>
+  <template>
+    <template>
+    <p>无论是通过 <code>Vue.component</code> 的方式，还是在写 <code>.vue</code> 文件的方式，官方都会推荐你写一个 <code>name</code> 属性。但是好像这个 name 在渲染时又几乎用不到，那么它实际能干嘛呢?</p>
+<h1 id="方便调试"><a href="#方便调试" class="headerlink" title="方便调试"></a>方便调试</h1><p>Vue 有一款官方强力推荐的浏览器上的调试插件: <a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="noopener">vue-devtools</a>。通过打开调试工具，我们可以很轻松的看到已经渲染到页面上的各个组件，以及对应的组件的内部状态。</p>
+<p>例如以下组件:</p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+ <span class="hljs-comment">// Demo.vue</span>
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'Kawaii'</span>,
+    <span class="hljs-attr">props</span>: [<span class="hljs-string">'val'</span>],
+    render (h) {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          { this.val }
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      )
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>如果在 App.vue 里引用的话:</p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">Demo</span> <span class="hljs-attr">val</span>=<span class="hljs-string">"foo"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Demo <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Demo'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app'</span>,
+  <span class="hljs-attr">components</span>: {
+    Demo
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>那么可以在 chrome 的调试界面可以看到:</p>
+<p><img src="https://i.loli.net/2018/04/11/5acd8954c11de.png" alt=""></p>
+<p>其中 <code>Kawaii</code> 就是刚才起了名字的组件，如果将其改名为 <code>看不见看不见</code></p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+ <span class="hljs-comment">// Demo.vue</span>
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'看不见看不见'</span>,
+    <span class="hljs-comment">// ...</span>
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>那么在 chrome 界面则可以直接看到其显示名字就变为 <code>看不见看不见</code> 了。</p>
+<p><img src="https://i.loli.net/2018/04/11/5acd895501f79.png" alt=""></p>
+<p>但如果不设置名字，那么 Vue.js 默认会用 tag 名称，也就是这个组件在 <code>template</code> 或者 <code>jsx</code> 里的名字。比如:</p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+ <span class="hljs-comment">// Demo.vue</span>
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-comment">// 不设置名字</span>
+    <span class="hljs-comment">// name: '看不见看不见',</span>
+    <span class="hljs-comment">// ...</span>
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">D</span> <span class="hljs-attr">val</span>=<span class="hljs-string">"foo"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Demo <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Demo'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app'</span>,
+  <span class="hljs-attr">components</span>: {
+    <span class="hljs-string">'D'</span>: Demo
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>那么此时就会显示为 <code>D</code>:</p>
+<p><img src="https://i.loli.net/2018/04/11/5acd895531d51.png" alt=""></p>
+<blockquote>
+<p>Note: functional 组件不会显示在 devtools 中，因为 vue 并不会为 functional component 创建实例</p>
+</blockquote>
+<h1 id="递归应用"><a href="#递归应用" class="headerlink" title="递归应用"></a>递归应用</h1><p>在有些时候，我们可以会递归使用自身组件，比如:</p>
+
+    <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{ val }}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">Recursive</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"val"</span> <span class="hljs-attr">:val</span>=<span class="hljs-string">"val - 1"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-comment">// Recursive.vue</span>
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'Recursive'</span>,
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">val</span>: {
+        <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">type</span>: <span class="hljs-built_in">Number</span>,
+        <span class="hljs-attr">default</span>: <span class="hljs-number">5</span>
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</span></code></pre>
+<p>在这种情况下，如果不设置 name，那么 console 就会报错，提示在 Recursive.vue 中找不到名为 <code>Recursive</code> 的组件。因此，如果想要递归应用自身组件的话，就必须设置 name 属性。</p>
+<h1 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h1><p>keep-alive 是 Vue 内置的组件，可以将 keep-alive 的子组件运行缓存，用于保存切换 (例如 v-if 的切换) 过程前的状态。</p>
+<p>而 keep-alive 有两个 props 是 <code>include</code> 以及 <code>exclude</code>。前者指明需要缓存的组件的名字。而后者则指明不需要缓存的组件的名字。</p>
+<p>下述例子中，Foo, Bar 两个组件的名字分别为 <code>vue-foo</code>, <code>vue-bar</code>, 且组件均包含一个 input。因为通过 input 可以很轻松的观察到切换前后的状态是否有保存:</p>
+
+    <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{ val }}</span><span class="xml"> <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"m"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-comment">// Foo.vue</span>
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'vue-foo'</span>,
+    data () {
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">val</span>: <span class="hljs-string">'vue-foo'</span>,
+        <span class="hljs-attr">m</span>: <span class="hljs-string">'vue-foo'</span>
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</span></code></pre>
+<p>Bar.vue 跟 Foo.vue 内容几乎一样，除了名字，因此这里就不贴 Bar.vue 的代码了。</p>
+
+    <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">keep-alive</span> <span class="hljs-attr">include</span>=<span class="hljs-string">"vue-foo"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Foo</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"visible"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Bar</span> <span class="hljs-attr">v-else</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">keep-alive</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"visible = !visible"</span>&gt;</span>
+      Visible </span><span class="hljs-template-variable">{{ visible }}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Foo <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Foo'</span>
+<span class="hljs-keyword">import</span> Bar <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Bar'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'app'</span>,
+  data () {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">visible</span>: <span class="hljs-literal">true</span>
+    }
+  },
+  <span class="hljs-attr">components</span>: {
+    Foo,
+    Bar
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</span></code></pre>
+<p>通过点击 button 来切换。因为设置了 <code>include</code> 指令，那么只有 <code>Foo</code> 的状态才会被保存:</p>
+<p><img src="https://i.loli.net/2018/04/11/5acd8955d055b.gif" alt=""></p>
+<p>通过这张效果图可以看到，在切换过程中，<code>Foo</code> 的状态被保存了，而 <code>Bar</code> 则没有，而是重新生成。</p>
+<p>如果使用 <code>exclude</code> 指令:</p>
+
+    <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">keep-alive</span> <span class="hljs-attr">exclude</span>=<span class="hljs-string">"vue-foo"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Foo</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"visible"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Bar</span> <span class="hljs-attr">v-else</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">keep-alive</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"visible = !visible"</span>&gt;</span>
+      Visible </span><span class="hljs-template-variable">{{ visible }}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</span></code></pre>
+<p>那么就会得到一个完全相反的结果: 即 <code>Bar</code> 的状态被保存了，而 <code>Foo</code> 则没有，而是重新生成。</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ol>
+<li><a href="https://vuejs.org/v2/api/#keep-alive" target="_blank" rel="noopener">api/#keep-alive</a></li>
+<li><a href="https://vuejs.org/v2/api/#name" target="_blank" rel="noopener">api/#name</a></li>
+<li><a href="https://github.com/vuejs/vue-devtools/issues/280" target="_blank" rel="noopener">vue-devtools/issues/280</a></li>
+</ol>
+
+</template>
+
+  </template>
+  <script type="text/javascript">
+    window.root = "/"
+  </script>
+  <script src="/js/manifest.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
