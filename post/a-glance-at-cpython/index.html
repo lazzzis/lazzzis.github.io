@@ -22,6 +22,7 @@
     <template>
     <h1 id="什么是-CPython"><a href="#什么是-CPython" class="headerlink" title="什么是 CPython"></a>什么是 CPython</h1><p>简单的说, <code>CPython</code> 是 Python 解释器的一个实现。换句话说，Python 解释器是由 C 写的，然后由 GCC 之类的编译器编译而成的可执行文件。除了 CPython，还有 <a href="http://pypy.org/" target="_blank" rel="noopener">PyPy</a>(用 Python 实现的 Python 解释器)，<a href="http://www.skulpt.org/" target="_blank" rel="noopener">Skulpt</a>(用 JavaScript 实现的 Python 解释器) 等等。如果你不知道你用的是哪一个，那么你一定用的就是 CPython。因为 CPython 是 Python 官方的解释器实现，其它均属于第三方实现。</p>
 <h1 id="从源码到运行"><a href="#从源码到运行" class="headerlink" title="从源码到运行"></a>从源码到运行</h1><p>对于从 Python 源码到解释器执行它们的这个过程，我把它分为两大步 —— 编译(Compiling) 与 解释(Interpreting)。</p>
+<a id="more"></a>
 <h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p>尽管 Python 一门典型的解释型语言 —— 与编译型语言(C, C++) 相对，但 Python 的运行确实涉及到了编译的部分。</p>
 <p>编译在这里的主要功能是将源代码转换为字节码，包括编译了原理中两个关键步骤，词法分析与语法分析，即 lexing, parsing, 也包含了语法检查，即 <code>SyntaxError</code> 可能在这个过程中抛出。</p>
 <p>而由 Python 编译而来的字节码似于如下:</p>

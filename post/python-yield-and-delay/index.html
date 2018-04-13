@@ -21,6 +21,7 @@
   <template>
     <template>
     <p>在 SICP 第 3 章中，有一段部分内容是以 stream 为核心而展开的。而 stream 的特点就是 lazy evaluation / delayed evaluation （惰性求值 / 延迟计算）。在接触 stream 之时，我便立即联想到 Python 具有类似的功能 — <code>yield</code>。</p>
+<a id="more"></a>
 <h1 id="yield-的意义"><a href="#yield-的意义" class="headerlink" title="yield 的意义"></a>yield 的意义</h1><p>使用 yield 的目的是为了生成器，而使用生成器的一个特点是每次只向你返回一个结果。基于这个特点，生成器可以产生的结果数量甚至可以是无限的。因此，生成器在用于表示一些 <code>list</code> 不便或无法表示的超多元素的集合时将表现出很好的便捷性。</p>
 <p>例如:</p>
 

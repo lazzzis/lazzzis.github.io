@@ -21,6 +21,7 @@
   <template>
     <template>
     <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>假设从( x, y )出发，并且从( x, y )出发所能走的最长路为 d[x][y]，那么设想如果( x  - 1, y )的值（即题目所给的高度）要小于(x，y)，那么d[x-1][y] + 1 有可能就是我们所要求的d[x][y]，因为这条路是单向的，只可能从较小的(x-1， y)走向(x，y)。如果考虑四个方向，用(x’， y’)表示(x ， y)上下左右四个方向，那么d[x][y] = max(d[x’][y’]) + 1，且 (x’, y’)上的值要小于(x, y)。那么从这个方程可以看出这实际上可以采用 DFS 加上 dp 的做法，或者称之为记忆化搜索。而 搜索 的终点则是某点(x, y)的四周都比他大，则返回 1。</p>
+<a id="more"></a>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2>
     <pre><code class="lang-cpp"><span class="hljs-comment">/*
  * AC @ Nov 26th 2015

@@ -24,6 +24,7 @@
 <p>全称 Uniform Resource Locator (统一资源定位符)，是一种 URI (Uniform Resource Identifier, 统一资源标识符)</p>
 </blockquote>
 <h1 id="URL-作用"><a href="#URL-作用" class="headerlink" title="URL 作用"></a>URL 作用</h1><p>主要用于网络资源的定位。换句话说，当你想告诉 Alice 你的服务器上有一个有趣的文件想要分享时，你就可以告诉这个文件对应的 URL。那么 Alice 就可以根据这个 URL 找到你要分享的文件。而目前 URL 更通俗的被称为网址。</p>
+<a id="more"></a>
 <h2 id="URL-诞生前的故事"><a href="#URL-诞生前的故事" class="headerlink" title="URL 诞生前的故事"></a>URL 诞生前的故事</h2><p>想了解 URL 的意义，那你必须要了解一下在 URL 诞生前，人们是怎么找资源的。同样，你要分享一个文件给 Alice。那么你要说: 使用一个 FTP 软件，连接到 ftp.example.com，然后使用用户名 anonymous 和密码 anonymous，接着切换到 doc 目录，再然后转换到 <code>binary mode</code> (二进制模式)，找到名为 <code>story.doc</code> 的文件下载并打开。</p>
 <p>但现在，你知道的，表示成 URL 就是 <code>ftp://ftp.example.com/doc/story.doc</code>。而且就下载而言，大部分浏览器已经具有 FTP 软件的一些功能。因此，URL 使你分享文件更加简单，因为别人更容易找到你想要分享的文件。</p>
 <h1 id="URL-与请求"><a href="#URL-与请求" class="headerlink" title="URL 与请求"></a>URL 与请求</h1><p>URL 常常出现在 HTTP 请求的 start-line，也就是请求的第一行，比如:</p>

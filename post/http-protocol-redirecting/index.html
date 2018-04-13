@@ -21,6 +21,7 @@
   <template>
     <template>
     <p>在 HTTP 协议中，一般 3 开头的状态码，都用于表示 <code>重定向</code>：因为某些原因，例如目标网页已经存在其它网站，服务器会通知客户端访问另一个网页。</p>
+<a id="more"></a>
 <h1 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h1><p>为了告诉客户端应改前往哪一个页面，服务器在返回的响应 (response) 的 headers 中用 <code>Location</code> 字段标明具体应该访问的页面。</p>
 <p>例如，访问 <code>http://example.com</code> 时，如果服务器想让浏览器跳转到 <code>http://google.com</code>，可以在 response 中写:</p>
 <pre><code>HTTP/1.0 302 Redirect

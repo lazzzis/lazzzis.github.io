@@ -27,6 +27,7 @@
 }
 </code></pre>
 <p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
+<a id="more"></a>
 <h1 id="相对简单的例子"><a href="#相对简单的例子" class="headerlink" title="相对简单的例子"></a>相对简单的例子</h1><p>wait() 操作与 notify() 操作必须在临界区内进行。而 synchronized 需要一个对象用作锁，以区分各个不同的临界区。比如临界区 A 中进行了 wait() 操作，在也必须在临界区A 中进行 notify() 操作。</p>
 <p>现看一个例子：</p>
 

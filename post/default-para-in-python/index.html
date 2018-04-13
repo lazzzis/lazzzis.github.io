@@ -36,6 +36,7 @@ f() <span class="hljs-comment"># output: 2</span>
 f() <span class="hljs-comment"># output: 3</span>
 </code></pre>
 <p>从结果可以看出，Python 在解析时便已经创建好了默认参数 a 的值。函数 f 在调用时采用了同一个对象，而不是每次调用时重新创建新的对象。这一点与 <code>C++</code> 的处理方式不同。</p>
+<a id="more"></a>
 <h1 id="f-defaults"><a href="#f-defaults" class="headerlink" title="f.__defaults__"></a><code>f.__defaults__</code></h1><p>在 Python 中，函数属于一等公民(first-class)。函数可当作一个对象，拥有自己的属性与方法。而默认参数则存在与函数的一个属性中。</p>
 
     <pre><code class="lang-Python"><span class="hljs-selector-tag">In</span> <span class="hljs-selector-attr">[28]</span>: <span class="hljs-selector-tag">def</span> <span class="hljs-selector-tag">f</span>(a, b=<span class="hljs-number">1</span>):

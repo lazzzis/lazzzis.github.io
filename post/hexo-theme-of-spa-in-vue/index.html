@@ -21,6 +21,7 @@
   <template>
     <template>
     <p>大概一年以前，我发布过一个主题，名为 <a href="https://github.com/lazzzis/hexo-theme-mls" target="_blank" rel="noopener">hexo-theme-mls</a>。这个主题是我当时在学完如何写一个 hexo 主题后完成的。后来在学了 vue 之后，构思着再写一个主题。我非常想把它写成一个单页应用，可是一直没有思绪。直到后来看到了 <a href="https://github.com/EYHN/hexo-theme-one" target="_blank" rel="noopener">hexo-theme-one</a>，我才有了思绪，于是开始写一个单页的主题。</p>
+<a id="more"></a>
 <h1 id="restful"><a href="#restful" class="headerlink" title="restful"></a>restful</h1><p>首先一个问题就是，如何生成 json 文件，用于前端的异步数据请求。<a href="https://github.com/yscoder/hexo-generator-restful" target="_blank" rel="noopener">hexo-generator-restful</a> 提供了很好的思路，hexo 在执行的时候，会载入主题文件夹下的 scripts 下的文件并执行。而 hexo 提供了一个接口，可以用于在读取所有博客内容之后，生成所有文件之前，添加需要生成的文件。</p>
 <p><a href="https://hexo.io/api/generator.html" target="_blank" rel="noopener">generator</a> 接口即是需要的接口。注册一个函数，这个函数可以在执行完后返回一个数组，数组每一个元素即是一个将要生成的文件的信息，这个信息包括:</p>
 

@@ -22,6 +22,7 @@
     <template>
     <p>SICP 第二章的标题为 <em>“Building Abstractions with Data”</em>。与第一章标题<em>“Building Abstractions with Procedures”</em> 相比，这一章明显注重于在数据上的抽象。因此，在本章中所采用的例子中，会有多种数据类型被抽象出来，而每种数据类型又会对应着多种操作，那么随着代码量的增多，如何在不减少需求的情况下正确的对数据的抽象将直接影响开发者编码时的难度以及后期维护的成本。</p>
 <p>在阅读和练习完 Chapter 2 之后，我想谈一下对我思维冲击比较大的几个点。</p>
+<a id="more"></a>
 <h1 id="Data-Directed-Programming"><a href="#Data-Directed-Programming" class="headerlink" title="Data-Directed Programming"></a>Data-Directed Programming</h1><p>在 SICP 中，DDP 出现的一个背景是：存在多种数据类型，它们需要实现相同功能的操作，但对于不同的类型，具体的实现方式有存在不同。</p>
 <p>拿书上的例子来说，对于有理数R1, R2, 它们的值分别为 3/4, 5/6。那么对于它们，可以构造一个方法叫做 add 用于计算 R1, R2 的值，比如 <code>(add R1 R2)</code>。</p>
 <p>同样的，如果是在同一个系统里，再增加一种类型 ———— 无理数。对于 I1，I2, 它们的值分别是 1 + 2i, 3 + 4i。同样，可以构造一个方法叫 add, 同于计算 I1，I2 的值，比如 <code>(add I1 I2)</code>。</p>
@@ -36,10 +37,10 @@
     <span class="hljs-keyword">elif</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(x) == <span class="hljs-string">"irrational"</span> <span class="hljs-keyword">and</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(y) == <span class="hljs-string">"irrational"</span>:
         pass # 对应无理数加法的代码
     <span class="hljs-keyword">elif</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(x) == <span class="hljs-string">"type-a"</span> <span class="hljs-keyword">and</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(y) == <span class="hljs-string">"type-a"</span>:
-        pass # 对应<span class="hljs-class"><span class="hljs-keyword">type</span>-<span class="hljs-title">a</span>加法的代码    </span>
+        pass # 对应<span class="hljs-class"><span class="hljs-keyword">type</span>-<span class="hljs-title">a</span>加法的代码</span>
     <span class="hljs-keyword">elif</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(x) == <span class="hljs-string">"type-b"</span> <span class="hljs-keyword">and</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>(y) == <span class="hljs-string">"type-b"</span>:
         pass # 对应<span class="hljs-class"><span class="hljs-keyword">type</span>-<span class="hljs-title">b</span>加法的代码</span>
-    <span class="hljs-keyword">elif</span> ... # 以此类推，每个<span class="hljs-keyword">elif</span> 部分对应一种数据类型的加法运算       
+    <span class="hljs-keyword">elif</span> ... # 以此类推，每个<span class="hljs-keyword">elif</span> 部分对应一种数据类型的加法运算
 </code></pre>
 <p>对于开发者实现来说，这个方法还算可以，虽然不算美观。<br>记得去年我在某公司实习的时候，我所在的那个项目中还真有这样的代码。一个文件中“挂”了至少上百个 <code>else if</code>。每个实习生一旦写好一个模块，就要在这个文件上加一个对应的 <code>else if</code>。然后因为多个实习生，每个实习生的工作台上都有整个项目的文件，最后提交的时候，负责管理实习生的员工还查看每个实习生增加了几个 <code>else if</code>，然后把它们一个一个汇总到一个文件上。<br>所以很明显，这个方法勉强可以，虽然对开发来说事实上会带来一点繁琐。</p>
 <p><strong>解法四</strong>: 在以上三种解法基础上，终于到了 DDP 登场。我认为 DDP 和解法三的一个重要区别就是，DDP 开发了一个表结构，帮助开发者分析类型并调用对应函数。同时在这时，系统还可以模块化，增加命名空间，避免设计者把过多时间花在起名字上。</p>

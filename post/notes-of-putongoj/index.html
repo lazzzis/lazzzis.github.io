@@ -23,6 +23,7 @@
     <p><strong>Putong OJ</strong> – 一个看上去很普通的 Online Judge，现已<a href="http://acm.cjlu.edu.cn" target="_blank" rel="noopener">上线</a></p>
 <h1 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h1><p>说一些我自认为可以称得上特性的”特性”</p>
 <h2 id="单页应用"><a href="#单页应用" class="headerlink" title="单页应用"></a>单页应用</h2><p>估计现在没有一个 OJ 采用的是单页应用吧。</p>
+<a id="more"></a>
 <p>其实最初开发单页应用的一个初衷是尽可能减轻服务器的压力，因为学校的服务器不是很好，这一点我后面还会说明。所以我觉得相比于后端渲染，前端渲染能减轻服务器压力。</p>
 <p>另外，采用单页应用，那么后端就可以采用 restful 设计，后端的编写压力就减少了不少。前端方面因为采用的是 Vue 作为框架，开发上相对简单点，毕竟 vue 的学习难度比 react 要小一点，而且现在与 vue 相关的现成组件也不少，因此 <del>偷懒</del> 短期开发也是相对比较简单的。而且，我一个毕业狗，考虑到未来学弟学妹的维护难度，或许选择 vue 会好一点吧。</p>
 <h2 id="Koa-v2-Restful"><a href="#Koa-v2-Restful" class="headerlink" title="Koa v2 + Restful"></a>Koa v2 + Restful</h2><p>后端上采用了 Node.js，而且采用了 koa v2 框架，摆脱了 callback hell，并且用上 <code>async / await</code>，因此在代码编写给人的快感自然要大于 Express。并且摆脱了后端渲染，restful 的后端框架说实话真的轻松了不少。</p>

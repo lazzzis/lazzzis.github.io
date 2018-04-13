@@ -22,6 +22,7 @@
     <template>
     <p>最近看了些项目的源码，其中就包括 <code>thunkify</code>。虽然 <code>thunkify</code> 代码简单，很快就读完了，不过看看项目的测试文件和提交历史，也还是能看出很多事物的。这次阅读的代码是当前最新版本，commit 编号 <a href="https://github.com/tj/node-thunkify/tree/0bd83e29df1bb0653230724f072cff96b0ab684e" target="_blank" rel="noopener">0bd83e</a>。</p>
 <h1 id="功能陈述"><a href="#功能陈述" class="headerlink" title="功能陈述"></a>功能陈述</h1><p>将一个函数转换为一个为 Thunk 函数，这个函数被调用后会返回一个以回调函数为参数的函数。可以参考 <a href="http://es6.ruanyifeng.com/#docs/generator-async#Thunk-函数" target="_blank" rel="noopener">Thunk 函数</a>。</p>
+<a id="more"></a>
 <h1 id="简单实现"><a href="#简单实现" class="headerlink" title="简单实现"></a>简单实现</h1><p>因为需求比较简单，所以我自己先实现了一下，然后比较与官方仓库的差异，可以发现一些源码的特点。呢</p>
 <p>我自己的实现:</p>
 

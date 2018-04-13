@@ -23,6 +23,7 @@
     <p>ETag 是 HTTP 头的一个字段，出现在 Response Header 之中，用于标记一个资源的版本，是 HTTP 缓存策略的一种手段。</p>
 <p>软件开发常常有版本号的概念，比如 <code>1.0</code>, <code>1.1</code>, <code>2.0</code> 等等。软件使用者通常会在客户端版本落后于服务器最新版本时才会去服务器获取新的软件。</p>
 <p>这一理念也用于了浏览器缓存策略中。结合下面这张图为例，浏览器已经缓存了 <code>foo.jpg</code> 且已记录版本号为<code>1.2</code> (这个版本号由服务器生成并告诉浏览器)，那么当浏览器再次请求 <code>foo.jpg</code> 时，就会同时把版本号也放在请求头中。这样，服务器收到请求时，就知道了客户端已缓存的文件的版本。如果服务器中的 <code>foo.jpg</code> 版本也是 <code>1.2</code>，那么服务器就可以说 <code>304 Not Modified</code>，不用再将 <code>foo.jpg</code> 传给了浏览器，因此就节省了带宽。反之，如果服务器端的 <code>foo.jpg</code> 已经 <code>1.3</code> 了，那么就要将新的文件传给浏览器，也同时告诉它版本号为 <code>1.3</code>，浏览器收到后，缓存文件，并记录版本号为 <code>1.3</code>。</p>
+<a id="more"></a>
 <p><img src="https://i.loli.net/2017/12/29/5a4566269629e.png" alt=""></p>
 <p>ETag 是 Response Header 中的一个字段，而与之对应的一个出现在请求头中的字段为 <code>If-None-Match</code>。<code>If-None-Match</code> 对应的值即为浏览器缓存的的文件的版本号。</p>
 <h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><p>使用 Koa 框架为例:</p>

@@ -22,6 +22,7 @@
     <template>
     <p>这里的 <code>DefaultDict</code> 指的是类似于 Python 中的 <a href="https://docs.python.org/3/library/collections.html#collections.defaultdict" target="_blank" rel="noopener"><code>defaultdict</code></a> 的一种类。其基本特点就是当某个属性不存在于该对象中时，该对象会自动为这个属性创建一个默认值。这个默认值是由用户在创建 <code>DefaultDict</code> 时指定的。</p>
 <p>举个例子，现在需要一个对象，如果某个属性不在这个对象时，在为这个属性赋值为 0.</p>
+<a id="more"></a>
 
     <pre><code class="lang-js"><span class="hljs-keyword">const</span> words = [<span class="hljs-string">'hello'</span>, <span class="hljs-string">'hello'</span>, <span class="hljs-string">'world'</span>, <span class="hljs-string">'please'</span>, <span class="hljs-string">'say'</span>, <span class="hljs-string">'say'</span>, <span class="hljs-string">'say'</span>]
 <span class="hljs-keyword">const</span> defaultDict = defaultDictFactory({}, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-number">0</span>)

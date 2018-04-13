@@ -24,6 +24,7 @@
 <p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo1.png" alt=""></p>
 <p>其中, <code>1 -&gt; 3</code> 表示任务 3 必须在任务 1 完成之后才能够开始。如上图中，任务 3 必须在任务 1 和任务 4 之后。而任务 4 又必须在任务 2 之后。</p>
 <p>而要求就是, 提供一个序列，要求按照这个序列能够顺利完成所有任务。这里假设每个时刻只能处理一个任务，而且一旦开始处理某个任务，那么你不能中止或切换到其它任务。这个答案可能不唯一。在上图中，一个可能的答案就是 <code>[1, 2, 4, 3, 5, 7, 6]</code>。</p>
+<a id="more"></a>
 <h1 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h1><p>一个显然可以得到的观点就是，对于没有依赖的任务，可以直接将其放入所求的序列中， 比如上图中的 <code>[1, 2]</code>。</p>
 <p>那算法的第一步就是找出所有没有被依赖的任务，并将其移除，此时可以得到一个新的图:</p>
 <p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo2.png" alt=""></p>
