@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>lazzzis</title>
-  <link rel="icon" href="favicon.ico"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="/css/ionicons.min.css">
-  <link rel="stylesheet" href="/css/milligram.min.css">
-  <link rel="stylesheet" href="/css/comfortaa.css">
-  <link rel="stylesheet" href="/css/source-sans-pro.css">
-  <link rel="stylesheet" href="/css/animate.min.css">
-  <link rel="stylesheet" href="/css/nprogress.css">
-  <link rel="stylesheet" href="/css/loaders.min.css">
-  <link rel="stylesheet" href="/css/atom-one-light.css">
-  <link rel="stylesheet" href="/css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>simulation of langton&#39;s ant | lazzzis</title>
+  <meta name="description" content="A minimal hexo theme." />
+  <meta name="keywords" content="blog,javascript,lazzzis" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Introduction to Langton’s Ant简单来说 Langton’s ant 就是一个简单的数学游戏. 在一平面上，存在无限的等大小的正方形方格，每一个方格要么是白色，要么是黑色. 我们在某一个上放了一只蚂蚁（Ant）. 这只蚂蚁每一步可以朝四个方向行走，并且每步行走遵从以下两条规则:  如果蚂蚁在白色格子时，就会向右转90°，同时颠倒该格子的颜色（变为黑色），最后再向前走一步。">
+<meta name="keywords" content="Java,Math">
+<meta property="og:type" content="article">
+<meta property="og:title" content="simulation of langton&#39;s ant">
+<meta property="og:url" content="https://lazzzis.moe/post/simulation-of-langton-s-ant/index.html">
+<meta property="og:site_name" content="lazzzis">
+<meta property="og:description" content="Introduction to Langton’s Ant简单来说 Langton’s ant 就是一个简单的数学游戏. 在一平面上，存在无限的等大小的正方形方格，每一个方格要么是白色，要么是黑色. 我们在某一个上放了一只蚂蚁（Ant）. 这只蚂蚁每一步可以朝四个方向行走，并且每步行走遵从以下两条规则:  如果蚂蚁在白色格子时，就会向右转90°，同时颠倒该格子的颜色（变为黑色），最后再向前走一步。">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/09/LangtonsAntAnimated.gif">
+<meta property="og:updated_time" content="2018-04-12T21:43:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="simulation of langton&#39;s ant">
+<meta name="twitter:description" content="Introduction to Langton’s Ant简单来说 Langton’s ant 就是一个简单的数学游戏. 在一平面上，存在无限的等大小的正方形方格，每一个方格要么是白色，要么是黑色. 我们在某一个上放了一只蚂蚁（Ant）. 这只蚂蚁每一步可以朝四个方向行走，并且每步行走遵从以下两条规则:  如果蚂蚁在白色格子时，就会向右转90°，同时颠倒该格子的颜色（变为黑色），最后再向前走一步。">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/09/LangtonsAntAnimated.gif">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+	<script src="https://use.typekit.net/eyf3hir.js"></script>
+  <script>try{Typekit.load({ async: false });}catch(e){}</script>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+  <!-- 
+ -->
 </head>
+
 <body>
-  <div id="app"></div>
-  <template>
-    <template>
-    <h2 id="Introduction-to-Langton’s-Ant"><a href="#Introduction-to-Langton’s-Ant" class="headerlink" title="Introduction to Langton’s Ant"></a>Introduction to Langton’s Ant</h2><p>简单来说 Langton’s ant 就是一个简单的数学游戏.</p>
+  
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+  <script>setLoadingBarProgress(20)</script>
+  
+  <div id="site-wrapper">
+    
+    <header id="header">
+	<div id="header-wrapper" class="clearfix">
+		<a id="logo" href="/">
+			<img src="/images/logo.png" />
+			<span id="site-desc">
+			  翼をください
+      </span>
+		</a>
+		<button id="site-nav-switch">
+	    <span class="icon icon-menu"></span>
+	  </button>
+	</div>
+	<aside id="site-menu">
+  	<nav>
+  		
+        <a href="/" class="nav-home nav">
+          Home
+        </a>
+      
+        <a href="/about" class="nav-about nav">
+          About
+        </a>
+      
+        <a href="/archives" class="nav-archives nav">
+          Archives
+        </a>
+      
+        <a href="/links" class="nav-links nav">
+          Links
+        </a>
+      
+    </nav>
+	</aside>
+</header>
+
+    <script>setLoadingBarProgress(40);</script>
+    
+    <main id="main" role="main">
+      <article id="post-simulation-of-langton-s-ant"
+  class="post article white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<h2 class="title">
+  	<a href="/post/simulation-of-langton-s-ant/">
+    	simulation of langton&#39;s ant
+    </a>
+  </h2>
+	<time>
+	  Oct 19, 2015
+	</time>
+	<section class="content">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h2 id="Introduction-to-Langton’s-Ant"><a href="#Introduction-to-Langton’s-Ant" class="headerlink" title="Introduction to Langton’s Ant"></a>Introduction to Langton’s Ant</h2><p>简单来说 Langton’s ant 就是一个简单的数学游戏.</p>
 <p>在一平面上，存在无限的等大小的正方形方格，每一个方格要么是白色，要么是黑色. 我们在某一个上放了一只蚂蚁（Ant）. 这只蚂蚁每一步可以朝四个方向行走，并且每步行走遵从以下两条规则:</p>
 <ul>
 <li>如果蚂蚁在<strong>白</strong>色格子时，就会向<strong>右</strong>转90°，同时颠倒该格子的颜色（变为黑色），最后再向前走一步。</li>
@@ -38,85 +119,130 @@
 <h3 id="Ant"><a href="#Ant" class="headerlink" title="Ant"></a>Ant</h3><p>蚂蚁负责移动，而移动的方向如果用东南西北<code>(NEWS)</code>表示的话，那么要涉及它的朝向问题。即：当它的朝向是向南时，那么它的右转实际是用西转。所以可以设计两个函数<code>turn_left()</code>和<code>turn_right()</code>。函数可以改变蚂蚁的位置，作出正确的左转和右转。<br>接下来是如何让它自动按规矩走。为了不影响程序的运行，我决定使用多线程。使用多线程的好处之一就是如果需要多只蚂蚁移动时，只需要轻松地启动几个线程就好了。所以蚂蚁类应该扩充<code>Runnable</code>接口。每一步行走时获取当前格的颜色，并进行修改。</p>
 <h3 id="Grids"><a href="#Grids" class="headerlink" title="Grids"></a>Grids</h3><p>首先很明显我可以用一个网格布局来管理每一个小网格，如 <code>GridLayout(100, 100)</code> 即 <code>100 X 100 </code>的网格布局。接下来需要用一个控件来表示小网格。每一个网格需要变换颜色，所以这个用作网格的控件就首先必须要有一个可以改变颜色的方法。要使用 JPanel 么？ JPanel确实可以变换颜色，但是实际测试就会发现一个问题，每一个小网格之间没有边界线，整个网格看上去就像一张白纸一样。JButton如何？JButton也有一个改变颜色的方法 <code>setBackground()</code>。而且在网格布局时，每一个JButton和JButton之间有一个明显的分界线，可以很明显地看出是一个100 * 100 的网格布局，显示效果比用JPanel要好。就这样决定了，使用JButton表示每一个小网格。<br>除此之外，为了方便蚂蚁获取颜色和修改颜色，编写两个方法：<code>getColor(int x, int y)</code> <code>setColor(int x, int y)</code> 供蚂蚁查询和修改 (x, y) 位置的颜色。</p>
 <h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2><p>我的项目地址 : <a href="https://github.com/lazzzis/Langton-s-Ant-Java" target="_blank" rel="noopener">Langton-s-Ant-Java</a><br>这里不展示所有的代码，只写一些我认为关键的部分。</p>
-<h3 id="Ant-部分："><a href="#Ant-部分：" class="headerlink" title="Ant 部分："></a>Ant 部分：</h3>
-    <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ant</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
-
-    <span class="hljs-keyword">int</span> x, y, forward; <span class="hljs-comment">// forward 为朝向</span>
-    <span class="hljs-keyword">private</span> Grids grid = <span class="hljs-keyword">null</span>; <span class="hljs-comment">// 注意此处的 grid 用作引用</span>
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> alive; <span class="hljs-comment">// 判断此蚂蚁是否存活</span>
-
-}
-
-</code></pre>
+<h3 id="Ant-部分："><a href="#Ant-部分：" class="headerlink" title="Ant 部分："></a>Ant 部分：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Ant</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> x, y, forward; <span class="comment">// forward 为朝向</span></span><br><span class="line">    <span class="keyword">private</span> Grids grid = <span class="keyword">null</span>; <span class="comment">// 注意此处的 grid 用作引用</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> alive; <span class="comment">// 判断此蚂蚁是否存活</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Run()函数部分：</p>
 <ul>
 <li>每次移动时，记录移动前格子的颜色，以便反色。</li>
 <li>同时把移动后的格子变为红色，可以在实际运行时表明蚂蚁的位置，加强交互性。</li>
 <li>stay_idle() 代表延时，可以起到控制蚂蚁速度的作用。</li>
 </ul>
-
-    <pre><code class="lang-java">    public void run() {
-        <span class="hljs-comment">// record the original color of grid[x][y]</span>
-        Color ori_color = <span class="hljs-keyword">grid</span>.getColor(x, y);
-        <span class="hljs-keyword">int</span> old_x, old_y;
-        <span class="hljs-keyword">while</span> (this.alive) {
-            old_x = x;
-            old_y = y;
-            <span class="hljs-comment">// black : turn left</span>
-            <span class="hljs-keyword">if</span> (ori_color == Ant_Util.black ) {
-                <span class="hljs-keyword">grid</span>.setColor(old_x, old_y, Ant_Util.white);
-                this.turn_left();
-                ori_color = <span class="hljs-keyword">grid</span>.getColor(x, y);
-                <span class="hljs-keyword">grid</span>.setColor(x, y, Ant_Util.red);
-            } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// white : turn right</span>
-                <span class="hljs-keyword">grid</span>.setColor(old_x, old_y, Ant_Util.black);
-                this.turn_right();
-                ori_color = <span class="hljs-keyword">grid</span>.getColor(x, y);
-                <span class="hljs-keyword">grid</span>.setColor(x, y, Ant_Util.red);
-            }
-            stay_idle();
-        }
-    }
-</code></pre>
-<h3 id="Grids-部分："><a href="#Grids-部分：" class="headerlink" title="Grids 部分："></a>Grids 部分：</h3><p>主要就是构造函数，以及上面提到的供Ant调用以得到和改变颜色的函数。<br>简单起见，默认全部为白三色。</p>
-
-    <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Grids</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Container</span> </span>{
-    <span class="hljs-comment">// every button is a grid</span>
-    <span class="hljs-keyword">private</span> JButton[][] grid = <span class="hljs-keyword">new</span> JButton[Ant_Util.Grid_Height][Ant_Util.Grid_Width];
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Grids</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">this</span>.setLayout(<span class="hljs-keyword">new</span> GridLayout(Ant_Util.Grid_Height, Ant_Util.Grid_Width));
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; Ant_Util.Grid_Height; ++ i) {
-            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j  = <span class="hljs-number">0</span>; j &lt; Ant_Util.Grid_Width; ++ j) {
-                grid[i][j] = <span class="hljs-keyword">new</span> JButton();
-                grid[i][j].setBackground(Ant_Util.white);
-                <span class="hljs-keyword">this</span>.add(grid[i][j]);
-            }
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> Color <span class="hljs-title">getColor</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
-        <span class="hljs-keyword">return</span> grid[x][y].getBackground();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setColor</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, Color c)</span> </span>{
-        grid[x][y].setBackground(c);
-    }
-}
-</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// record the original color of grid[x][y]</span></span><br><span class="line">    Color ori_color = grid.getColor(x, y);</span><br><span class="line">    <span class="keyword">int</span> old_x, old_y;</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">this</span>.alive) &#123;</span><br><span class="line">        old_x = x;</span><br><span class="line">        old_y = y;</span><br><span class="line">        <span class="comment">// black : turn left</span></span><br><span class="line">        <span class="keyword">if</span> (ori_color == Ant_Util.black ) &#123;</span><br><span class="line">            grid.setColor(old_x, old_y, Ant_Util.white);</span><br><span class="line">            <span class="keyword">this</span>.turn_left();</span><br><span class="line">            ori_color = grid.getColor(x, y);</span><br><span class="line">            grid.setColor(x, y, Ant_Util.red);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">// white : turn right</span></span><br><span class="line">            grid.setColor(old_x, old_y, Ant_Util.black);</span><br><span class="line">            <span class="keyword">this</span>.turn_right();</span><br><span class="line">            ori_color = grid.getColor(x, y);</span><br><span class="line">            grid.setColor(x, y, Ant_Util.red);</span><br><span class="line">        &#125;</span><br><span class="line">        stay_idle();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Grids-部分："><a href="#Grids-部分：" class="headerlink" title="Grids 部分："></a>Grids 部分：</h3><p>主要就是构造函数，以及上面提到的供Ant调用以得到和改变颜色的函数。<br>简单起见，默认全部为白三色。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Grids</span> <span class="keyword">extends</span> <span class="title">Container</span> </span>&#123;</span><br><span class="line">    <span class="comment">// every button is a grid</span></span><br><span class="line">    <span class="keyword">private</span> JButton[][] grid = <span class="keyword">new</span> JButton[Ant_Util.Grid_Height][Ant_Util.Grid_Width];</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Grids</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.setLayout(<span class="keyword">new</span> GridLayout(Ant_Util.Grid_Height, Ant_Util.Grid_Width));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; Ant_Util.Grid_Height; ++ i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j  = <span class="number">0</span>; j &lt; Ant_Util.Grid_Width; ++ j) &#123;</span><br><span class="line">                grid[i][j] = <span class="keyword">new</span> JButton();</span><br><span class="line">                grid[i][j].setBackground(Ant_Util.white);</span><br><span class="line">                <span class="keyword">this</span>.add(grid[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Color <span class="title">getColor</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> grid[x][y].getBackground();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColor</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, Color c)</span> </span>&#123;</span><br><span class="line">        grid[x][y].setBackground(c);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="其他部分"><a href="#其他部分" class="headerlink" title="其他部分"></a>其他部分</h3><ul>
 <li>class App ， 用作主窗口。实例化 Ant 类 以及 Girds 类。</li>
 <li>Class Ant_Util，用作存放常量，比如蚂蚁的速度，网格的数量，窗口的大小等，需要修改时只要在此类里修改更改就好，不用跑到其它类里满地找，而且调用起来也会方便很多。</li>
 </ul>
 
-</template>
+  	</div>
 
-  </template>
-  <script type="text/javascript">
-    window.root = "/"
-  </script>
-  <script src="/js/manifest.js"></script>
-  <script src="/js/vendor.js"></script>
-  <script src="/js/app.js"></script>
+	  <div class="article-tags tags">
+		  
+        <a class="tag-link" href="/tags/Java/">Java</a><a class="tag-link" href="/tags/Math/">Math</a>
+      
+	  </div>
+	</section>
+</article>
+
+
+<section id="comments">
+	<div id="disqus_thread"></div>
+</section>
+
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </main>
+    
+    <footer id="footer" class="clearfix">
+  
+  
+	<div class="search">
+	  <form name="searchform" id="searchform" class="u-search-form">
+	    <input type="text" id="searchinput" class="u-search-input" placeholder="Looking for something?" />
+	    <button type="submit" id="u-search-btn-submit" class="u-search-btn-submit">
+	      <span class="icon icon-search"></span>
+	    </button>
+	  </form>
+	</div>
+	
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/lazzzis" class="social github"
+          target="_blank" rel="external">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://twitter.com/lazzzis" class="social twitter"
+          target="_blank" rel="external">
+          <span class="icon icon-twitter"></span>
+        </a>
+      
+        <a href="/atom.xml" class="social rss"
+          target="_blank" rel="external">
+          <span class="icon icon-rss"></span>
+        </a>
+      
+        <a href="https://instagram.com/lazzzis" class="social instagram"
+          target="_blank" rel="external">
+          <span class="icon icon-instagram"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Theme <span class="codename">Typescript</span> designed by <a href="http://rakugaki.me/" target="_blank">Art Chen</a>.</div>
+  <div>&copy; <a href="/">lazzzis</a></div>
+  
+</footer>
+
+
+    <script>setLoadingBarProgress(80);</script>
+    
+  </div>
+
+  
+<script>
+  var disqus_shortname = 'lazzzis';
+  
+  var disqus_url = 'https://lazzzis.moe/post/simulation-of-langton-s-ant/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "google";
+</script>
+<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+<script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+<script src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+  <script>setLoadingBarProgress(100);</script>
+  
 </body>
 </html>
