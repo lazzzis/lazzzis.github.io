@@ -98,6 +98,41 @@
 
   
   <h2 class="title">
+    <a href="/post/list-sort-in-js/">
+      sort some list elements into an descreasing ones in js
+    </a>
+  </h2>
+  
+  <time>
+    Nov 17, 2015
+  </time>
+  <section class="content">
+	  <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>Sort is a prevalent topic in programing. Although the sort operation mostly is handled by the back-end like PHP, Java and so on, occasionaly some are occured in front-end. Here are some simple instances I dealt with recently.</p>
+<h2 id="Bubble-like-Sort"><a href="#Bubble-like-Sort" class="headerlink" title="Bubble-like Sort"></a>Bubble-like Sort</h2><p>Suppose some list elements ordered as follows:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>Every time I filter through the nodes to get the smallest-value one from 1st one to 4nd one, and then I put it to the tail of lists. Next, I still filter to get the smallest-value one but from 1st one to 3nd one, and still put it to the tail to the lists. Now, two elements are sorted, and still two ones stay idle. The operation continues until all the elements have been sorted.<br>The produceres can be illustrated as follows:</p>
+<blockquote>
+<p>2 1 4 3 -&gt; 2 4 3 1 -&gt; 4 3 1 2 -&gt; 4 1 2 3 -&gt; 1 2 3 4</p>
+</blockquote>
+
+    
+	  <div class="readmore">
+      <a href="/post/list-sort-in-js/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+	  </div>
+    
+
+  </section>
+</article>
+  
+    <article class="post ">
+
+  
+  <h2 class="title">
     <a href="/post/static-in-js/">
       在JS中实现静态变量/函数
     </a>
