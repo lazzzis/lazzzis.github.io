@@ -20,6 +20,7 @@
   
     <link rel="icon" href="/favicon.png">
   
+  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
 
 	<!-- <script src="https://use.typekit.net/eyf3hir.js"></script> -->
   <!-- <script>try{Typekit.load({ async: false });}catch(e){}</script> -->
@@ -89,6 +90,37 @@
 
 <section class="post-list">
 	
+    <article class="post ">
+
+  
+  <h2 class="title">
+    <a href="/post/defaultdict-in-js/">
+      借助 Proxy 实现一个 DefaultDict
+    </a>
+  </h2>
+  
+  <time>
+    Sep 30, 2017
+  </time>
+  <section class="content">
+	  <p>这里的 <code>DefaultDict</code> 指的是类似于 Python 中的 <a href="https://docs.python.org/3/library/collections.html#collections.defaultdict" target="_blank" rel="noopener"><code>defaultdict</code></a> 的一种类。其基本特点就是当某个属性不存在于该对象中时，该对象会自动为这个属性创建一个默认值。这个默认值是由用户在创建 <code>DefaultDict</code> 时指定的。</p>
+<p>举个例子，现在需要一个对象，如果某个属性不在这个对象时，在为这个属性赋值为 0.</p>
+
+    
+	  <div class="readmore">
+      <a href="/post/defaultdict-in-js/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+	  </div>
+    
+
+  </section>
+</article>
+  
     <article class="post ">
 
   
@@ -352,37 +384,6 @@
     
 	  <div class="tags">
       <a class="tag-link" href="/tags/Python/">Python</a><a class="tag-link" href="/tags/SICP/">SICP</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/post/sicp-chapter-2-summary/">
-      对 SICP Chapter 2 的一些理解
-    </a>
-  </h2>
-  
-  <time>
-    Dec 3, 2016
-  </time>
-  <section class="content">
-	  <p>SICP 第二章的标题为 <em>“Building Abstractions with Data”</em>。与第一章标题<em>“Building Abstractions with Procedures”</em> 相比，这一章明显注重于在数据上的抽象。因此，在本章中所采用的例子中，会有多种数据类型被抽象出来，而每种数据类型又会对应着多种操作，那么随着代码量的增多，如何在不减少需求的情况下正确的对数据的抽象将直接影响开发者编码时的难度以及后期维护的成本。</p>
-<p>在阅读和练习完 Chapter 2 之后，我想谈一下对我思维冲击比较大的几个点。</p>
-
-    
-	  <div class="readmore">
-      <a href="/post/sicp-chapter-2-summary/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/SICP/">SICP</a><a class="tag-link" href="/tags/Scheme/">Scheme</a>
 	  </div>
     
 

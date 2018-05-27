@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Tag: Thread | lazzzis</title>
+  <title>Archives: 2018/5 | lazzzis</title>
   <meta name="description" content="A minimal hexo theme." />
   <meta name="keywords" content="blog,javascript,lazzzis" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="lazzzis">
-<meta property="og:url" content="https://lazzzis.moe/tags/Thread/index.html">
+<meta property="og:url" content="https://lazzzis.moe/archives/2018/05/index.html">
 <meta property="og:site_name" content="lazzzis">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lazzzis">
@@ -83,11 +83,12 @@
     
     <main id="main" role="main">
       
-	<section class="page-header tag">
-    <h1>- <span>Thread</span> -</h1>
+	
+
+
+	<section class="page-header archive">
+    <h1>- <span>2018.5</span> -</h1>
   </section>
-
-
 
 
 
@@ -98,28 +99,28 @@
 
   
   <h2 class="title">
-    <a href="/post/java-wait-notify-usage/">
-      Java 中 wait 与 notify 的简单操作
+    <a href="/post/parse-error-stack-in-js/">
+      解析 JavaScript Error 中的 stack 信息
     </a>
   </h2>
   
   <time>
-    Feb 15, 2016
+    May 26, 2018
   </time>
   <section class="content">
-	  <p>在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(condition) &#123;</span><br><span class="line">  <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
+	  <h1 id="需求描述"><a href="#需求描述" class="headerlink" title="需求描述"></a>需求描述</h1><p>对于任意的 Error 对象，如果将其输出，我们可以看见这个异常的堆栈信息。例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Error</span><br><span class="line">    at Object.&lt;anonymous&gt; (/Users/lazzzis/Documents/Projects/Test/test.js:10:12)</span><br><span class="line">    at Module._compile (internal/modules/cjs/loader.js:702:30)</span><br><span class="line">    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)</span><br><span class="line">    at Module.load (internal/modules/cjs/loader.js:612:32)</span><br><span class="line">    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)</span><br><span class="line">    at Function.Module._load (internal/modules/cjs/loader.js:543:3)</span><br><span class="line">    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)</span><br><span class="line">    at startup (internal/bootstrap/node.js:238:19)</span><br><span class="line">    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)</span><br></pre></td></tr></table></figure>
+<p>可以看到这个异常来自: <code>test.js</code> 的第 10 行。但现在的需求是要用 <strong>代码</strong> 捕捉报错的来源文件以及行数。</p>
 
     
 	  <div class="readmore">
-      <a href="/post/java-wait-notify-usage/">Read More</a>
+      <a href="/post/parse-error-stack-in-js/">Read More</a>
     </div>
     
     
     
 	  <div class="tags">
-      <a class="tag-link" href="/tags/Java/">Java</a><a class="tag-link" href="/tags/Thread/">Thread</a>
+      <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
 	  </div>
     
 
@@ -127,6 +128,8 @@
 </article>
   
 </section>
+
+
 
 
       <script>setLoadingBarProgress(60);</script>
