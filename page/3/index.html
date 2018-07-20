@@ -94,6 +94,32 @@
 
   
   <h2 class="title">
+    <a href="/post/the-end-of-2016/">
+      2016 -&gt; 2017
+    </a>
+  </h2>
+  
+  <time>
+    Dec 20, 2016
+  </time>
+  <section class="content">
+	  <p>（叹气）又是一年。</p>
+
+    
+	  <div class="readmore">
+      <a href="/post/the-end-of-2016/">Read More</a>
+    </div>
+    
+    
+    
+
+  </section>
+</article>
+  
+    <article class="post ">
+
+  
+  <h2 class="title">
     <a href="/post/python-yield-and-delay/">
       延迟计算: 关于 Python 的 yield
     </a>
@@ -359,36 +385,6 @@
     
 	  <div class="tags">
       <a class="tag-link" href="/tags/Python/">Python</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/post/uva1395/">
-      UVa1395 - Slim Span
-    </a>
-  </h2>
-  
-  <time>
-    Jan 25, 2016
-  </time>
-  <section class="content">
-	  <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>首先有一点是可以确定的：对于任何一连通图，必有一生成树（简直废话）。<br>对于这一题，关键的问题是确定最大与最小。对于这种寻找两个相关变量的题，其实一般可以先试着确定一个，然后再去寻找另一个。<br>比如在这题中，可以迭代每一个边 L，同时把这条边 L 当做最小的边，用比它大的边去试着连同一幅图，知道找到边 R， 使得加上这条边 R 后刚好可以凑成一幅联通图。<br>因此，从上述思路可以看出，排序是必不可少了。所有排序是第一步。<br>排序好后进行遍历 L，建立 N （顶点数） 个并查集 S，每加入一条边就将该边的端点对应的并查集合并（前提是两个端点对应不同的并查集）。<br>直到刚好加入边 R 后，并查集只剩一个，且大小刚好与顶点数相等。此时对于 L 来说，R － L 极为其 “苗条度”。<br>因此对所有求得的“苗条度”求一个最小值即可。如果连一个“苗条度”都没有，那结果自然就是找不到合适的答案了。</p>
-
-    
-	  <div class="readmore">
-      <a href="/post/uva1395/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/ACM/">ACM</a><a class="tag-link" href="/tags/UVaOJ/">UVaOJ</a>
 	  </div>
     
 
