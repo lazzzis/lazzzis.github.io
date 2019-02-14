@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives: 2015/11 | lazzzis</title>
+  <title>Archives: 2019/2 | lazzzis</title>
   <meta name="description" content="A minimal hexo theme." />
   <meta name="keywords" content="blog,javascript,lazzzis" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="lazzzis">
-<meta property="og:url" content="https://lazzzis.moe/archives/2015/11/index.html">
+<meta property="og:url" content="https://lazzzis.moe/archives/2019/02/index.html">
 <meta property="og:site_name" content="lazzzis">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lazzzis">
@@ -87,7 +87,7 @@
 
 
 	<section class="page-header archive">
-    <h1>- <span>2015.11</span> -</h1>
+    <h1>- <span>2019.2</span> -</h1>
   </section>
 
 
@@ -99,96 +99,25 @@
 
   
   <h2 class="title">
-    <a href="/post/uva10285/">
-      UVa10285 - Longest Run on a Snowboard
+    <a href="/post/the-end-of-2018/">
+      我的 2018
     </a>
   </h2>
   
   <time>
-    Nov 29, 2015
+    Feb 13, 2019
   </time>
   <section class="content">
-	  <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>假设从( x, y )出发，并且从( x, y )出发所能走的最长路为 d[x][y]，那么设想如果( x  - 1, y )的值（即题目所给的高度）要小于(x，y)，那么d[x-1][y] + 1 有可能就是我们所要求的d[x][y]，因为这条路是单向的，只可能从较小的(x-1， y)走向(x，y)。如果考虑四个方向，用(x’， y’)表示(x ， y)上下左右四个方向，那么d[x][y] = max(d[x’][y’]) + 1，且 (x’, y’)上的值要小于(x, y)。那么从这个方程可以看出这实际上可以采用 DFS 加上 dp 的做法，或者称之为记忆化搜索。而 搜索 的终点则是某点(x, y)的四周都比他大，则返回 1。</p>
-
-    
-	  <div class="readmore">
-      <a href="/post/uva10285/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/ACM/">ACM</a><a class="tag-link" href="/tags/UVaOJ/">UVaOJ</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/post/list-sort-in-js/">
-      sort some list elements into an descreasing ones in js
-    </a>
-  </h2>
-  
-  <time>
-    Nov 17, 2015
-  </time>
-  <section class="content">
-	  <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>Sort is a prevalent topic in programing. Although the sort operation mostly is handled by the back-end like PHP, Java and so on, occasionaly some are occured in front-end. Here are some simple instances I dealt with recently.</p>
-<h2 id="Bubble-like-Sort"><a href="#Bubble-like-Sort" class="headerlink" title="Bubble-like Sort"></a>Bubble-like Sort</h2><p>Suppose some list elements ordered as follows:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>Every time I filter through the nodes to get the smallest-value one from 1st one to 4nd one, and then I put it to the tail of lists. Next, I still filter to get the smallest-value one but from 1st one to 3nd one, and still put it to the tail to the lists. Now, two elements are sorted, and still two ones stay idle. The operation continues until all the elements have been sorted.<br>The produceres can be illustrated as follows:</p>
-<blockquote>
-<p>2 1 4 3 -&gt; 2 4 3 1 -&gt; 4 3 1 2 -&gt; 4 1 2 3 -&gt; 1 2 3 4</p>
+	  <blockquote>
+<p>「すべて 夢見ることから」ー　椎名もた「夢の値段」</p>
 </blockquote>
 
     
 	  <div class="readmore">
-      <a href="/post/list-sort-in-js/">Read More</a>
+      <a href="/post/the-end-of-2018/">Read More</a>
     </div>
     
     
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/post/xclip-intro/">
-      Copy the Command Line Outputs to Clipbord in Bash
-    </a>
-  </h2>
-  
-  <time>
-    Nov 10, 2015
-  </time>
-  <section class="content">
-	  <h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>The involved tool is called <strong>xclip</strong>. So check whether the xclip had been installed or not.<br>If not, install it fitst:</p>
-<ul>
-<li>Fedora:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install xclip</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-    
-	  <div class="readmore">
-      <a href="/post/xclip-intro/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/Linux/">Linux</a>
-	  </div>
     
 
   </section>

@@ -94,6 +94,39 @@
 
   
   <h2 class="title">
+    <a href="/post/intro-of-topological-sort/">
+      拓扑排序 / topological sort
+    </a>
+  </h2>
+  
+  <time>
+    Nov 22, 2017
+  </time>
+  <section class="content">
+	  <p>问题描述: 提供一些以数字为 id 的任务(task)，这些任务存在如下图所示的依赖关系:</p>
+<p><img src="https://raw.githubusercontent.com/lazzzis/lazzzis.github.io/d123b09acd4b911b40cd9dcbfc0a6a5e36844773/projects/images/topo1.png" alt=""></p>
+<p>其中, <code>1 -&gt; 3</code> 表示任务 3 必须在任务 1 完成之后才能够开始。如上图中，任务 3 必须在任务 1 和任务 4 之后。而任务 4 又必须在任务 2 之后。</p>
+<p>而要求就是, 提供一个序列，要求按照这个序列能够顺利完成所有任务。这里假设每个时刻只能处理一个任务，而且一旦开始处理某个任务，那么你不能中止或切换到其它任务。这个答案可能不唯一。在上图中，一个可能的答案就是 <code>[1, 2, 4, 3, 5, 7, 6]</code>。</p>
+
+    
+	  <div class="readmore">
+      <a href="/post/intro-of-topological-sort/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/tags/ACM/">ACM</a><a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+	  </div>
+    
+
+  </section>
+</article>
+  
+    <article class="post ">
+
+  
+  <h2 class="title">
     <a href="/post/why-factory-method-pattern/">
       思考为什么要用工厂模式
     </a>
@@ -367,37 +400,6 @@
   </section>
 </article>
   
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/post/a-glance-at-cpython/">
-      初看 CPython
-    </a>
-  </h2>
-  
-  <time>
-    Jan 4, 2017
-  </time>
-  <section class="content">
-	  <h1 id="什么是-CPython"><a href="#什么是-CPython" class="headerlink" title="什么是 CPython"></a>什么是 CPython</h1><p>简单的说, <code>CPython</code> 是 Python 解释器的一个实现。换句话说，Python 解释器是由 C 写的，然后由 GCC 之类的编译器编译而成的可执行文件。除了 CPython，还有 <a href="http://pypy.org/" target="_blank" rel="noopener">PyPy</a>(用 Python 实现的 Python 解释器)，<a href="http://www.skulpt.org/" target="_blank" rel="noopener">Skulpt</a>(用 JavaScript 实现的 Python 解释器) 等等。如果你不知道你用的是哪一个，那么你一定用的就是 CPython。因为 CPython 是 Python 官方的解释器实现，其它均属于第三方实现。</p>
-<h1 id="从源码到运行"><a href="#从源码到运行" class="headerlink" title="从源码到运行"></a>从源码到运行</h1><p>对于从 Python 源码到解释器执行它们的这个过程，我把它分为两大步 —— 编译(Compiling) 与 解释(Interpreting)。</p>
-
-    
-	  <div class="readmore">
-      <a href="/post/a-glance-at-cpython/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/tags/Python/">Python</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
 </section>
 
 
@@ -503,7 +505,7 @@
 </script>
 <script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
 <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
-<script src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script src="https://unpkg.com/mathjax@2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
