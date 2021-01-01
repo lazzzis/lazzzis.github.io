@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lazzzis.moe/post/the-end-of-2020/</loc>
+    
+    <lastmod>2021-01-01T07:40:07.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lazzzis.moe/404.html</loc>
+    
+    <lastmod>2021-01-01T03:32:57.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lazzzis.moe/post/the-end-of-2016/</loc>
+    
+    <lastmod>2021-01-01T03:16:08.368Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lazzzis.moe/post/test/</loc>
+    
+    <lastmod>2020-12-29T08:31:55.192Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lazzzis.moe/about/index.html</loc>
+    
+    <lastmod>2020-12-29T08:25:16.607Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lazzzis.moe/post/the-end-of-2018/</loc>
     
-    <lastmod>2019-02-14T05:41:35.579Z</lastmod>
+    <lastmod>2019-02-14T05:41:34.000Z</lastmod>
     
   </url>
   
@@ -25,14 +60,14 @@
   <url>
     <loc>https://lazzzis.moe/post/parse-error-stack-in-js/</loc>
     
-    <lastmod>2018-05-27T03:59:25.000Z</lastmod>
+    <lastmod>2018-05-27T03:59:24.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/hexo-theme-of-spa-in-vue/</loc>
     
-    <lastmod>2018-05-27T03:49:49.000Z</lastmod>
+    <lastmod>2018-05-27T03:49:48.000Z</lastmod>
     
   </url>
   
@@ -46,42 +81,35 @@
   <url>
     <loc>https://lazzzis.moe/post/notes-of-putongoj/</loc>
     
-    <lastmod>2018-05-05T21:57:49.000Z</lastmod>
+    <lastmod>2018-05-05T21:57:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/recent-interviews-in-march-2017/</loc>
     
-    <lastmod>2018-05-05T21:55:31.000Z</lastmod>
+    <lastmod>2018-05-05T21:55:30.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/source-code-of-howdoi/</loc>
     
-    <lastmod>2018-05-05T21:47:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lazzzis.moe/post/the-end-of-2016/</loc>
-    
-    <lastmod>2018-05-05T21:46:21.000Z</lastmod>
+    <lastmod>2018-05-05T21:47:32.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/toefl-10-29-zju/</loc>
     
-    <lastmod>2018-05-05T21:39:49.000Z</lastmod>
+    <lastmod>2018-05-05T21:39:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/acm-contest-in-zj-2015/</loc>
     
-    <lastmod>2018-05-05T21:27:39.000Z</lastmod>
+    <lastmod>2018-05-05T21:27:38.000Z</lastmod>
     
   </url>
   
@@ -89,13 +117,6 @@
     <loc>https://lazzzis.moe/post/name-attribute-in-vue-component/</loc>
     
     <lastmod>2018-05-05T21:19:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lazzzis.moe/about/index.html</loc>
-    
-    <lastmod>2018-04-14T05:47:15.000Z</lastmod>
     
   </url>
   
@@ -116,7 +137,7 @@
   <url>
     <loc>https://lazzzis.moe/post/python-yield-and-delay/</loc>
     
-    <lastmod>2018-04-12T21:45:51.000Z</lastmod>
+    <lastmod>2018-04-12T21:45:50.000Z</lastmod>
     
   </url>
   
@@ -130,56 +151,56 @@
   <url>
     <loc>https://lazzzis.moe/post/words-on-the-support-of-esm-in-node/</loc>
     
-    <lastmod>2018-04-12T21:44:51.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:50.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/why-factory-method-pattern/</loc>
     
-    <lastmod>2018-04-12T21:44:45.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:44.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/uva10285/</loc>
     
-    <lastmod>2018-04-12T21:44:37.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:36.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/uva1395/</loc>
     
-    <lastmod>2018-04-12T21:44:33.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:32.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/staticmethod-and-classmethod-in-Python/</loc>
     
-    <lastmod>2018-04-12T21:44:17.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:16.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/static-in-js/</loc>
     
-    <lastmod>2018-04-12T21:44:13.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/source-code-of-thunkify/</loc>
     
-    <lastmod>2018-04-12T21:44:09.000Z</lastmod>
+    <lastmod>2018-04-12T21:44:08.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/simulation-of-langton-s-ant/</loc>
     
-    <lastmod>2018-04-12T21:43:59.000Z</lastmod>
+    <lastmod>2018-04-12T21:43:58.000Z</lastmod>
     
   </url>
   
@@ -207,42 +228,42 @@
   <url>
     <loc>https://lazzzis.moe/post/list-sort-in-js/</loc>
     
-    <lastmod>2018-04-12T21:43:27.000Z</lastmod>
+    <lastmod>2018-04-12T21:43:26.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/java-wait-notify-usage/</loc>
     
-    <lastmod>2018-04-12T21:43:19.000Z</lastmod>
+    <lastmod>2018-04-12T21:43:18.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/intro-of-topological-sort/</loc>
     
-    <lastmod>2018-04-12T21:43:09.000Z</lastmod>
+    <lastmod>2018-04-12T21:43:08.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/grub-theme/</loc>
     
-    <lastmod>2018-04-12T21:42:21.000Z</lastmod>
+    <lastmod>2018-04-12T21:42:20.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/gre-at-ningbo-university/</loc>
     
-    <lastmod>2018-04-12T21:42:13.000Z</lastmod>
+    <lastmod>2018-04-12T21:42:12.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/post/defaultdict-in-js/</loc>
     
-    <lastmod>2018-04-12T21:42:03.000Z</lastmod>
+    <lastmod>2018-04-12T21:42:02.000Z</lastmod>
     
   </url>
   
@@ -270,7 +291,7 @@
   <url>
     <loc>https://lazzzis.moe/post/a-glance-at-cpython/</loc>
     
-    <lastmod>2018-04-12T21:41:37.000Z</lastmod>
+    <lastmod>2018-04-12T21:41:36.000Z</lastmod>
     
   </url>
   
@@ -278,13 +299,6 @@
     <loc>https://lazzzis.moe/links/index.html</loc>
     
     <lastmod>2018-04-12T21:20:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lazzzis.moe/post/test/</loc>
-    
-    <lastmod>2018-04-12T20:46:47.000Z</lastmod>
     
   </url>
   
@@ -305,14 +319,14 @@
   <url>
     <loc>https://lazzzis.moe/post/http-protocol-redirecting/</loc>
     
-    <lastmod>2018-04-12T19:40:29.000Z</lastmod>
+    <lastmod>2018-04-12T19:40:28.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/links.html</loc>
     
-    <lastmod>2018-04-12T00:06:11.000Z</lastmod>
+    <lastmod>2018-04-12T00:06:10.000Z</lastmod>
     
   </url>
   
@@ -326,14 +340,14 @@
   <url>
     <loc>https://lazzzis.moe/page404/index.html</loc>
     
-    <lastmod>2018-04-03T15:29:25.000Z</lastmod>
+    <lastmod>2018-04-03T15:29:24.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lazzzis.moe/categories/index.html</loc>
     
-    <lastmod>2017-10-27T13:44:29.000Z</lastmod>
+    <lastmod>2017-10-27T13:44:28.000Z</lastmod>
     
   </url>
   
@@ -341,13 +355,6 @@
     <loc>https://lazzzis.moe/tags/index.html</loc>
     
     <lastmod>2017-10-27T13:44:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lazzzis.moe/404.html</loc>
-    
-    <lastmod>2017-07-30T07:15:43.000Z</lastmod>
     
   </url>
   
