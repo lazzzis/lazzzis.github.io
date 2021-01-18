@@ -6,7 +6,7 @@
   <link href="https://lazzzis.moe/atom.xml" rel="self"/>
   
   <link href="https://lazzzis.moe/"/>
-  <updated>2021-01-01T07:40:07.766Z</updated>
+  <updated>2021-01-18T02:08:40.487Z</updated>
   <id>https://lazzzis.moe/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>认识社会心理学 ——《Not by Chance Alone》与《The Social Animal》小记</title>
+    <link href="https://lazzzis.moe/post/the-social-animal/"/>
+    <id>https://lazzzis.moe/post/the-social-animal/</id>
+    <published>2021-01-17T23:46:21.000Z</published>
+    <updated>2021-01-18T02:08:40.487Z</updated>
+    
+    <content type="html"><![CDATA[<p>《Not by Chance Alone》(中译：<a href="https://book.douban.com/subject/19949881/">绝非偶然</a>)以及《The Social Animal》(中译：<a href="https://book.douban.com/subject/2328458/">社会性动物</a>) 均为社会心理学家 Elliot Aronson (埃利奥特·阿伦森) 的著作。前者，为 Aronson 的自传；而后者，则是由 Aronson 编写的社会心理学入门教材。</p><a id="more"></a><p>阅读的动机是偶然在豆瓣上看到了《绝非偶然》这本书，读完后就又对《社会性动物》产生了兴趣，所以一口气就把两本读完了。我确实以前也没读过心理学相关的书籍，凭着好奇心翻开书籍，被里面提到的有趣的例子和作者深入浅出的讲述方式而深深吸引。</p><h1 id="对心理学的改观"><a href="#对心理学的改观" class="headerlink" title="对心理学的改观"></a>对心理学的改观</h1><p>现代网络已经逐渐揭开了心理学的面纱，像电视剧里 “读心” 这样的理解已经逐渐被抛弃。取而代之的，是更接近科学的看法，尽管这其中仍有一些不充分的认知。</p><p>最初，心理学之于我，有点 “哲学” 的意味。我最早接触的心理学文章，颇有一种思考人生的意图，例如，在试图解读人为什么孤独的文章里会有作者对人生意义的解读，从而帮助读者理解孤独的成因和解决方法。但后来了解到，心理学和物理学，化学一样，依托于包含了假设，实验，和分析等在内的科学方法论。因此，现在说起心理学，有些人会优先想到一个人被连接了仪器测试脑电波的场景。这其实可以理解，因为有些心理问题确实可以归结为病理问题，这方面的研究，更多被称为精神病学或神经科学。精神病学更多是在生物层面分析，医学层面分析，必要时辅以药物。</p><p>而《The Social Animal》主要介绍的，是心理学的一个分支 —— 社会心理学，一个研究社会坏境对人行为影响的心理学。<strong>科学实验</strong>在社会心理学里扮演着不可或缺的角色。在这本书中出现的所有理论和结论，除了现实世界的观察以外，更多是通过实验得出的。而这个做实验的基本方法论，和医学里常说的 “双盲实验” 是非常相似的 —— 将志愿者尽可能随机分配为控制组和实验组，这两组的任何条件，除了要实验的要素，其它的任何条件都是相同的。但这里有一点和药物测试的实验截然不同，药物测试里，患者虽然不知道自己吃的是安慰剂还是待测试药物，但仍然知道实验的目的是测试药物。而在社会心理学的实验里，却不会这么做，因为如果提前告诉了测试者实验的目的，那么测试者会有意纠正自己接下来的行为，使其行为不自然，比如如果告诉测试者接下来的实验将测试人是否会服从权威，那么测试者接下来很可能会特别注意这点，从而避免出现服从权威的行为。为了让测试者更接近自然状态，实验设计者通常会设计一个封面故事（Cover Story）。以著名的 <a href="https://www.wikiwand.com/zh-hans/%E7%B1%B3%E7%88%BE%E6%A0%BC%E5%80%AB%E5%AF%A6%E9%A9%97">“米尔格拉姆实验”(Milgram experiment)</a> 为例，实验设计者为了掩盖真正的意图，在招募志愿者时的说辞是要测试 “记忆力”。</p><p>这么做的目的，就是为了增强其科学性。这里的科学性，也包含了可重复性。仍以刚才提到的米尔格拉姆实验为例，后来的实验者多次重复了这个实验从而验证了原实验的结论，同时也改进了一些实验条件，比如，实验中的指导者是以电话方式发出指令，这种情景下的被测试者有多少不一样的反应。因为可重复性，后来的实验者，可以发现更多的问题，也可以指出原实验中得出的结论有更严格的限定条件。</p><p>实验是如此的重要，因此在总共 9 篇章节的《社会性动物》中，作者用单独的一章来解释实验的重要性，如何设计一个合理的实验等。同时，作者也对目前主流社会对社会心理学中的实验的批评做了回应，包括实验中的欺骗是否道德等。类似地，在另一本广泛应用的社会心理学教材<a href="https://book.douban.com/subject/26701760/">《社会心理学》(Social Psychology)</a> 里，也在开篇就详细阐述了实验的方法及重要性。这部分的内容，很大程度上涉及到了辩证性思维的思想，比如，相关性不代表因果性，第三者潜在因素的存在对实验的影响。了解这些思想，也有助于人们面对当今网络上各种流行的心理学段子时，能有更严谨的态度和辩证的思维去看待。也难怪，作者在提到网络上一些流行的心理学段子时也说，“我们应该先问问，‘这是否可以重现?’”.</p><blockquote><p>Today, unfortunately, there have been many pop social psychology “findings” that get public attention and then don’t pass the test of replication. But that does not mean that the basic methods of social-psychological experimentation are at fault — it means that science is moving along as it should, correcting its mistakes and advancing the findings that hold up. <strong>It also means, however, that the public should be wary of sensational, improbable, or simplistic findings and ask, “But have they been replicated?”</strong></p></blockquote><h1 id="作者成为社会心理学家的契机"><a href="#作者成为社会心理学家的契机" class="headerlink" title="作者成为社会心理学家的契机"></a>作者成为社会心理学家的契机</h1><p>作者最初是并不打算选择心理学的，因为经济问题一直困扰着他。作者的父亲在经济大萧条后失去了经营的店铺，经济变得困难，甚至作者本来也没准备读大学。是在他哥哥的劝说下，加上他哥哥就读的大学 <a href="https://www.wikiwand.com/en/Brandeis_University">Brandeis University</a> 愿意为作者提供一年学费和一份兼职才同意进入大学。但可惜的是，在大二那年，学校又突然因为资金不足而不能继续为他提供经济资助，作者只能打工挣学费，却仍旧没有足够的钱用来租房。所以，那一段时间，作者基本是睡在室外，比如树林里，没有锁的汽车的后座里。</p><p>在这样的背景下，他其实是想选择来钱更快的经济学专业的，直到偶然一次机会上了一节心理学导论课。这节课本来是作者在和一位女同学约会后，想一起陪着上课的，但这节课是由提出了著名的 “马斯洛需求理论” 的<a href="https://www.wikiwand.com/zh/%E4%BA%9A%E4%BC%AF%E6%8B%89%E7%BD%95%C2%B7%E9%A9%AC%E6%96%AF%E6%B4%9B">马斯洛</a>教授的课。这节课中提到的关于偏见的内容激发了他对童年的回忆，也触发了他更多的思考，以至于他忙于笔记而忘记了走进这间教室的原本目的。作者因为发现自己对这门学科如此地感兴趣，所以才想成为心理学家，也就在第二天把专业志愿从经济学换成了心理学。</p><p>作者在自传的序言中就提到了一个对新生的建议：比起思考 “Who am I?”，更应该思考 “Who do I want to become?”。我想，在选定心理学专业的那一刻，作者已经清楚地回答了自己的这个问题。</p><blockquote><p>For the past fifty years as a teacher, I have tried to impart this way of looking at things to my students. Early in my career I came to understand that this was the single most precious gift I could ever give them. Students are continually asking themselves, “Who am I?” My goal was to get them to reframe the question into <strong>“Who do I want to become?”</strong> Once they arrive at their own answer, they must also learn that getting there won’t come by chance alone.</p></blockquote><h1 id="优秀的入门教材"><a href="#优秀的入门教材" class="headerlink" title="优秀的入门教材"></a>优秀的入门教材</h1><h2 id="大量的例子"><a href="#大量的例子" class="headerlink" title="大量的例子"></a>大量的例子</h2><p>这本教材和其它学科的美国经典教材有一个共同显著的特点，就是富含大量生动且贴近生活的例子。比如在我阅读的第十二版里，就有多处以 2016 年美国总统大选为例解释偏见和冲动行为的发生原因。除此之外，也有发生在作者自己身边的例子，比如在解释旁观者效应这一节中，就提到了作者在野营中的一次经历：在这次野营的晚上，附近一个帐篷里发出了一声惨叫，而当作者走出一探究竟时，发现已经有很多附近帐篷的人提着灯围在那儿了。如果用旁观者效应解释的话，大家应该都害怕得或冷漠得呆在自己的帐篷里才对，但作者借这次亲生经历来提醒读者，旁观者效应有着更为苛刻的条件，同时存在其它潜在因素可以打破这个效应，但仍需大量实验证明。</p><h2 id="带着疑问阅读"><a href="#带着疑问阅读" class="headerlink" title="带着疑问阅读"></a>带着疑问阅读</h2><p>“带着疑问阅读”，是备受推崇的一种阅读方法。这本教材，为了激起观众的疑问，在教材的第一章便列举了 11 个真实发生的小故事，而读者要想解释这 11 个小故事，明白其中的缘由，就需要一节一节地阅读和思考。在每个章节的第一篇，作者也依旧举一个例子作为引子，带出主题。当阅读完一章之后，再回看之前的例子，便能豁然开朗：看上去荒谬的现象背后，也存在合理的解释。</p><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>《社会性动物》包含了比较流行的，对初学者比较感兴趣的话题：自我辩解，大众交流，从众性，偏见等。因为作者 Aronson 致力于认知失调（Cognitive Dissonance）的研究，所以其中的一章 “自我辩解” 其实就是围绕着这一理论展开的。在之后的其它章节中，也多次用认知失调来解释现象和实验结果。</p><h1 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h1><p>因为这两本书包含了太多的内容，但这些内容又是那么地生动有趣，我想我这么一篇小结，也仅仅分享了我在阅读过程的感想的一部分而已。把这本书推荐给没有了解过心理学但又想要了解的读者。这两本书籍，不仅可以帮助我们进一步理解社会中的一些奇怪现象，同时通过这些现象，我们又能反窥我们自己，了解我们为什么有时能做出另自己事后愧疚懊悔和疑惑的，与自己预期不符的行为。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;《Not by Chance Alone》(中译：&lt;a href=&quot;https://book.douban.com/subject/19949881/&quot;&gt;绝非偶然&lt;/a&gt;)以及《The Social Animal》(中译：&lt;a href=&quot;https://book.douban.com/subject/2328458/&quot;&gt;社会性动物&lt;/a&gt;) 均为社会心理学家 Elliot Aronson (埃利奥特·阿伦森) 的著作。前者，为 Aronson 的自传；而后者，则是由 Aronson 编写的社会心理学入门教材。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="SocialScience" scheme="https://lazzzis.moe/tags/SocialScience/"/>
+    
+    <category term="Reading" scheme="https://lazzzis.moe/tags/Reading/"/>
+    
+    <category term="Psychology" scheme="https://lazzzis.moe/tags/Psychology/"/>
+    
+  </entry>
   
   <entry>
     <title>工作，生活，以及其它，在 2019 与 2020</title>
@@ -394,26 +417,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>howdoi 源码阅读与分析</title>
-    <link href="https://lazzzis.moe/post/source-code-of-howdoi/"/>
-    <id>https://lazzzis.moe/post/source-code-of-howdoi/</id>
-    <published>2017-03-05T05:49:27.000Z</published>
-    <updated>2018-05-05T21:47:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://github.com/gleitz/howdoi">howdoi</a> – 一款通过命令行帮你从 stackoverflow 中寻找答案的工具，其源代码部分不足 300 行。同时，这份代码被 <a href="http://docs.python-guide.org/en/latest/writing/reading/">The Hitchhiker’s Guide to Python!</a> 推荐为适合新手源码阅读的代码。因此，在读完源码后，我分享一下我对这份代码的理解。</p><p>这里采用的版本是 tree 中标号为 <a href="https://github.com/gleitz/howdoi/tree/d84afdee603dbe699153e35650d46ddd734337d1">d84afdee60</a> 的那一版</p><a id="more"></a><h1 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h1><p>简单的概括:</p><p>获取搜索关键词 –&gt; 通过爬虫找到 stackoverflow 上的答案(html 格式) –&gt; 对 html 进行解析拿到答案</p><h2 id="获取关键词"><a href="#获取关键词" class="headerlink" title="获取关键词"></a>获取关键词</h2><p>其中 <strong>关键词</strong> 必须从终端获取，这一步可以通过 Python 自带的包 <code>argparse</code> 实现。</p><p>在代码的第 153 行，<code>args[&#39;query&#39;] = &#39; &#39;.join(args[&#39;query&#39;]).replace(&#39;?&#39;, &#39;&#39;)</code>， 这里作者将关键词中的问号去掉了。刚开始误以为这个处理是怕将问号放到 url 后，问号后面的字符串会变为 url 中查询的参数，从而没有达到使用者的意图。事实上，我的这个想法是错误的，因为之后的代码中，作者会将查询的字符串转义了。我的第二个猜测认为问号会影响 google 查询的结果，因为 <code>?</code> 符号是 google 搜索的指令之一，比如 搜索 <code>c?lor</code> 和 <code>clor</code> 的结果几乎是完全不同的。</p><h2 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h2><p>而爬虫部分，则使用包 <strong>requests</strong> ，其中 url 采用的是 google 搜索的 url, <code>&#39;https://www.google.com/search?q=site:&#123;0&#125;%20&#123;1&#125;&#39;</code>。其中 0 位对应搜索的目标网站，而 1 位代表搜索的内容。比如 <code>&#39;https://www.google.com/search?q=site:stackoverflow.com%20python%20async&#39;</code> 代表在 stackoverflow 上搜索有关 <code>python async</code> 的内容，相当于你在 google 的搜索框里输入了 <code>site:stackoverflow python async</code>。其中 site 是 google 搜索的一个指令，其它指令还包括 <code>filetype</code> (制定文件类型)等。</p><p>而 1 的位置填的搜索的内容正是命令行中输入的内容。为了安全起见，最好将其转义，如代码中 95 行所示 <code>result = _get_result(SEARCH_URL.format(URL, url_quote(query)))</code>。假如 <code>query = &#39;foo bar&#39;</code>, 那么转义后 <code>query = &#39;foo%20bar&#39;</code>。</p><h2 id="解析-html"><a href="#解析-html" class="headerlink" title="解析 html"></a>解析 html</h2><p>采用的工具是 <code>pyquery</code>，它可以让使用者像使用 <code>jquery</code> 一样解析 html 代码。</p><p>第一次拿到的 html 是 google 搜索的结果，而不是 stackoverflow 的页面，所以要先拿到有答案的 stackoverflow 的页面。函数 <code>_is_question</code> 帮助程序识别超链接是否是 stackoverflow 的链接。</p><p>如果是 stackoverflow 的链接，那么接下来有一个分支 – 第 151, 152 行。</p><ol><li>用户只需要 url。那么就此打住，将 url 返回即可。</li><li>如果用户需要答案。就对这个链接做一次请求，这一次拿到的 html 就是 stackoverflow 有提问和回答的页面了。为了提高拿到的答案的可靠型，在 153 行，<code>page = _get_result(link + &#39;?answertab=votes&#39;)</code> 使得 stackoverflow 页面返回的结果是根据答案的支持数从高到低排序的。</li></ol><p>拿到页面后，再对 html 分析，这里又有一个分支。如果用户只要代码，拿到 <code>pre</code> 标签内或 <code>code</code> 标签内的内容返回，否则把答案的文本全部返回。</p><h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>以下几个部分即使删去，也并不也影响程序的主要功能。但加上的话可以很好的改善用户体验。</p><h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><p>对应函数 <code>get_proxies</code>。其中作者还为没有用 http 开头的网址加了 http，比如 <code>&#123;&#39;http&#39;: &#39;localhost:1080&#39;&#125;</code> 会转化为 <code>&#123;&#39;http&#39;: &#39;http://localhost:1080&#39;&#125;</code>。</p><h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>如果开启缓存而且搜索次数多了，缓存可以很好地改善用户体验。作者的实现采用了 <code>requests_cache</code>。使用也挺简单的，不多说了，可以参考<a href="https://github.com/reclosedev/requests-cache">文档</a>。</p><h3 id="颜色输出"><a href="#颜色输出" class="headerlink" title="颜色输出"></a>颜色输出</h3><p>这也是改善用户体验的一个途径。作者采用的是 <a href="http://pygments.org/">pygments</a> 。用 pygments 提供的 lexer 对字符串解析并加上颜色。</p><h1 id="代码风格"><a href="#代码风格" class="headerlink" title="代码风格"></a>代码风格</h1><p>这里讲一些我从这份源码中比较有启发的代码风格</p><h2 id="私有函数"><a href="#私有函数" class="headerlink" title="私有函数"></a>私有函数</h2><p>Python 中并没有严格意义上的 私有函数，一般来讲，名字以但下划线开头的即为 <strong>不推荐调用</strong> 的函数，也可以认为属于私有函数。而观察这个项目以前的代码，可以发现最早并没有私有函数。私有函数的出现起于 <a href="https://github.com/gleitz/howdoi/pull/132">Pull Request: PEP 8 conventions #132</a>。个人认为区分私有和公有的区分对于使用者的学习还是有帮助的，尤其是文档不多或者使用者比较着急使用的情况下，使用者可以直接看公有函数。另外，公有函数也警告使用者不要随意调用，因为有些私有函数的随意调用可能会造成一些对项目比较危险的结果。</p><h2 id="函数的顺序"><a href="#函数的顺序" class="headerlink" title="函数的顺序"></a>函数的顺序</h2><p>不知是无意还是有意，函数的顺序根据调用的顺序逆序排列。比如我们从 <code>command_line_runner</code> 看起，这个函数第一个出现的调用是 <code>get_parser</code>，而源码中 <code>command_line_runner</code> 的上一个函数就是 <code>get_parser</code>。继续往下看，则可以看到 <code>_clear_cache</code>, <code>_enable_cache</code>。而这个顺序刚好是你从文件尾往文件头看得顺序。也就是说，每次我看到一个函数调用时，我肯定往上翻就行了，而且越先看到的越先出现，这给阅读源码带来了很大的便利。</p><h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>我发现这里的常量包括了作为模板的字符串，如 <code>SEARCH_URL = &#39;https://www.google.com/search?q=site:&#123;0&#125;%20&#123;1&#125;&#39;</code>。仔细想想，我好像以前写常量都是固定的字符串或数字，这种模板型的字符串常量我好像一直没用过。</p><h1 id="小细节"><a href="#小细节" class="headerlink" title="小细节"></a>小细节</h1><p><code>URL = os.getenv(&#39;HOWDOI_URL&#39;) or &#39;stackoverflow.com&#39;</code></p><p>注意这里用的 stackoverflow 地址是 <code>stackoverflow.com</code>  而不是 <code>www.stackoverflow.com</code>。这是有区别的。使用前者搜索，出来的 stackoverflow 相关链接大多是 <code>stackoverflow.com/problems/(\d+)/</code> 形式，而使用后者，大多出现的是 <code>www.stackoverflow.com/a/(\d+)/</code> 形式。前者的形式相对后者的形式更容易判断一个链接是不是 stackoverflow 的问题链接。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>howdoi 的点子很好，而且源码确实比较易懂。读完源码之后，建议可以自己试着实现一个类似的或用其它语言复刻一个。毕竟，有些问题是只有开发时才能想到的。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/gleitz/howdoi&quot;&gt;howdoi&lt;/a&gt; – 一款通过命令行帮你从 stackoverflow 中寻找答案的工具，其源代码部分不足 300 行。同时，这份代码被 &lt;a href=&quot;http://docs.python-guide.org/en/latest/writing/reading/&quot;&gt;The Hitchhiker’s Guide to Python!&lt;/a&gt; 推荐为适合新手源码阅读的代码。因此，在读完源码后，我分享一下我对这份代码的理解。&lt;/p&gt;
-&lt;p&gt;这里采用的版本是 tree 中标号为 &lt;a href=&quot;https://github.com/gleitz/howdoi/tree/d84afdee603dbe699153e35650d46ddd734337d1&quot;&gt;d84afdee60&lt;/a&gt; 的那一版&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Python" scheme="https://lazzzis.moe/tags/Python/"/>
     
   </entry>
   
