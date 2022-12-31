@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286617.css">
+<link rel="stylesheet" href="/style.css?t=1672469858327.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -112,7 +112,7 @@
 <blockquote>
 <p>2 1 4 3 -&gt; 2 4 3 1 -&gt; 4 3 1 2 -&gt; 4 1 2 3 -&gt; 1 2 3 4</p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
 
 <p>The following is my code:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ulObj = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;demo&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> lists = ulObj.getElementsByTagName(<span class="string">&#x27;li&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = lists.length - <span class="number">1</span>; i &gt;=<span class="number">0</span> ; -- i) &#123;</span><br><span class="line">    <span class="keyword">var</span> max_one = lists[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = i; j &gt;= <span class="number">0</span>; -- j) &#123;</span><br><span class="line">     <span class="comment">/* A: */</span>   <span class="keyword">if</span> (<span class="built_in">parseInt</span>(lists[j].innerHTML) &gt; <span class="built_in">parseInt</span>(max_one.innerHTML)) &#123;</span><br><span class="line">            max_one = lists[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// B: ulObj.removeChild(max_one);</span></span><br><span class="line">    ulObj.appendChild(max_one);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -129,6 +129,7 @@
 </blockquote>
 <p>Therefore, I need to convert the list to a new array as initial. After <code>sort()</code> method, the list elemnts are appended with <code>appendChild()</code> method.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ulObj = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;demo&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> lists = ulObj.getElementsByTagName(<span class="string">&#x27;li&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> listsArr = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = lists.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; -- i) &#123;</span><br><span class="line">    listsArr.push(lists[i]);</span><br><span class="line">&#125;</span><br><span class="line">listsArr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">   <span class="comment">/* A */</span> <span class="keyword">return</span> <span class="built_in">parseInt</span>(a.innerHTML) - <span class="built_in">parseInt</span>(b.innerHTML);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = listsArr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; -- i) &#123;</span><br><span class="line">    ulObj.appendChild(listsArr[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>In part A, there is a custom compareFunctiom to define the sort order. Especially to deserve to be mentioned, elements are sorted by converting them to strings and comparing strings in Unicode point order by defaut.  The <code>parseInt()</code> can still not be erased.</p>
 
         </div>

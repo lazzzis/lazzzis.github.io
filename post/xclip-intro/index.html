@@ -17,12 +17,12 @@
     <meta name="google-site-verification" content=""/>
     <meta name="baidu-site-verification" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="PreparationThe involved tool is called xclip. So check whether the xclip had been installed or not.If not, install it fitst:  Fedora: 1sudo dnf install xclip">
+    <meta name="description" content="PreparationThe involved tool is called xclip. So check whether the xclip had been installed or not.If not, install it fitst:  Fedora:1sudo dnf install xclip">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Copy the Command Line Outputs to Clipbord in Bash">
 <meta property="og:url" content="https://lazzzis.moe/post/xclip-intro/index.html">
 <meta property="og:site_name" content="lazzzis">
-<meta property="og:description" content="PreparationThe involved tool is called xclip. So check whether the xclip had been installed or not.If not, install it fitst:  Fedora: 1sudo dnf install xclip">
+<meta property="og:description" content="PreparationThe involved tool is called xclip. So check whether the xclip had been installed or not.If not, install it fitst:  Fedora:1sudo dnf install xclip">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2015-11-11T02:16:11.000Z">
 <meta property="article:modified_time" content="2018-04-12T21:44:54.000Z">
@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286640.css">
+<link rel="stylesheet" href="/style.css?t=1672469858329.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -107,20 +107,20 @@
         <div class="article-entry" itemprop="articleBody">
             <h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>The involved tool is called <strong>xclip</strong>. So check whether the xclip had been installed or not.<br>If not, install it fitst:</p>
 <ul>
-<li><p>Fedora:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install xclip</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-</li>
-<li><p>Ubuntu</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install xclip</span><br></pre></td></tr></table></figure>
-<p>The size of this software is only 16KB, so the install producere should be finished soon.</p>
-</li>
+<li>Fedora:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install xclip</span><br></pre></td></tr></table></figure></li>
 </ul>
+<span id="more"></span>
+
+<ul>
+<li>Ubuntu<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install xclip</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>The size of this software is only 16KB, so the install producere should be finished soon.</p>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Copy-text-to-clipboard"><a href="#Copy-text-to-clipboard" class="headerlink" title="Copy text to clipboard"></a>Copy text to clipboard</h3><p>Example:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;string&quot;</span> | xclip -selection c</span><br></pre></td></tr></table></figure>
 <p>This results that the “string” is copied to the clipboard. The texts can be pasted not only in terminal, but also in other windows just using the shortcut “Ctrl + V”.</p>
 <p>The command above is an easist example. The commands except ‘echo’ are also available.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat filename | xclip -selection c</span><br></pre></td></tr></table></figure>
+
 <p>This leads that the contents of a file named “filename” is copied.</p>
 <h3 id="Paste-to-a-text-file"><a href="#Paste-to-a-text-file" class="headerlink" title="Paste to a text file"></a>Paste to a text file</h3><p>Paste the contents to a file:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xclip -o &gt; helloworld.c</span><br></pre></td></tr></table></figure>

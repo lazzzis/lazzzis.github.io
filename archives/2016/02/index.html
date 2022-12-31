@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286648.css">
+<link rel="stylesheet" href="/style.css?t=1672469858333.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -121,6 +121,7 @@
     <section class="content">
         <p>在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(condition) &#123;</span><br><span class="line">  <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
 
         

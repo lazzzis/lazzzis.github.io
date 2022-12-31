@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286666.css">
+<link rel="stylesheet" href="/style.css?t=1672469858332.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -100,6 +100,40 @@
 
 
 <section class="post-list">
+  
+    <article class="post ">
+
+    
+        <h2 class="title">
+            <a href="/post/java-wait-notify-usage/">
+                Java 中 wait 与 notify 的简单操作
+            </a>
+        </h2>
+    
+    <time>
+        Feb 15, 2016
+    </time>
+    <section class="content">
+        <p>在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(condition) &#123;</span><br><span class="line">  <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
+
+        
+            <div class="readmore">
+                <a href="/post/java-wait-notify-usage/">Read More</a>
+            </div>
+        
+
+        
+            <div class="tags">
+                <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a><a class="tag-none-link" href="/tags/Thread/" rel="tag">Thread</a>
+            </div>
+        
+
+    </section>
+</article>
+
   
     <article class="post ">
 
@@ -209,6 +243,7 @@
     <section class="content">
         <h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>已防万一，最好还是先做好备份:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp -R /boot ~/</span><br></pre></td></tr></table></figure>
+
 <p>这里将 /boot 备份在了自己的 home 目录下， 需要的话，保存在其它地方也是一样的</p>
 
         
@@ -341,8 +376,8 @@
     <section class="content">
         <h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>The involved tool is called <strong>xclip</strong>. So check whether the xclip had been installed or not.<br>If not, install it fitst:</p>
 <ul>
-<li><p>Fedora:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install xclip</span><br></pre></td></tr></table></figure>
+<li>Fedora:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install xclip</span><br></pre></td></tr></table></figure></li>
+</ul>
 
         
             <div class="readmore">
@@ -378,38 +413,6 @@
         
             <div class="readmore">
                 <a href="/post/static-in-js/">Read More</a>
-            </div>
-        
-
-        
-            <div class="tags">
-                <a class="tag-none-link" href="/tags/JavaScript/" rel="tag">JavaScript</a>
-            </div>
-        
-
-    </section>
-</article>
-
-  
-    <article class="post ">
-
-    
-        <h2 class="title">
-            <a href="/post/mis-in-js/">
-                在初学JS时犯的一些错误
-            </a>
-        </h2>
-    
-    <time>
-        Oct 24, 2015
-    </time>
-    <section class="content">
-        <p>表示最近在学JS, 相对个人以前学的Python, JAVA之类的语言, JS的语言确实有一些”奇葩”. 把初学时的一些语法错误记录下来,方便自己以后查阅, 如果能帮助到读这篇文章的你自然就更好了.</p>
-<h2 id="number-与-string-相加-减-乘-除"><a href="#number-与-string-相加-减-乘-除" class="headerlink" title="number 与 string 相加/减/乘/除"></a>number 与 string 相加/减/乘/除</h2><h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1:"></a>Example 1:</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a  = <span class="string">&quot;5&quot;</span> + <span class="number">2</span>;   <span class="comment">// the result is &quot;52&quot;</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span> + <span class="string">&quot;5&quot;</span>;    <span class="comment">// the result is &quot;25&quot;</span></span><br></pre></td></tr></table></figure>
-
-        
-            <div class="readmore">
-                <a href="/post/mis-in-js/">Read More</a>
             </div>
         
 

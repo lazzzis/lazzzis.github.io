@@ -1,1 +1,87 @@
-!function(t){"use strict";var i=function(t,i){i.preventDefault(),!0===t.hasClass("active")?t.removeClass("active"):t.addClass("active")},a=function(a){var e=t(this),o=e.attr("data-toggle"),n="toc"===o?"bio":"toc";e.hasClass("active")||(i(e,a),i(e.siblings(".dark-btn"),a),t(".site-"+n).toggleClass("show"),setTimeout(function(){t(".site-"+n).hide(),t(".site-"+o).show(),setTimeout(function(){t(".site-"+o).toggleClass("show")},50)},240))},e=function(i){i.preventDefault();var a=t(this),e=i.data&&i.data.correction?i.data.correction:0;t("html, body").animate({scrollTop:t(a.attr("href")).offset().top-e},400)},o=function(i){i.stopPropagation(),t("body").removeClass("menu-open"),t("#site-nav-switch").removeClass("active")},n=function(i){i.stopPropagation(),t("body").toggleClass("menu-open"),t("#site-nav-switch").toggleClass("active")};t(function(){var i,s;t("#footer, #main").addClass("loaded"),t("#site-nav-switch").on("click",n),t("#site-wrapper .overlay, #sidebar-close").on("click",o),t(".window-nav, .site-toc a").on("click",e),t(".content .video-container").fitVids(),t("#site-sidebar .sidebar-switch .dark-btn").on("click",a),t(window).load(()=>{t(".content img").each((i,a)=>{const e=t(a);e.height()/e.width()>=1.1&&e.width("80%").css("margin","auto"),a.naturalWidth<=.7*t(".content").width()&&e.width(a.naturalWidth).css("margin","auto")})}),"/pixiv"!==window.location.pathname&&"/pixiv/"!==window.location.pathname||(i=t(".article-entry ul").length,s=t(".article-entry ul li").length,t("#pixiv-vol").text(i),t("#pixiv-artist-count").text(s)),setTimeout(function(){t("#loading-bar-wrapper").fadeOut(500)},300)})}(jQuery);
+(function ($) {
+
+  "use strict";
+
+  var toggleActive = function (self, e) {
+    e.preventDefault();
+    if (self.hasClass("active") === true) {
+      self.removeClass("active");
+    } else {
+      self.addClass("active");
+    }
+  };
+
+  var switchSidebarTab = function (e) {
+    var self = $(this),
+      target = self.attr('data-toggle'),
+      counter_target = target === 'toc' ? 'bio' : 'toc';
+    if (self.hasClass('active')) {
+      return;
+    }
+    toggleActive(self, e);
+    toggleActive(self.siblings('.dark-btn'), e);
+    $('.site-' + counter_target).toggleClass('show');
+    setTimeout(function () {
+      $('.site-' + counter_target).hide();
+      $('.site-' + target).show();
+      setTimeout(function () {
+        $('.site-' + target).toggleClass('show');
+      }, 50);
+    }, 240);
+  };
+
+  var scrolltoElement = function (e) {
+    e.preventDefault();
+    var self = $(this),
+      correction = e.data ? e.data.correction ? e.data.correction : 0 : 0;
+    $('html, body').animate({ 'scrollTop': $(self.attr('href')).offset().top - correction }, 400);
+  };
+
+  var closeMenu = function (e) {
+    e.stopPropagation();
+    $('body').removeClass('menu-open');
+    $('#site-nav-switch').removeClass('active');
+  };
+
+  var toggleMenu = function (e) {
+    e.stopPropagation();
+    $('body').toggleClass('menu-open');
+    $('#site-nav-switch').toggleClass('active');
+  };
+
+  var pixivArchiveStat = function () {
+    var vol = $(".article-entry ul").length;
+    var artistCount = $(".article-entry ul li").length;
+    $("#pixiv-vol").text(vol);
+    $("#pixiv-artist-count").text(artistCount);
+  };
+
+  $(function () {
+    $('#footer, #main').addClass('loaded');
+    $('#site-nav-switch').on('click', toggleMenu);
+    $('#site-wrapper .overlay, #sidebar-close').on('click', closeMenu);
+    $('.window-nav, .site-toc a').on('click', scrolltoElement);
+    $(".content .video-container").fitVids();
+    $('#site-sidebar .sidebar-switch .dark-btn').on('click', switchSidebarTab);
+    $(window).load(() => {
+      $('.content img').each((i, n) => {
+        const img = $(n)
+        if (img.height() / img.width() >= 1.1) {
+          img.width("80%").css('margin', 'auto')
+        }
+        if (n.naturalWidth <= $('.content').width() * 0.7) {
+          img.width(n.naturalWidth).css('margin', 'auto')
+        }
+      })
+    })
+
+    if (window.location.pathname === '/pixiv' || window.location.pathname === '/pixiv/') {
+      pixivArchiveStat();
+    }
+
+    setTimeout(function () {
+      $('#loading-bar-wrapper').fadeOut(500);
+    }, 300);
+  });
+
+})(jQuery);

@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286652.css">
+<link rel="stylesheet" href="/style.css?t=1672469858334.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -121,7 +121,8 @@
     <section class="content">
         <p>Python 对函数默认参数的处理</p>
 <p>一个以可变对象为默认参数的函数:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.x = <span class="number">1</span></span><br><span class="line">        print(<span class="string">&#x27;created&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a = A(<span class="params"></span>)</span>):</span></span><br><span class="line">    a.x += <span class="number">1</span></span><br><span class="line">    print(a.x)</span><br><span class="line"><span class="comment"># output: created</span></span><br><span class="line">f() <span class="comment"># output: 2</span></span><br><span class="line">f() <span class="comment"># output: 3</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.x = <span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;created&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a = A(<span class="params"></span>)</span>):</span></span><br><span class="line">    a.x += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(a.x)</span><br><span class="line"><span class="comment"># output: created</span></span><br><span class="line">f() <span class="comment"># output: 2</span></span><br><span class="line">f() <span class="comment"># output: 3</span></span><br></pre></td></tr></table></figure>
+
 <p>从结果可以看出，Python 在解析时便已经创建好了默认参数 a 的值。函数 f 在调用时采用了同一个对象，而不是每次调用时重新创建新的对象。这一点与 <code>C++</code> 的处理方式不同。</p>
 
         

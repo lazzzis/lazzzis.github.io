@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286666.css">
+<link rel="stylesheet" href="/style.css?t=1672469858331.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -105,6 +105,38 @@
 
     
         <h2 class="title">
+            <a href="/post/source-code-of-howdoi/">
+                howdoi 源码阅读与分析
+            </a>
+        </h2>
+    
+    <time>
+        Mar 4, 2017
+    </time>
+    <section class="content">
+        <p><a target="_blank" rel="noopener" href="https://github.com/gleitz/howdoi">howdoi</a> – 一款通过命令行帮你从 stackoverflow 中寻找答案的工具，其源代码部分不足 300 行。同时，这份代码被 <a target="_blank" rel="noopener" href="http://docs.python-guide.org/en/latest/writing/reading/">The Hitchhiker’s Guide to Python!</a> 推荐为适合新手源码阅读的代码。因此，在读完源码后，我分享一下我对这份代码的理解。</p>
+<p>这里采用的版本是 tree 中标号为 <a target="_blank" rel="noopener" href="https://github.com/gleitz/howdoi/tree/d84afdee603dbe699153e35650d46ddd734337d1">d84afdee60</a> 的那一版</p>
+
+        
+            <div class="readmore">
+                <a href="/post/source-code-of-howdoi/">Read More</a>
+            </div>
+        
+
+        
+            <div class="tags">
+                <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>
+            </div>
+        
+
+    </section>
+</article>
+
+  
+    <article class="post ">
+
+    
+        <h2 class="title">
             <a href="/post/default-para-in-python/">
                 Python 对函数默认参数的处理
             </a>
@@ -116,7 +148,8 @@
     <section class="content">
         <p>Python 对函数默认参数的处理</p>
 <p>一个以可变对象为默认参数的函数:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.x = <span class="number">1</span></span><br><span class="line">        print(<span class="string">&#x27;created&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a = A(<span class="params"></span>)</span>):</span></span><br><span class="line">    a.x += <span class="number">1</span></span><br><span class="line">    print(a.x)</span><br><span class="line"><span class="comment"># output: created</span></span><br><span class="line">f() <span class="comment"># output: 2</span></span><br><span class="line">f() <span class="comment"># output: 3</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.x = <span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;created&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a = A(<span class="params"></span>)</span>):</span></span><br><span class="line">    a.x += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(a.x)</span><br><span class="line"><span class="comment"># output: created</span></span><br><span class="line">f() <span class="comment"># output: 2</span></span><br><span class="line">f() <span class="comment"># output: 3</span></span><br></pre></td></tr></table></figure>
+
 <p>从结果可以看出，Python 在解析时便已经创建好了默认参数 a 的值。函数 f 在调用时采用了同一个对象，而不是每次调用时重新创建新的对象。这一点与 <code>C++</code> 的处理方式不同。</p>
 
         
@@ -380,39 +413,6 @@
         
             <div class="tags">
                 <a class="tag-none-link" href="/tags/TFT/" rel="tag">TFT</a><a class="tag-none-link" href="/tags/TOEFL/" rel="tag">TOEFL</a><a class="tag-none-link" href="/tags/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/" rel="tag">生活杂记</a>
-            </div>
-        
-
-    </section>
-</article>
-
-  
-    <article class="post ">
-
-    
-        <h2 class="title">
-            <a href="/post/java-wait-notify-usage/">
-                Java 中 wait 与 notify 的简单操作
-            </a>
-        </h2>
-    
-    <time>
-        Feb 15, 2016
-    </time>
-    <section class="content">
-        <p>在我知道wait() 与 notify() 以前，我常常用一种看似很 low 的方式控制线程同步</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(condition) &#123;</span><br><span class="line">  <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>实际上这个线程是一直在运行的，并没有操作系统概念中的阻塞（Block）。而要实现阻塞（Block）则要借助 Java 线程中的 wait() 操作 与 notify() 操作。</p>
-
-        
-            <div class="readmore">
-                <a href="/post/java-wait-notify-usage/">Read More</a>
-            </div>
-        
-
-        
-            <div class="tags">
-                <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a><a class="tag-none-link" href="/tags/Thread/" rel="tag">Thread</a>
             </div>
         
 

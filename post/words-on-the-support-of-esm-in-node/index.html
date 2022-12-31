@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286579.css">
+<link rel="stylesheet" href="/style.css?t=1672469858316.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -112,7 +112,7 @@
 <li>通过源代码内容自动区分</li>
 <li>在 <code>package.json</code> 指明采用 <code>ESM</code> 的文件</li>
 </ol>
-<a id="more"></a>
+<span id="more"></span>
 
 <p>这四个方案都已经满足了一些基本要求:</p>
 <ul>
@@ -121,6 +121,7 @@
 </ul>
 <p>在这个基础上，第 2 个方案接受的比较多，而且在当前版本 <code>8.7.0</code> 中，可以通过在命令行中增加 <code>--experimental-modules</code> 运行。<br>比如 <code>node --experimental-modules main.mjs</code>:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> _ <span class="keyword">from</span> <span class="string">&#x27;ramda&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(_.add(<span class="number">1</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+
 <h1 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h1><p>其实我最初想到的也是这种方案, 因为我以前在其它语言中接触过一些类似的做法。</p>
 <p>在一些脚本语言中，会采用类似与 <code>#!foo</code> 这种特殊的注释用于说明执行该脚本的程序，比如 <code>#!/usr/bin/env python3</code>。</p>
 <p>而在 <code>python2</code> 中，也会在文件的开头注释说明该语言的编码形式: <code># -*- coding: &lt;encoding name&gt; -*-</code>，比如 <code># -*- coding: utf-8 -*-</code>。</p>
@@ -140,8 +141,10 @@
 <p>不过说实话，这个一听就对开发者有点不友好。要把所有 ESM 都指明，似乎有点累呀。</p>
 <p>比如这样子:</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;module&quot;</span>: <span class="string">&quot;lib/index.js&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;main&quot;</span>: <span class="string">&quot;old/index.js&quot;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>或</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="comment">// files:</span></span><br><span class="line">  <span class="attr">&quot;modules&quot;</span>: [<span class="string">&quot;lib/hello.js&quot;</span>, <span class="string">&quot;bin/hello.js&quot;</span>],</span><br><span class="line"></span><br><span class="line">  <span class="comment">// directories:</span></span><br><span class="line">  <span class="attr">&quot;modules&quot;</span>: [<span class="string">&quot;lib&quot;</span>, <span class="string">&quot;bin&quot;</span>],</span><br><span class="line"></span><br><span class="line">  <span class="comment">// files and directories:</span></span><br><span class="line">  <span class="attr">&quot;modules&quot;</span>: [<span class="string">&quot;lib&quot;</span>, <span class="string">&quot;bin&quot;</span>, <span class="string">&quot;special.js&quot;</span>],</span><br><span class="line"></span><br><span class="line">  <span class="comment">// if package never uses CJS Modules</span></span><br><span class="line">  <span class="attr">&quot;modules&quot;</span>: [<span class="string">&quot;.&quot;</span>],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>另一个比较实在的问题，就是如果要运行 <code>ESM</code> 的文件的话，那岂不是要把 js 文件和 package.json 一起使用？也就是说，单个 <code>ESM</code> 文件是不是不能运行。</p>
 <p>同样这个对现有的某些工具链不友好，需要阅读 <code>package.json</code> 才能确定是不是 <code>ESM</code>。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>总的而言，虽然方案二有些缺点，但确实是方案二更优一点。另外，有一篇对方案四的<a target="_blank" rel="noopener" href="https://github.com/dherman/defense-of-dot-js/blob/master/proposal.md">正名</a>文章，值得读一读。</p>

@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286551.css">
+<link rel="stylesheet" href="/style.css?t=1672469858274.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -107,7 +107,7 @@
     <section class="content">
         <div class="article-entry" itemprop="articleBody">
             <p>在学校指导老师的要求下，同时 <a target="_blank" rel="noopener" href="https://github.com/Kerminate">Kerminate</a> 想把写 OJ 作为毕业设计的情况下，我和 Kerminate 决定开发 2.0 版本。具体的特性已经在项目地址 <a target="_blank" rel="noopener" href="https://github.com/acm309/PutongOJ">PutongOJ</a> 说明。这里主要说一下这次开发中的坑。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h1 id="项目文件结构"><a href="#项目文件结构" class="headerlink" title="项目文件结构"></a>项目文件结构</h1><p>在后端结构上，直接采用了之前的项目文件结构，结果可以看到，几乎所有文件夹都放在项目一级目录下，包括 <code>controller</code>, <code>model</code> 文件夹等。现在看来，应该都把它们放在一个 <code>src</code> 文件夹下的。因为如果采用这种方式，那么使用 <code>babel</code>, <code>tsc</code>, <code>eslint</code> 等工具时，可以更方便的指定需要操作的文件夹。不然现在，如果我要使用这些工具，我需要指定一些需要被工具 <code>ignore</code> 的文件夹，比如 <code>public</code> (里面可能包含一些编译好的前端 js 文件)。</p>
 <h1 id="i18n"><a href="#i18n" class="headerlink" title="i18n"></a>i18n</h1><p>原先计划是全用英文的，因为觉得大多数单词都很常见，比如: <code>Problem</code>, <code>Status</code>, <code>Wrong Answer</code> 等。而且，正式比赛里，题面都是英文的，因此正常情况下，使用者对英文是不会排斥的。</p>
@@ -118,6 +118,7 @@
 <p>起初我注意到了判题端总是 ptrace 失败的问题，但我一直猜测原因出在判题端本身的实现上。直至我偶然情况下，没有在 docker 容器内测试，而是在一台 linux 服务器上测试时，才发现此时判题端并不会出现 ptrace 失败的问题。之后也猜测了是否是 docker 容器的 linux 版本的问题，不过幸运的是，直接在 google 上以 docker ptrace 为关键字搜索就能知道问题原因。</p>
 <p>解决方案就是开启 docker 对 ptrace 的支持。如果是 docker-compose file 的话，只需加上</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cap_add:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">SYS_PTRACE</span></span><br></pre></td></tr></table></figure>
+
 <h1 id="前端-UI-库的选择"><a href="#前端-UI-库的选择" class="headerlink" title="前端 UI 库的选择"></a>前端 UI 库的选择</h1><p>在最开始挑选 UI 库的时候，我首先把 Material 风格的给排除了。原因是个人认为 Material 风格不适合 OJ。</p>
 <p>而主要负责前端编写的 Kerminate 首先使用的是 ElementUI，但 Kerminate 反应这个并不好用，因此又选择了 iView (虽然采用了 iView 了后，也抱怨过 iView 有些组件也不好用)。</p>
 <p>记得当时可选范围限定在了 <a target="_blank" rel="noopener" href="https://github.com/vuejs/awesome-vue#frameworks">awesome-vue</a> 列表上出现的 UI 库。与当时相比，现在比以前增加了 5 个左右，而且现在增加了 <code>vue-antd-ui</code>。</p>

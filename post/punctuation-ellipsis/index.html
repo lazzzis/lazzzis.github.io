@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286526.css">
+<link rel="stylesheet" href="/style.css?t=1672469858261.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -107,7 +107,7 @@
             <p>UX: 这次我们把按钮的文字改一下，从 “Continue” 改成 “Save…”.</p>
 <p>我：OK。简单，三个点而已。</p>
 <p>Reviewer: 不，那可不只是三个点</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <p>我：三个点还能有不一样！？</p>
 <p>Reviewer：对，我们应该用 “…” 而不是 “…”。</p>
@@ -127,11 +127,13 @@
 <p>Reviewer：你可以在我们项目里加一个 presubmit script。这样，它能在提交代码时警告工程师。要不你去实现检测 <code>…</code> 和 <code>...</code> 吧。</p>
 <p>我：好！</p>
 <p>聊完后，我开始写起这个脚本。项目里用的是 python，那么用 python 的话，正则表达式就是 <code>\u002e\u002e\u002e</code>，也就是这个样子了：</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">p = re.<span class="built_in">compile</span>(<span class="string">&#x27;\u002e\u002e\u002e&#x27;</span>)</span><br><span class="line">print(p.search(<span class="string">&quot;downloading...&quot;</span>).group())</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">p = re.<span class="built_in">compile</span>(<span class="string">&#x27;\u002e\u002e\u002e&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(p.search(<span class="string">&quot;downloading...&quot;</span>).group())</span><br></pre></td></tr></table></figure>
+
 <p>看一下输出，是这个样子：<code>dow</code></p>
 <p>嗯？怎么回事，为什么不是 <code>...</code>。难道我哪里打错了？但仔细看了不下十遍，也没发现啥疑点。把字符换成 <code>Saving...</code> 试试，但也没有正确匹配。</p>
 <p>用其他语言试试：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="string">&quot;downloading...&quot;</span>.match(<span class="regexp">/\u002e\u002e\u002e/</span>)</span><br><span class="line">[ <span class="string">&#x27;...&#x27;</span>, <span class="attr">index</span>: <span class="number">11</span>, <span class="attr">input</span>: <span class="string">&#x27;downloading...&#x27;</span>, <span class="attr">groups</span>: <span class="literal">undefined</span> ]</span><br></pre></td></tr></table></figure>
+
 <p>为什么用 js 就可以？</p>
 <p>折腾了半个多小时，无奈去问了问擅长 Python 的同事。</p>
 <p>同事：你用 <code>p = re.compile(&#39;[\u002e]&#123;3&#125;&#39;)</code> 试试？</p>

@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="/style.css">
 
     <!-- 
-<link rel="stylesheet" href="/style.css?t=1657592286642.css">
+<link rel="stylesheet" href="/style.css?t=1672469858328.css">
  -->
     <script>
       function setLoadingBarProgress(num) {
@@ -106,7 +106,7 @@
     <section class="content">
         <div class="article-entry" itemprop="articleBody">
             <h2 id="静态变量-方法"><a href="#静态变量-方法" class="headerlink" title="静态变量/方法"></a>静态变量/方法</h2><p>静态变量/方法，一般来说是独立於对象的存在，它不属於任何一个具体的对象，它属於每一特定类的所有对象。也可以认为是属於一个类的。静态变量一般用於常数，或者存储某一类的所有对象需要共有的变量。<br>学JS的时候发现，与JAVA，C++相比，JS并没有明确定义静态的声明或使用方法。虽然没有说，但仍然需要，比如一个很经典的需要就时用静态变量统计一个类被实例化了几次。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="静态变量的实现"><a href="#静态变量的实现" class="headerlink" title="静态变量的实现"></a>静态变量的实现</h2><p>因为 <code>Function</code> 本身也可以看作是对象，那么就可以尝试给这个对象添加一个常量。例如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">A.count = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
