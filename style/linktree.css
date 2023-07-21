@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+:root {
+  --bgColor: #223344;
+  --bgColor2: #090a0f;
+  --accentColor: #FFF;
+  --hoverColor: rgba(255, 255, 255, 1);
+  --font: "nunito", sans-serif;
+  --delay: .3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* min-height: 100vh; */
+  font-family: var(--font);
+  /* background-color: rgba(18, 18, 18, 1); */
+  /* background-color: antiquewhite; */
+  background-color: #7B90D2;
+  background-image: url("/img/texture.png");
+  /* https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image */
+  /* opacity: 0; */
+  /* animation: 0.7s ease-out var(--delay) 1 transitionAnimation; */
+  /* transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out; */
+  /* transition: background-image 300ms ease-in 200ms; */
+  /* duration/timing-function/delay/iterations/name */
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+body::before {
+  /* content: ''; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('./2.ori.png'); */
+  background-color: antiquewhite;
+  /* box-shadow: inset 0 0 0 2000px rgba(18, 18, 18, 0.7); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+#profilePicture,
+#profilePicture img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto 5px;
+  /* border-radius: 50%; */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#userName {
+  /* padding-top: 10%; */
+  color: #121212;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+#links {
+  max-width: 675px;
+  width: auto;
+  display: block;
+  margin: 27px auto;
+}
+
+.link {
+  position: relative;
+  background-color: white;
+  color: #888888;
+  border: solid var(--accentColor) 2px;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--hoverColor);
+    color: var(--bgColor);
+    transform: scale(1.02);
+  }
+}
+.link:active {
+  background-color: var(--hoverColor);
+  color: var(--bgColor);
+}
+
+/*-------------------------animations-----------------------*/
+@keyframes transitionAnimation {
+  0% {
+    opacity: 0;
+    /* transform: translateY(-10px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
