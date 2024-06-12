@@ -5,6 +5,17 @@ export default defineConfig({
     build: {
         outDir: 'dist',
         emptyOutDir: true,
+        rollupOptions: {
+            output: {
+                assetFileNames: (assetInfo) => {
+                    if (assetInfo.name.endsWith('.xml')) {
+                        return `assets/[name].[ext]`
+                    } else {
+                        return `assets/[name]-[hash].[ext]`
+                    }
+                }
+            }
+        }
     },
     plugins: [],
 })
