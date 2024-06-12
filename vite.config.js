@@ -9,7 +9,7 @@ export default defineConfig({
             output: {
                 assetFileNames: (assetInfo) => {
                     if (assetInfo.name.endsWith('.xml')) {
-                        return `assets/[name].[ext]`
+                        return `[name].[ext]`
                     } else {
                         return `assets/[name]-[hash].[ext]`
                     }
