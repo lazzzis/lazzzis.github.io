@@ -45,6 +45,10 @@ main {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px) saturate(0.7);
+
+    @media only screen and (max-width: 540px) {
+        backdrop-filter: blur(5px) saturate(0.7);
+    }
 }
 
 .container {
@@ -53,6 +57,11 @@ main {
     width: 100%;
     aspect-ratio: 2/1;
     background-color: rgb(243 245 255 / 78%);
+
+    @media only screen and (max-width: 540px) {
+        background-color: rgb(243 245 255 / 42%);
+    }
+
     // border: 1px solid #fff;
 
     display: flex;
