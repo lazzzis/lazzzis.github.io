@@ -2,6 +2,30 @@
     /* --primary-color: rgb(204, 246, 247); */
     --primary-color: #f5dcb3;
     --primary-color-alpha: rgba(204, 246, 247, 0.4);
+    --container-bg: rgb(243 245 255 / 78%);
+    --container-bg-mobile: rgb(243 245 255 / 42%);
+    --container-shadow: rgb(224 225 255 / 41%);
+    --title-color: rgb(64, 64, 64);
+    --bio-color: #5f6383;
+    --link-bg: #424242;
+    --link-color: #fff;
+    --link-hover-bg: var(--primary-color);
+    --link-hover-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #c8a97a;
+        --container-bg: rgb(15 17 30 / 82%);
+        --container-bg-mobile: rgb(15 17 30 / 60%);
+        --container-shadow: rgb(0 0 20 / 50%);
+        --title-color: rgb(220, 220, 230);
+        --bio-color: #a0a3be;
+        --link-bg: #2e3050;
+        --link-color: #dde0f5;
+        --link-hover-bg: #3d4070;
+        --link-hover-color: #fff;
+    }
 }
 
 * {
@@ -56,10 +80,10 @@ main {
     max-width: 1080px;
     width: 100%;
     aspect-ratio: 2/1;
-    background-color: rgb(243 245 255 / 78%);
+    background-color: var(--container-bg);
 
     @media only screen and (max-width: 540px) {
-        background-color: rgb(243 245 255 / 42%);
+        background-color: var(--container-bg-mobile);
     }
 
     /* border: 1px solid #fff; */
@@ -70,7 +94,7 @@ main {
     border-radius: 16px;
     /* box-shadow: 0px 12px 15px 2px rgb(224 225 255 / 41%); */
     /* box-shadow: 0px 12px 15px 2px var(--primary-color-alpha); */
-    box-shadow: 12px 12px 15px 2px rgb(224 225 255 / 41%);
+    box-shadow: 12px 12px 15px 2px var(--container-shadow);
     overflow: hidden;
 
     @media only screen and (max-width: 540px) {
@@ -128,13 +152,13 @@ main {
         line-height: 1.2;
         font-size: 3rem;
         font-family: nunito;
-        color: rgb(64, 64, 64);
+        color: var(--title-color);
         font-weight: 600;
     }
 
     .bio {
         margin-top: 1rem;
-        color: #5f6383;
+        color: var(--bio-color);
         line-height: 1.5;
         font-weight: 500;
         font-family: nunito;
@@ -157,16 +181,14 @@ main {
         a.link {
 
             &:hover {
-                /* color of landing start */
-                background-color: var(--primary-color);
-                color: black;
+                background-color: var(--link-hover-bg);
+                color: var(--link-hover-color);
                 transition: all .3s;
             }
 
             padding: 0.5rem 1rem;
-            /* background: #2e2e2e; */
-            background: #424242;
-            color: #fff;
+            background: var(--link-bg);
+            color: var(--link-color);
             font-size: 0.8rem;
             border-radius: 8px;
             display: flex;
