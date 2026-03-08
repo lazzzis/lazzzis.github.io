@@ -132,11 +132,32 @@ main {
         background-position: center;
         background-size: cover;
 
+        /* Feather the right edge by masking the element itself —
+           the card's background-color shows through naturally */
+        mask-image: linear-gradient(to right,
+            black 0%,
+            black 38%,
+            rgba(0,0,0,0.92) 50%,
+            rgba(0,0,0,0.72) 62%,
+            rgba(0,0,0,0.38) 75%,
+            rgba(0,0,0,0.10) 88%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(to right,
+            black 0%,
+            black 38%,
+            rgba(0,0,0,0.92) 50%,
+            rgba(0,0,0,0.72) 62%,
+            rgba(0,0,0,0.38) 75%,
+            rgba(0,0,0,0.10) 88%,
+            transparent 100%
+        );
+
         &::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to right, var(--photo-tint) 0%, var(--container-bg) 100%);
+            background: var(--photo-tint);
         }
     }
 
