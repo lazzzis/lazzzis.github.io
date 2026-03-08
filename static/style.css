@@ -16,19 +16,19 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-color: #b8956a;
-        --container-bg: rgb(10 12 24 / 78%);
-        --container-bg-mobile: rgb(10 12 24 / 65%);
-        --container-border: rgba(255, 255, 255, 0.07);
+        --primary-color: #c8a87a;
+        --container-bg: rgb(10 12 26 / 88%);
+        --container-bg-mobile: rgb(10 12 26 / 78%);
+        --container-border: rgba(255, 255, 255, 0.09);
         --container-shadow: 0 24px 64px rgb(0 0 0 / 55%), 0 4px 20px rgb(0 0 0 / 30%);
-        --title-color: rgb(228, 228, 242);
-        --bio-color: #8a8eb8;
-        --link-bg: rgba(255, 255, 255, 0.08);
-        --link-color: #c6caf0;
-        --link-border: rgba(255, 255, 255, 0.12);
-        --link-hover-bg: rgba(255, 255, 255, 0.16);
+        --title-color: rgb(242, 242, 255);
+        --bio-color: #b4b8dc;
+        --link-bg: rgba(255, 255, 255, 0.13);
+        --link-color: #dde0ff;
+        --link-border: rgba(255, 255, 255, 0.2);
+        --link-hover-bg: rgba(255, 255, 255, 0.22);
         --link-hover-color: #fff;
-        --avatar-ring: rgba(255, 255, 255, 0.2);
+        --avatar-ring: rgba(255, 255, 255, 0.25);
     }
 }
 
