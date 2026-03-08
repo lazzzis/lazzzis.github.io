@@ -12,6 +12,9 @@
     --link-hover-bg: var(--primary-color);
     --link-hover-color: rgb(28, 18, 4);
     --avatar-ring: rgba(255, 255, 255, 0.75);
+    --photo-tint: transparent;
+    --backdrop-filter: blur(10px) saturate(0.75) brightness(0.92);
+    --backdrop-filter-mobile: blur(6px) saturate(0.75) brightness(0.9);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +32,9 @@
         --link-hover-bg: rgba(255, 255, 255, 0.22);
         --link-hover-color: #fff;
         --avatar-ring: rgba(255, 255, 255, 0.25);
+        --photo-tint: rgb(0 0 0 / 45%);
+        --backdrop-filter: blur(10px) saturate(0.6) brightness(0.5);
+        --backdrop-filter-mobile: blur(6px) saturate(0.6) brightness(0.5);
     }
 }
 
@@ -73,11 +79,11 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    backdrop-filter: blur(10px) saturate(0.75) brightness(0.92);
+    backdrop-filter: var(--backdrop-filter);
 
     @media only screen and (max-width: 540px) {
         padding: 1rem;
-        backdrop-filter: blur(6px) saturate(0.75) brightness(0.9);
+        backdrop-filter: var(--backdrop-filter-mobile);
     }
 }
 
@@ -130,7 +136,7 @@ main {
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to right, transparent 50%, var(--container-bg) 100%);
+            background: linear-gradient(to right, var(--photo-tint) 0%, var(--container-bg) 100%);
         }
     }
 
