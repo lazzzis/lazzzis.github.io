@@ -1,30 +1,45 @@
 :root {
-    /* --primary-color: rgb(204, 246, 247); */
-    --primary-color: #f5dcb3;
-    --primary-color-alpha: rgba(204, 246, 247, 0.4);
-    --container-bg: rgb(243 245 255 / 78%);
-    --container-bg-mobile: rgb(243 245 255 / 42%);
-    --container-shadow: rgb(224 225 255 / 41%);
-    --title-color: rgb(64, 64, 64);
-    --bio-color: #5f6383;
-    --link-bg: #424242;
-    --link-color: #fff;
+    --primary-color: #e8c9a0;
+    --container-bg: rgb(255 255 255 / 62%);
+    --container-bg-mobile: rgb(255 255 255 / 48%);
+    --container-border: rgba(255, 255, 255, 0.55);
+    --container-shadow: 0 24px 64px rgb(0 0 0 / 14%), 0 4px 20px rgb(0 0 0 / 8%);
+    --title-color: rgb(18, 18, 30);
+    --bio-color: #5f6390;
+    --link-bg: rgb(18 20 38 / 88%);
+    --link-color: #ededff;
+    --link-border: rgba(255, 255, 255, 0.1);
     --link-hover-bg: var(--primary-color);
-    --link-hover-color: black;
+    --link-hover-color: rgb(28, 18, 4);
+    --avatar-ring: rgba(255, 255, 255, 0.75);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-color: #c8a97a;
-        --container-bg: rgb(15 17 30 / 82%);
-        --container-bg-mobile: rgb(15 17 30 / 60%);
-        --container-shadow: rgb(0 0 20 / 50%);
-        --title-color: rgb(220, 220, 230);
-        --bio-color: #a0a3be;
-        --link-bg: #2e3050;
-        --link-color: #dde0f5;
-        --link-hover-bg: #3d4070;
+        --primary-color: #b8956a;
+        --container-bg: rgb(10 12 24 / 78%);
+        --container-bg-mobile: rgb(10 12 24 / 65%);
+        --container-border: rgba(255, 255, 255, 0.07);
+        --container-shadow: 0 24px 64px rgb(0 0 0 / 55%), 0 4px 20px rgb(0 0 0 / 30%);
+        --title-color: rgb(228, 228, 242);
+        --bio-color: #8a8eb8;
+        --link-bg: rgba(255, 255, 255, 0.08);
+        --link-color: #c6caf0;
+        --link-border: rgba(255, 255, 255, 0.12);
+        --link-hover-bg: rgba(255, 255, 255, 0.16);
         --link-hover-color: #fff;
+        --avatar-ring: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -34,8 +49,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'nunito', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Heiti, 黑体, sans-serif;
-    ;
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Heiti, 黑体, sans-serif;
 }
 
 a {
@@ -48,60 +62,42 @@ a {
 
 body {
     height: 100%;
-    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
-    /* https://webgradients.com/ */
-    /* 154 */
-    /* background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
-    /* 161 */
-    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-
     background-image: url(./splash.jpg);
     background-size: cover;
     background-position: center;
-
-    /* 166 */
-    /* background-image: linear-gradient(-45deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%); */
 }
 
 main {
-    min-height: calc(100vh);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px) saturate(0.7);
+    padding: 2rem;
+    backdrop-filter: blur(10px) saturate(0.75) brightness(0.92);
 
     @media only screen and (max-width: 540px) {
-        backdrop-filter: blur(5px) saturate(0.7);
+        padding: 1rem;
+        backdrop-filter: blur(6px) saturate(0.75) brightness(0.9);
     }
 }
 
 .container {
-    height: 40%;
-    max-width: 1080px;
+    max-width: 960px;
     width: 100%;
     aspect-ratio: 2/1;
     background-color: var(--container-bg);
-
-    @media only screen and (max-width: 540px) {
-        background-color: var(--container-bg-mobile);
-    }
-
-    /* border: 1px solid #fff; */
-
+    border: 1px solid var(--container-border);
     display: flex;
     flex-direction: row;
-
-    border-radius: 16px;
-    /* box-shadow: 0px 12px 15px 2px rgb(224 225 255 / 41%); */
-    /* box-shadow: 0px 12px 15px 2px var(--primary-color-alpha); */
-    box-shadow: 12px 12px 15px 2px var(--container-shadow);
+    border-radius: 24px;
+    box-shadow: var(--container-shadow);
     overflow: hidden;
+    animation: enter 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 
-    @media only screen and (max-width: 540px) {
-        height: 80%;
+    @media only screen and (max-width: 600px) {
+        background-color: var(--container-bg-mobile);
         aspect-ratio: unset;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        min-height: min(480px, 82vh);
     }
 
     @media only screen and (max-height: 540px) {
@@ -115,98 +111,118 @@ main {
     .landing {
         width: 50%;
 
-        @media only screen and (max-width: 540px) {
+        @media only screen and (max-width: 600px) {
             width: 100%;
         }
     }
 
     .landing-start {
-        @media only screen and (max-width: 540px) {
+        @media only screen and (max-width: 600px) {
             display: none;
         }
 
+        position: relative;
         background-image: url(./splash.jpg);
         background-position: center;
         background-size: cover;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, transparent 50%, var(--container-bg) 100%);
+        }
     }
 
     .landing-end {
         @media only screen and (max-height: 600px) {
-            overflow: scroll;
+            overflow-y: auto;
         }
 
-        padding: 3rem;
-        backdrop-filter: blur(0.5rem);
+        padding: 2.75rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .landing-logo {
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
 
         & > img {
-            height: 62px;
+            height: 72px;
+            width: 72px;
             border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 0 3px var(--avatar-ring), 0 4px 16px rgb(0 0 0 / 18%);
         }
     }
 
     .title {
-        line-height: 1.2;
-        font-size: 3rem;
+        line-height: 1.1;
+        font-size: 2.75rem;
         font-family: nunito;
         color: var(--title-color);
-        font-weight: 600;
+        font-weight: 700;
+        letter-spacing: -0.02em;
     }
 
     .bio {
-        margin-top: 1rem;
+        margin-top: 0.75rem;
         color: var(--bio-color);
-        line-height: 1.5;
+        line-height: 1.6;
         font-weight: 500;
         font-family: nunito;
 
         .icons {
+            margin-bottom: 0.2rem;
+
             .icon {
-                font-size: 2.1rem;
+                font-size: 1.9rem;
+                opacity: 0.85;
             }
         }
     }
 
     .links {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 0.7rem;
+        column-gap: 0.5rem;
         row-gap: 0.5rem;
 
         a.link {
-
-            &:hover {
-                background-color: var(--link-hover-bg);
-                color: var(--link-hover-color);
-                transition: all .3s;
-            }
-
-            padding: 0.5rem 1rem;
+            padding: 0.42rem 0.9rem;
             background: var(--link-bg);
             color: var(--link-color);
-            font-size: 0.8rem;
-            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            border-radius: 999px;
+            border: 1px solid var(--link-border);
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+            will-change: transform;
+
+            &:hover {
+                background-color: var(--link-hover-bg);
+                color: var(--link-hover-color);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 18px rgb(0 0 0 / 16%);
+            }
 
             & > img {
-                height: 1.4rem;
-                margin-right: 0.5rem;
+                height: 1.3rem;
+                margin-right: 0.45rem;
             }
 
             & > .icon {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 margin-right: 0.3rem;
             }
         }
-
     }
 }
 
