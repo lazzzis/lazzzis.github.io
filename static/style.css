@@ -31,7 +31,7 @@
         --link-border: rgba(255, 255, 255, 0.2);
         --link-hover-bg: rgba(255, 255, 255, 0.22);
         --link-hover-color: #fff;
-        --avatar-ring: rgba(255, 255, 255, 0.25);
+        --avatar-ring: rgba(255, 255, 255, 0.4);
         --photo-tint: rgb(0 0 0 / 45%);
         --backdrop-filter: blur(10px) saturate(0.6) brightness(0.5);
         --backdrop-filter-mobile: blur(6px) saturate(0.6) brightness(0.5);
@@ -170,6 +170,10 @@ main {
             overflow-y: auto;
         }
 
+        @media only screen and (max-width: 600px) {
+            padding: 2rem 1.75rem;
+        }
+
         padding: 2.75rem 3rem;
         display: flex;
         flex-direction: column;
@@ -215,7 +219,7 @@ main {
     }
 
     .links {
-        margin-top: 2rem;
+        margin-top: 1.25rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -234,6 +238,7 @@ main {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            flex-grow: 1;
             transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
             will-change: transform;
 
