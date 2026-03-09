@@ -100,6 +100,10 @@ main {
     overflow: hidden;
     animation: enter 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 
+    @media only screen and (min-width: 601px) and (max-width: 960px) {
+        aspect-ratio: unset;
+    }
+
     @media only screen and (max-width: 600px) {
         background-color: var(--container-bg-mobile);
         aspect-ratio: unset;
