@@ -2,16 +2,16 @@
     --primary-color: #e8c9a0;
     --container-bg: rgb(255 255 255 / 62%);
     --container-bg-mobile: rgb(255 255 255 / 48%);
-    --container-border: rgba(255, 255, 255, 0.55);
+    --container-border: rgba(0, 0, 0, 0.08);
     --container-shadow: 0 24px 64px rgb(0 0 0 / 14%), 0 4px 20px rgb(0 0 0 / 8%);
     --title-color: rgb(18, 18, 30);
     --bio-color: #5f6390;
-    --link-bg: rgb(18 20 38 / 88%);
-    --link-color: #ededff;
-    --link-border: rgba(255, 255, 255, 0.1);
+    --link-bg: rgb(28 26 44 / 92%);
+    --link-color: #f0eeff;
+    --link-border: rgba(255, 255, 255, 0.12);
     --link-hover-bg: var(--primary-color);
     --link-hover-color: rgb(28, 18, 4);
-    --avatar-ring: rgba(255, 255, 255, 0.75);
+    --avatar-ring: rgba(0, 0, 0, 0.12);
     --photo-tint: transparent;
     --backdrop-filter: blur(10px) saturate(0.75) brightness(0.92);
     --backdrop-filter-mobile: blur(6px) saturate(0.75) brightness(0.9);
@@ -213,7 +213,6 @@ main {
 
             .icon {
                 font-size: 1.9rem;
-                opacity: 0.85;
             }
         }
     }
